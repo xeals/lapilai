@@ -1,0 +1,25 @@
+header:
+  - title: How to play
+    url: /guide
+  - title: Translated content
+    url: /content
+
+guide:
+  - title: Guide
+    children:
+      - title: Navigation
+        url: /guide/navigating
+      - title: Battling
+        url: /guide/battle
+      - title: Witches
+        url: /guide/witches
+
+tcontent:
+  - title: Missions
+    children:
+      - title: Daily missions
+        url: /content/missions/dailies
+      - title: Weekly missions
+        url: /content/missions/weeklies
+      - title: Release Tiara event
+        url: /content/missions/tiara
