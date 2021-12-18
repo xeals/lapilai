@@ -53,11 +53,6 @@ compatibility for this method remains unknown.
 On launch, the sharing functionality was reportedly broken for a lot of users.
 KLab should fix this in time.
 
-### I've unlocked the arena, but I can't access it?
-
-The arena is probably down for maintenance while KLab addresses issues with it.
-We don't know when it'll be back up.
-
 ### How do I choose my favourite girl to appear on the home screen?
 
 The home screen is customisable through the [room menu](navigating#rooms).
