@@ -1,0 +1,18 @@
+---
+title: Rooms
+permalink: /guide/mechanics/room
+---
+
+{% include image.html file="howto-room.png" description="Room screen overview" %}
+
+The rooms menu lets you change your home background, the members present in it, and passively gain resources!
+
+Rooms can house up to three members that will idly interact with the scenery, and give quick access to talk to those witches. While you start off with one room, the study, you can buy additional rooms in exchange for decoration tickets.
+
+Rooms also generate resources over time, which can be collected from the room menu, accessible from the home screen. All rooms that you have access to will generate resources, not just the one that you’ve chosen to be active.
+
+| Room                      | Resource generated |
+|---------------------------|--------------------|
+| Magic study room          | Flora              |
+| Flora Academy dining room | Stamina            |
+| Staff room                | Common bright sand |

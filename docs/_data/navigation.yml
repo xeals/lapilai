@@ -15,6 +15,10 @@ guide:
         url: /guide/battle
       - title: Witches
         url: /guide/witches
+  - title: General mechanics
+    children:
+      - title: Rooms
+        url: /guide/mechanics/room
 
 tcontent:
   - title: Missions

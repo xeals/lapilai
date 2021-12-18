@@ -47,7 +47,7 @@ Welcome to your main base of operations, professor!
 17. Summon - Gacha hell. Luci pls roll me some NaT 20s
 18. Card - View and strengthen cards
 19. [Witch](#witch-details) - View, equip and strengthen your witches.
-20. Guild hall - 
+20. [Guild hall](#guild) - Join your friends and help each other out
 21. More news - hey guys pls buy the monthly pass
 
 You can tap on any character in the scenery to [interact](#interaction) with them!
@@ -61,7 +61,7 @@ Tapping on the arrow below the 10-13 options will expand the menu row and open u
 25. [Witch activities](mechanics/activities)
 26. Friends
 27. Bag - items
-28. [Room](mechanics/room) - customise your home page
+28. [Room](#rooms) - customise your home page
 
 
 ## Interaction
@@ -151,3 +151,33 @@ spellbooks](witches#equipment-enhancement) that are rewarded from quests.
 12. Meteorite - `requires confirmation`{:.warning}
 
 ## AR
+
+{% include image.html file="howto-nav-ar.png" description="Interacting with Angelica in augmented reality!" %}
+
+1. Leave AR
+2. Help
+3. Pose
+4. Dance
+5. Change outfit
+6. Touch mode
+7. Take picture
+8. Expression
+9. Change phone orientation
+10. Reset changes
+11. Dialogue ON/OFF
+12. Shadow ON/OFF
+13. Set eyes to follow camera ON/OFF
+
+## Guild
+
+`TODO`{:.warning}
+
+## Rooms
+
+{% include image.html file="howto-nav-room.png" description="The room menu" %}
+
+The rooms menu is where you can customise your home layout and who appears in
+it.
+
+Rooms have some gameplay mechanics that are explained in their own article
+[here](mechanics/room).

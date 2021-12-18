@@ -57,3 +57,7 @@ KLab should fix this in time.
 
 The arena is probably down for maintenance while KLab addresses issues with it.
 We don't know when it'll be back up.
+
+### How do I choose my favourite girl to appear on the home screen?
+
+The home screen is customisable through the [room menu](navigating#rooms).
