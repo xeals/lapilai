@@ -28,8 +28,8 @@ tcontent:
   - title: Missions
     children:
       - title: Daily missions
-        url: /content/missions/dailies
+        url: /content/dailies
       - title: Weekly missions
-        url: /content/missions/weeklies
+        url: /content/weeklies
       - title: Release Tiara event
-        url: /content/missions/tiara
+        url: /content/release-tiara

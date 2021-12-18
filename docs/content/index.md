@@ -1,3 +1,0 @@
----
-title: Translated content
----
