@@ -17,6 +17,8 @@ guide:
         url: /guide/witches
   - title: General mechanics
     children:
+      - title: Guild Hall
+        url: /guide/guild
       - title: Rooms
         url: /guide/room
 
