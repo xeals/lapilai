@@ -18,7 +18,7 @@ guide:
   - title: General mechanics
     children:
       - title: Rooms
-        url: /guide/mechanics/room
+        url: /guide/room
 
 tcontent:
   - title: Missions
