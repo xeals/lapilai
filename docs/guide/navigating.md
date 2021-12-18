@@ -74,7 +74,7 @@ Tapping on the arrow below the 10-13 options will expand the menu row and open u
 5. [AR](#ar) - Send your girl into real life except not really
 6. Details - Details about your girl
 7. Logbook - Select from all of your witches
-8. [Affection](#affection) - How much your girl loves you
+8. [Affection](witches#affection) - How much your girl loves you
 9. Share - Share your love for your girl on social media! (You get 50 gems for the 1st time!)
 10. Picture - Take a picture!
 11. Gift opportunities - How many times you can give them gifts. Recharges per day.
@@ -96,20 +96,10 @@ Depending on the girl, they may be more receptive to certain types of gifts than
 
 You can hold down the button to select multiple of the same gift quickly.
 
-## Affection
 
-As you progress through the game, you can grow closer to the witches in your
-class and learn more about them, and maybe even...?!
 
-Affection increases by giving gifts, interacting, listening to their stories or
-messages or calls, and similar interactions.
 
-Every 5 affection ranks, you will gain some rewards and potentially unlock new
-major features or systems.
 
-While not listed in the table for consistency, there are additional voice line
-unlocks at every level ending in 0, 5, and 8 (5, 8, 10, etc.).
 
-{% include affection_table.html %}
 
 ## AR

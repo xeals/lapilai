@@ -2,9 +2,21 @@
 title: Witch and card mechanics
 ---
 
+## Affection
 
-### Affection
+As you progress through the game, you can grow closer to the witches in your
+class and learn more about them, and maybe even...?!
 
+Affection increases by giving gifts, interacting, listening to their stories or
+messages or calls, and similar interactions.
+
+Every 5 affection ranks, you will gain some rewards and potentially unlock new
+major features or systems.
+
+While not listed in the table for consistency, there are additional voice line
+unlocks at every level ending in 0, 5, and 8 (5, 8, 10, etc.).
+
+{% include affection_table.html %}
 
 ## Equipment enhancement
 
