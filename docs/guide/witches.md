@@ -18,6 +18,61 @@ unlocks at every level ending in 0, 5, and 8 (5, 8, 10, etc.).
 
 {% include affection_table.html %}
 
+## Star ranking
+
+{% include image.html file="howto-witch-star.png" description="Stats gained from
+improving the star ranking" %}
+
+Star ranking is the secondary method of improving your cards, and unlocks stat
+improvements and new skills.
+
+Increasing star ranking consumes *Secrets of Stars scrolls*, or more simply
+*scrolls*, which can be acquired through witch activities, hard quests (on first
+completion), and examination resource quests.
+
+A card’s star ranking affects their level cap (in combination with your player
+ranking), unlocks new skills, and increases stats.
+
+For SSR and UR cards, star rank 1 is incredibly important as it unlocks their
+[enhanced attack](battle#making-attacks), which is vital for their use.
+
+## Flower ranking
+
+{% include image.html file="howto-witch-flower.png" description="Improving the
+flower ranking of Ratura" %}
+
+Flower ranking is equivalent to evolving cards in other games, and unlocks
+improvements for the skills of cards.
+
+Increasing flower ranking consumes *star stones*, specific to card to be
+improved. Star stones are acquired from duplicate cards in gacha (30 shards
+each), through card quests, and through hard story quest lines.
+
+Instead of using specific star stones improve flower ranking, UR cards can
+utilise *heavenly star stones* `translation pending`{:.warning} as substitute
+star stones. Heavenly star stones are not locked to a specific card, which makes
+them very versatile in a pinch. However, they are difficult or expensive to
+obtain.
+{:.info}
+
+The cost of improving flower ranking goes up with each rank, as below.
+
+| Rank X | Cost                               |
+|:------:|------------------------------------|
+| 1      | 10                                 |
+| 2      | 30                                 |
+| 3      | 50                                 |
+| 4      | `requires confirmation`{:.warning} |
+| 5      | `requires confirmation`{:.warning} |
+| 6      | `requires confirmation`{:.warning} |
+
+Higher rarity cards have additional flower ranking stages: while a R card has
+only 3 ranks, a UR card has 6 ranks!
+
+Some cards may give cosmetic headpieces, such as earrings or headbands, for
+reaching flower rank 2. The simplest example of this is with the initial SR
+cards.
+
 ## Equipment enhancement
 
 Equipment is improved by imbuing them with magic from *spellbooks* obtained through unit quests. All equipment can be imbued, but only one imbuement can be active at once. Just like cards, spellbooks come in multiple rarities, from R to `requires confirmation`{:.warning}. Higher-rarity spellbooks confer stronger individual effects.
