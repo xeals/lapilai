@@ -1,4 +1,6 @@
 header:
+  - title: Home
+    url: /
   - title: How to play
     url: /guide/faq
   - title: Translated content
