@@ -1,12 +1,14 @@
 header:
   - title: How to play
-    url: /guide
+    url: /guide/faq
   - title: Translated content
     url: /content
 
 guide:
   - title: Guide
     children:
+      - title: FAQ
+        url: /guide/faq
       - title: Navigation
         url: /guide/navigating
       - title: Battling

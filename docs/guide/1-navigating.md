@@ -1,5 +1,6 @@
 ---
 title: Navigation
+permalink: /guide/navigating
 ---
 
 Navigating menus can be hard when you may not be able to read them. This page

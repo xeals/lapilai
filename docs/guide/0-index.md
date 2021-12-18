@@ -1,10 +1,14 @@
 ---
 title: How to play
+permalink: /guide/faq
 ---
 
-- [Battling](battle)
-- [Navigation](navigating)
-- [Witches](witches)
+Welcome to the guide! This site will aim to not only introduce the basics of
+playing Lapis Re:LiGHTs, but provide as much translated content and in-depth
+knowledge as we have available.
+
+You can navigate to different sections in the guide with the sidebar on the
+left, or following the previous/next navigation links at the bottom of the page.
 
 ## Frequently asked questions
 

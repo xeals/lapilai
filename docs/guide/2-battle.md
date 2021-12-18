@@ -1,6 +1,7 @@
 ---
 title: Battling
 key: howto-battle
+permalink: /guide/battle
 ---
 
 ## Team-building

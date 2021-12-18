@@ -1,5 +1,6 @@
 ---
 title: Witch and card mechanics
+permalink: /guide/witches
 ---
 
 ## Affection
