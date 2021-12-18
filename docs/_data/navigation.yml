@@ -31,6 +31,8 @@ guide:
 tcontent:
   - title: Missions
     children:
+      - title: Top
+        url: /content
       - title: Daily missions
         url: /content/dailies
       - title: Weekly missions
