@@ -21,6 +21,8 @@ guide:
     children:
       - title: Guild Hall
         url: /guide/guild
+      - title: Unit Bonds
+        url: /guide/unit-bonds
       - title: Witch Activities
         url: /guide/activities
       - title: Rooms
