@@ -19,6 +19,8 @@ guide:
     children:
       - title: Guild Hall
         url: /guide/guild
+      - title: Witch Activities
+        url: /guide/activities
       - title: Rooms
         url: /guide/room
 
