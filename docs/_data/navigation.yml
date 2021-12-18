@@ -27,6 +27,12 @@ guide:
         url: /guide/activities
       - title: Rooms
         url: /guide/room
+  - title: Events
+    children:
+      - title: Introduction
+        url: /guide/events
+      - title: Tea Party Events
+        url: /guide/tea-party-event
 
 tcontent:
   - title: Missions
