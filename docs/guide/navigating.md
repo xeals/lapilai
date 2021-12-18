@@ -45,7 +45,7 @@ Welcome to your main base of operations, professor!
 16. [Arena](#arena) - Multiplayer
 17. Summon - Gacha hell. Luci pls roll me some NaT 20s
 18. Card - View and strengthen cards
-19. Witch - View, equip and strengthen your witches.
+19. [Witch](#witch-details) - View, equip and strengthen your witches.
 20. Guild hall - 
 21. More news - hey guys pls buy the monthly pass
 
@@ -55,12 +55,12 @@ Tapping on the arrow below the 10-13 options will expand the menu row and open u
 
 {% include image.html file="howto-nav-home2.png" description="Detail of expanded options in the home screen" %}
 
-23. [Bonds](unit-bonds) - Gain bonuses for having multiple members from the same unit in your team!
-24. Field guide - access your memories (story MVs), collection (card ability MVs), and [witches' notes](witches-notes)
-25. [Witch activities](witch-activities)
+23. [Bonds](mechanics/unit-bonds) - Gain bonuses for having multiple members from the same unit in your team!
+24. Field guide - access your memories (story MVs), collection (card ability MVs), and [witches' notes](mechanics/notes)
+25. [Witch activities](mechanics/activities)
 26. Friends
 27. Bag - items
-28. [Room](room) - customise your home page
+28. [Room](mechanics/room) - customise your home page
 
 
 ## Interaction
@@ -96,10 +96,54 @@ Depending on the girl, they may be more receptive to certain types of gifts than
 
 You can hold down the button to select multiple of the same gift quickly.
 
+## Witch details
 
+{% include image.html file="howto-witch-details.png" description="Viewing details for a single witch" %}
 
+1. Equipment - Inspect and improve their equipment
+2. Outfit - Change their outfit
+3. Logbook - Select a witch to view from a menu
+4. Switch - View the next or previous witch in your collection
+5. [Affection](witches#affection) level - Personal bond with the girl
+6. Card details - Which card you’re using, their skills, and their personal attributes. Tap and hold to view the card details
+7. Total stats - HP (green), defence (orange), physical attack (red), and magical attack (blue)
 
+### Equipment
 
+{% include image.html file="howto-witch-equipment.png" description="Inspecting Lynette's equipment" %}
 
+1. Weapon
+2. Hair accessory
+3. Neck accessory
+4. Arm accessory
+5. Ear accessory (unlocked at affection rank 15)
+6. Trinket (unlocked at affection rank 20)
+7. Strengthen all - Upgrades equipment as much as possible with your current materials.
+
+Different weapons and accessories give stat improvements.
+
+{% include image.html file="howto-witch-equipment2.png" description="Switching between available weapons for Lynette" %}
+
+Additional weapons can be unlocked by:
+
+- Levelling the starter weapon to rank 50
+- Completing all weapon missions in the character's [witch notes](mechanics/notes)
+
+After clearing stage 7-10, equipment can be [improved by using seals](witches#equipment-enhancement) that are rewarded from quests.
+
+### Card details
+
+1. Equipment - Go back to the equipment page
+2. Card details - Name, Rarity, Flower level, Star level. Press the magnifying glass to remove UI
+3. Card stats
+4. Skills - The cards skills
+5. Enhanced attack - More powerful version of a normal attack that may appear in battle
+6. Characteristics - Tags indicating a card’s strengths, such as AoE damage or debuffing
+7. Witch details - Character, voice actress, etc.
+8. Attribute - Character aspect used in [witch activities](mechanics/activities)
+9. Strengthen (the current page)
+10. [Evolve](witches#flower-ranking)
+11. [Limit Break](witches#star-ranking)
+12. Meteorite - `requires confirmation`{:.warning}
 
 ## AR
