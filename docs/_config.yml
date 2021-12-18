@@ -22,7 +22,7 @@ url     : https://xeals.github.io/lapilai # the base hostname & protocol for you
 baseurl : /lapilai # does not include hostname
 title   : Lapis Re:LiGHTs English Fan Documentation
 description: > # this means to ignore newlines until "Language & timezone"
-  TODO
+  Fan-made English documentation for helping new players navigating around Lapis Re:LiGHTs.
 
 
 ## => Language and Timezone
