@@ -130,7 +130,8 @@ Additional weapons can be unlocked by:
 - Levelling the starter weapon to rank 50
 - Completing all weapon missions in the character's [witch notes](mechanics/notes)
 
-After clearing stage 7-10, equipment can be [improved by using seals](witches#equipment-enhancement) that are rewarded from quests.
+After clearing stage 7-10, equipment can be [improved by using
+spellbooks](witches#equipment-enhancement) that are rewarded from quests.
 
 ### Card details
 
