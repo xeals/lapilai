@@ -135,6 +135,8 @@ spellbooks](witches#equipment-enhancement) that are rewarded from quests.
 
 ### Card details
 
+{% include image.html file="howto-nav-card.png" description="Inspecting details for Ratura" %}
+
 1. Equipment - Go back to the equipment page
 2. Card details - Name, Rarity, Flower level, Star level. Press the magnifying glass to remove UI
 3. Card stats
