@@ -34,7 +34,7 @@ This section requires confirmation.
 | Fulfil 1 guildmate's request                           | experience, 10 gems                                     |
 | Clear 1 hard quest                                     | experience, 3 skip tickets                              |
 | Clear 1 resource quest                                 | `requires confirmation`{:.warning}                      |
-| Clear 1 treasure resource quest                        | experience, 2,000 flora                                 |
+| Clear 1 treasure dungeon resource quest                | experience, 2,000 flora                                 |
 | Clear 1 mimic challenge resource quest                 | experience, 2,000 flora                                 |
 | Clear 1 boss live at the Witch's Theatre               | experience, 2,000 flora                                 |
 | Participate in 1 arena battle                          | experience, 2,000 flora                                 |
