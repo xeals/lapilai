@@ -1,0 +1,54 @@
+---
+title: Cards
+permalink: /card
+aside: false
+---
+
+<style>
+  .wc__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+  }
+
+  .wc__item {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 0.5em;
+    border: 0.2em solid var(--type-border, #000);
+    box-sizing: border-box;
+  }
+
+  .wc__item[data-type="T"] {
+    --type-border: lightcoral;
+  }
+  .wc__item[data-type="S"] {
+    --type-border: mediumpurple;
+  }
+  .wc__item[data-type="P"] {
+    --type-border: goldenrod;
+  }
+  .wc__item[data-type="M"] {
+    --type-border: cornflowerblue;
+  }
+  .wc__item[data-type="X"] {
+    --type-border: seagreen;
+  }
+
+  .wc__image {
+    display: block;
+    height: 350px;
+    max-width: unset !important;
+  }
+</style>
+
+<div class="wc__gallery">
+  {% for card in site.data.cards %}
+  <div class="wc__item" data-type="{{ card.type }}">
+    <a href="{{ card.release | downcase }}-{{ card.rarity | downcase }}-{{ card.witch | downcase }}" >
+      {% include card/image.html card=card %}
+    </a>
+  </div>
+  {% endfor %}
+</div>

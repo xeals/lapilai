@@ -1,0 +1,13 @@
+---
+title: All cards
+layout: article
+permalink: /card/all
+---
+
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/witch-card.css">
+
+{% for card in site.data.cards %}
+  <section>
+  {% include witch_card.html card=card include_title="true" %}
+  </section>
+{% endfor %}

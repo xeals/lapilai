@@ -356,6 +356,16 @@
     };
     version = "0.1.6";
   };
+  jekyll-datapage-generator = {
+    groups = ["default"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "11wby4r32zxyhvdvjq0rl2r7s96jcarzypx48zpz81w8pv68nxz5";
+      type = "gem";
+    };
+    version = "1.4.0";
+  };
   jekyll-default-layout = {
     dependencies = ["jekyll"];
     groups = ["default" "jekyll_plugins"];

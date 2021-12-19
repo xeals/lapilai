@@ -237,10 +237,19 @@ defaults:
       sidebar:
         nav: tcontent
 
+page_gen:
+  - data: cards
+    template: witch_card
+    dir: card
+    index_files: true
+    name_expr: (record['release'] + "-" + record['rarity'] + "-" + record['witch']).downcase
+    title_expr: record['release'] + " " + record['rarity'] + " " + record['witch']
+
 
 ## => Plugins
 ##############################
 plugins:
+  - jekyll-datapage-generator
   - jekyll-feed
   - jekyll-paginate
   - jekyll-remote-theme

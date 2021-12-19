@@ -1,0 +1,62 @@
+{% assign card = include.card %}
+<div class="wc__info">
+
+  {% if include.include_title %}
+  <h2 id="{{ card.release | downcase }}-{{ card.rarity }}-{{ card.witch }}">
+    {{ card.release }} {{ card.rarity }} {{ card.witch }}
+  </h2>
+  {% endif %}
+
+  <div class="wc__stats">
+    {% include card/image.html card=card %}
+    <i>{{ card._title }}</i>
+
+    <b data-type="{{ card.type }}">{{ site.data.card_types[card.type] }}</b>
+
+    {% if card.tags %}
+    <div class="wc__tags">
+      {% for tag in card.tags %}
+      <span class="wc__tag" data-type="{{ site.data.card_tags[tag] }}">
+        {{ tag }}
+      </span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+
+  {% if card.spell %}
+  <h3
+    id="{{ card.spell.name | downcase | replace:' ','-' }}"
+    data-type="{{ card.spell.type }}"
+  >
+    {{ card.spell.name }}
+  </h3>
+
+  <p>Cost: <span class="wc__cost">{{ card.spell.cost }}</span></p>
+
+  <ol>
+    {% for level in card.spell.levels %}
+    <li>{{ level }}</li>
+    {% endfor %}
+  </ol>
+  {% endif %} {% if card.special %}
+  <h3
+    id="{{ card.special.name | downcase | replace: ' ','-' }}"
+    data-type="{{ card.special.type }}"
+  >
+    {{ card.special.name }} - Special
+  </h3>
+
+  {{ card.special.r0 }} {% endif %} {% for passive in card.passives %}
+  <a name=""></a>
+  <h3 id="{{passive.name | downcase | replace: ' ','-' }}">
+    {{ passive.name }} - Passive
+  </h3>
+
+  <ol>
+    {% for level in passive.levels %}
+    <li>{{ level }}</li>
+    {% endfor %}
+  </ol>
+  {% endfor %}
+</div>

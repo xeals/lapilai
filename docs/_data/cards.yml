@@ -1,0 +1,234 @@
+- witch: Lucifer
+  release: Christmas
+  rarity: UR
+  _title: The Stars, Lights, and the Snowy Sky
+  type: P
+- witch: Kaede
+  release: Christmas
+  rarity: UR
+  _title:
+  type: M
+- witch: Salsa
+  release: Christmas
+  rarity: UR
+  _title: A Warm Muffler
+  type: S
+- witch: Tiara
+  release: Initial
+  rarity: UR
+  _title: Glowing Pyroxene Forest
+  type: T
+  tags:
+    - Resuscitation
+    - Recovery
+    - Ability Buff
+- witch: Rosetta
+  release: Initial
+  rarity: UR
+  _title: Time's Unknown Land
+  type: S
+  tags:
+    - AoE Attack
+    - Attack Obstruction
+- witch: Lavie
+  release: Initial
+  rarity: UR
+  _title: The Big Stage of Dreams
+  type: X
+  tags:
+    - Recovery
+    - Ability Buff
+- witch: Ashley
+  release: Initial
+  rarity: UR
+  _title: A Knight's Wish
+  type: P
+  tags:
+    - AoE Attack
+    - Shield Recovery
+    - Persistence
+- witch: Lynette
+  release: Initial
+  rarity: UR
+  _title: Bookshelf of Delusions
+  type: M
+  tags:
+    - Single Attack
+    - Ability Buff
+- witch: Emilia
+  release: Initial
+  rarity: UR
+  _title: Pride Blooming in the Darkness
+  type: T
+  tags:
+    - Single Attack
+    - Ability Buff
+    - Attack Obstruction
+- witch: Alpha
+  release: Initial
+  rarity: UR
+  _title: Dance in the Moonlight
+  type: P
+  tags:
+    - Shield Recovery
+    - AoE Attack
+    - Ability Buff
+- witch: Salsa
+  release: Initial
+  rarity: UR
+  _title: Brighter than the Moon
+  type: S
+  tags:
+    - Single Attack
+    - Debuff
+    - Ability Buff
+- witch: Garnet
+  release: Initial
+  rarity: UR
+  _title: Butterflies Fluttering in the Night
+  type: M
+  tags:
+    - AoE Attack
+    - Attack Obstruction
+- witch: Tsubaki
+  release: Initial
+  rarity: UR
+  _title: Fluttering Flames
+  type: S
+  tags:
+    - AoE Attack
+    - Abnormal Status
+- witch: Nadeshiko
+  release: Initial
+  rarity: UR
+  _title: Accept the Night Sky
+  type: P
+  tags:
+    - Shield Recovery
+    - AoE Attack
+- witch: Kaede
+  release: Initial
+  rarity: UR
+  _title: Hidden Hard Work
+  type: M
+  tags:
+    - AoE Attack
+    - Abnormal Status
+- witch: Ratura
+  release: Initial
+  rarity: UR
+  _title: Shining Step
+  type: T
+  tags:
+    - Single Attack
+    - Healing
+- witch: Champe
+  release: Initial
+  rarity: UR
+  _title: In the Flower Field
+  type: S
+  tags:
+    - Single Attack
+    - Ability Buff
+- witch: Maryberry
+  release: Initial
+  rarity: UR
+  _title: Exciting Award Ceremony
+  type: M
+  tags:
+    - Single Attack
+    - Debuff
+    - Abnormal Status
+- witch: Angelica
+  release: Initial
+  rarity: UR
+  _title: Healing Light
+  type: X
+  tags:
+    - Recovery
+    - Ability Buff
+    - Healing
+- witch: Lucifer
+  release: Initial
+  rarity: UR
+  _title: The King's Challenge
+  type: P
+  tags:
+    - Single Attack
+    - Attack Obstruction
+    - Shield Recovery
+- witch: Yue
+  release: Initial
+  rarity: UR
+  _title: Tiny Friend
+  type: X
+  tags:
+    - Recovery
+    - Ability Buff
+- witch: Millefeuille
+  release: Initial
+  rarity: UR
+  _title: Aquatic Dance
+  type: S
+  tags:
+    - Single Attack
+    - Debuff
+    - Attack Obstruction
+- witch: Fiona
+  release: Initial
+  rarity: UR
+  _title: Premonition of a Great Voyage
+  type: T
+  tags:
+    - AoE Attack
+    - Abnormal Status
+    - Debuff
+- witch: Tiara
+  release: Initial
+  rarity: SSR
+  _title: Blooming in the Night
+  type: T
+  tags:
+    - AoE Attack
+    - Abnormal Status
+- witch: Rosetta
+  release: Initial
+  rarity: SSR
+  _title: Letter of Happiness
+  type: S
+  tags:
+    - Single Attack
+    - Ability Buff
+- witch: Lavie
+  release: Initial
+  rarity: SSR
+  _title: Cutting Edge Fashion
+  type: X
+  tags:
+    - Recovery
+    - Ability Buff
+- witch: Ashley
+  release: Initial
+  rarity: SSR
+  _title: The Situation She Was Found In
+  type: P
+  tags:
+    - Single Attack
+    - Shield Recovery
+    - Debuff
+- witch: Lynette
+  release: Initial
+  rarity: SSR
+  _title: Afternoon Daydreaming
+  type: M
+  tags:
+    - AoE Attack
+    - Debuff
+- witch: Emilia
+  release: Initial
+  rarity: SSR
+  _title: Salty Breeze Balcony
+  type: T
+  tags:
+    - Single Attack
+    - Abnormal Status

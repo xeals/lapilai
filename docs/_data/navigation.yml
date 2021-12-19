@@ -5,6 +5,8 @@ header:
     url: /guide/faq
   - title: Translated content
     url: /content
+  - title: Cards
+    url: /card
 
 guide:
   - title: Getting started
