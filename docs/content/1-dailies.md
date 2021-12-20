@@ -3,22 +3,22 @@ title: Daily missions
 permalink: /content/dailies
 ---
 
-Daily missions reset each day at 4am JST and give some rewards 10 badges. You
-are rewarded with an additional 10 gems for every 20 badges you collect, up to
-100 badges (50 gems).
+Daily missions reset each day at 4am JST and give some rewards, as well as 10
+badges. You are rewarded with an additional 10 gems for every 20 badges you
+collect, up to 100 badges (50 gems).
 
 Not all missions below will be available to you every day; you will be assigned
 13 missions, drawn from the pool of guarenteed missions (all), as well as
 additional missions from the pool of extra missions.
 
-Since you are given more than 10 missions, don't have to clear every mission to
-reach 100 badges.
+Since you are given more than 10 missions, you don't have to clear every mission
+to reach 100 badges.
 {:.info}
 
 Credits go to Cremonese#0039 from the Discord server for helping translate these
 missions!
 
-## Guarenteed missions
+## Guaranteed missions
 
 This section requires confirmation.
 {:.warning}
