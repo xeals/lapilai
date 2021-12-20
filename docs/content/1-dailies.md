@@ -41,6 +41,7 @@ This section requires confirmation.
 | Clear 1 resource quest                                 | `requires confirmation`{:.warning}                       |
 | Clear 1 treasure dungeon resource quest                | experience, 2,000 flora                                  |
 | Clear 1 mimic challenge resource quest                 | experience, 2,000 flora                                  |
+| Clear 1 魔文審査会 (experience resource quest)         | `requires confirmation`{:.warning}                       |
 | Participate in 1 arena battle                          | experience, 2,000 flora                                  |
 | Clear 1 witch's examination                            | experience, 5 pure pyrosand                              |
 | Collect the daily rewards from the witch's examination | experience, 5 pyrosand                                   |
