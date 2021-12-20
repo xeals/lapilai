@@ -56,3 +56,8 @@ KLab should fix this in time.
 ### How do I choose my favourite girl to appear on the home screen?
 
 The home screen is customisable through the [room menu](navigating#rooms).
+
+### How do I unlock the songs needed for the Tiara mission / Kinki no Märchen / Trinity?
+
+Read the relevant section in the [starter Tiara event
+guide](../content/release-tiara).
