@@ -33,7 +33,7 @@ This section requires confirmation.
 
 | Headpat 3 times                                        | 3 [items used for progressing in witch's notes], 1 shake |
 | Level up a card 1 time                                 | 5 pure pyrosand, 1 green pasta                           |
-| Obtain 3 Extra chests from battles                     | `requires confirmation`{:.warning}                       |
+| Obtain 3 Extra chests from battles                     | 5 pure pyrosand, 1 costume box                           |
 | Fulfil 1 guildmate's request                           | experience, 10 gems                                      |
 | Complete 1 guild mission                               | 10 gems, experience                                      |
 | Clear 1 hard quest                                     | experience, 3 skip tickets                               |
@@ -41,7 +41,7 @@ This section requires confirmation.
 | Clear 1 resource quest                                 | `requires confirmation`{:.warning}                       |
 | Clear 1 treasure dungeon resource quest                | experience, 2,000 flora                                  |
 | Clear 1 mimic challenge resource quest                 | experience, 2,000 flora                                  |
-| Clear 1 魔文審査会 (experience resource quest)         | `requires confirmation`{:.warning}                       |
+| Clear 1 魔文審査会 (experience resource quest)         | experience, 2,000 flora                                  |
 | Participate in 1 arena battle                          | experience, 2,000 flora                                  |
 | Clear 1 witch's examination                            | experience, 5 pure pyrosand                              |
 | Collect the daily rewards from the witch's examination | experience, 5 pyrosand                                   |
