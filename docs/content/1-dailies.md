@@ -46,4 +46,5 @@ This section requires confirmation.
 | Clear 1 witch's examination                            | experience, 5 pure pyrosand                              |
 | Collect the daily rewards from the witch's examination | experience, 5 pyrosand                                   |
 | Clear 1 card quest                                     | 5 pure pyrosand, 1 fashion magazine                      |
+| Clear 1 unit quest                                     | 5 pure pyrosand, 1 fashion magazine                      |
 | Clear Phantom World                                    | 5 pure pyrosand, 1 fashion magazine                      |
