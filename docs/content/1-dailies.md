@@ -23,12 +23,14 @@ missions!
 This section requires confirmation.
 {:.warning}
 
-| Login | experience, 3 skip tickets |
+| Login                      | experience, 3 skip tickets                               |
+| Earn 20 friendship badges  | 10 gems, 2,000 flora                                     |
+| Give 5 gifts               | 3 [items used for progressing in witch's notes], 1 shake |
+| Clear 5 witch's activities | 10 gems, 2,000 flora                                     |
+| Consume 100 stamina        | experience, 10 gems                                      |
 
 ## Possible extra missions
 
-| Earn 20 friendship badges                              | 10 gems, 2,000 flora                                     |
-| Give 5 gifts                                           | 3 [items used for progressing in witch's notes], 1 shake |
 | Headpat 3 times                                        | 3 [items used for progressing in witch's notes], 1 shake |
 | Level up a card 1 time                                 | 5 pure pyrosand, 1 green pasta                           |
 | Obtain 3 Extra chests from battles                     | `requires confirmation`{:.warning}                       |
@@ -40,9 +42,7 @@ This section requires confirmation.
 | Clear 1 treasure dungeon resource quest                | experience, 2,000 flora                                  |
 | Clear 1 mimic challenge resource quest                 | experience, 2,000 flora                                  |
 | Participate in 1 arena battle                          | experience, 2,000 flora                                  |
-| Consume 100 stamina                                    | experience, 10 gems                                      |
 | Clear 1 witch's examination                            | experience, 5 pure pyrosand                              |
 | Collect the daily rewards from the witch's examination | experience, 5 pyrosand                                   |
 | Clear 1 card quest                                     | 5 pure pyrosand, 1 fashion magazine                      |
 | Clear Phantom World                                    | 5 pure pyrosand, 1 fashion magazine                      |
-| Clear 5 witch's activities                             | 10 gems, 2,000 flora                                     |
