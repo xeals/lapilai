@@ -27,9 +27,23 @@ guide:
         url: /guide/activities
       - title: Rooms
         url: /guide/room
+  - title: Quests
+    children:
+      - title: Main and Hard Quests
+        url: /guide/quests/main
+      - title: Witch's Theatre
+        url: /guide/quests/theatre
+      - title: Examinations
+        url: /guide/quests/exam
+      - title: Resource Quests
+        url: /guide/quests/resource
+      - title: Unit Quests
+        url: /guide/quests/unit
+      - title: Card Quests
+        url: /guide/quests/card
   - title: Events
     children:
-      - title: Introduction
+      - title: Events Introduction
         url: /guide/events
       - title: Tea Party Events
         url: /guide/tea-party-event

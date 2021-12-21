@@ -60,4 +60,5 @@ The home screen is customisable through the [room menu](navigating#rooms).
 ### How do I unlock the songs needed for the Tiara mission / Kinki no Märchen / Trinity?
 
 Read the relevant section in the [starter Tiara event
-guide](../content/release-tiara).
+guide](../content/release-tiara), as well as the guide section on the [Witch's
+Theatre]({{ site.baseurl }}{% link guide/2.10.2-theatre.md %}).
