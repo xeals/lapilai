@@ -34,7 +34,7 @@ This section requires confirmation.
 | Headpat 3 times                                        | 3 [items used for progressing in witch's notes], 1 shake |
 | Level up a card 1 time                                 | 5 pure pyrosand, 1 green pasta                           |
 | Obtain 3 Extra chests from battles                     | 5 pure pyrosand, 1 costume box                           |
-| Fulfil 1 guildmate's request                           | experience, 10 gems                                      |
+| Make 1 request at your guild                           | experience, 10 gems                                      |
 | Complete 1 guild mission                               | 10 gems, experience                                      |
 | Clear 1 hard quest                                     | experience, 3 skip tickets                               |
 | Clear 1 boss live at the Witch's Theatre               | experience, 2,000 flora                                  |
