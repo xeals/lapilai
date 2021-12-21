@@ -16,6 +16,11 @@ Official channels:
 [![Official game Twitter](https://badgen.net/twitter/follow/lapi_staff)](https://twitter.com/lapi_staff)
 [![Official YouTube](https://badgen.net/badge/icon/YouTube/red?icon=peertube&label=ラピスリライツ公式チャンネル)](https://www.youtube.com/channel/UCbia-gfyNViX55iSBIP5M4Q)
 
+Other useful guides:
+
+- [Card skills](https://docs.google.com/document/d/1-O9O_rimeYmnmiHeOz1Nv0c18emhucS2PDt5MMgTQxc)
+- [Unit skills](https://docs.google.com/document/d/1-eponAh9YcRvWfUJBClvhbDotbv0cSnuXYh4sf4VvrA)
+
 ## Contribute
 
 We are always welcome to contributors! If you find some of the documentation or
