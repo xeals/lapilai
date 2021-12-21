@@ -1,5 +1,5 @@
 {
-  description = "Unofficial Lapis Re:LiGHTs English documentation";
+  description = "Lapis Re:LiGHTs English fan guide";
 
   # Also consider nixpkgs/nixos-[RELEASE]
   inputs.nixpkgs.url = "github:nixos/nixpkgs";
