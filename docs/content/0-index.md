@@ -1,6 +1,9 @@
 ---
 title: Translated content
 permalink: /content
+excerpt: >
+    A variety of translated content that might be useful as references during
+    your journey, including missions and event guides.
 ---
 
 This section hosts a variety of translated content that might be useful as

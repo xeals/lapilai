@@ -1,6 +1,9 @@
 ---
 title: Weeklies
 permalink: /content/weeklies
+excerpt: >
+    Information on weekly missions, as well as translations for helping you
+    achieve them.
 ---
 
 Weekly missions reset each Monday at 4am JST and give some rewards 10 badges.

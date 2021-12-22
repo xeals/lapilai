@@ -1,6 +1,9 @@
 ---
 title: How to play
 permalink: /guide/faq
+excerpt: >
+    An introduction to Lapis Re:LiGHTs, the guide, and frequently asked
+    questions.
 ---
 
 Welcome to the guide! This site will aim to not only introduce the basics of

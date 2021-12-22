@@ -1,6 +1,9 @@
 ---
 title: Daily missions
 permalink: /content/dailies
+excerpt: >
+    Information on daily missions, as well as translations for helping you
+    achieve them.
 ---
 
 Daily missions reset each day at 4am JST and give some rewards, as well as 10

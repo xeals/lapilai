@@ -1,5 +1,9 @@
 ---
 layout: home
+title: Home
+excerpt: >
+    Links to join the Lapis Re:LiGHTs fan communities, official sites, and
+    pointers to other useful resources!
 ---
 
 Join us!
