@@ -33,18 +33,21 @@ This section requires confirmation.
 
 | Headpat 3 times                                        | 3 [items used for progressing in witch's notes], 1 shake |
 | Level up a card 1 time                                 | 5 pure pyrosand, 1 green pasta                           |
+| Level up an equipment 1 time                           | 5 pure pyrosand, 1 green pasta                           |
 | Obtain 3 Extra chests from battles                     | 5 pure pyrosand, 1 costume box                           |
 | Make 1 request at your guild                           | experience, 10 gems                                      |
 | Complete 1 guild mission                               | 10 gems, experience                                      |
+| Clear 1 normal main quest                              | experience, 3 skip tickets                               |
 | Clear 1 hard quest                                     | experience, 3 skip tickets                               |
 | Clear 1 boss live at the Witch's Theatre               | experience, 2,000 flora                                  |
 | Clear 1 resource quest                                 | `requires confirmation`{:.warning}                       |
 | Clear 1 treasure dungeon resource quest                | experience, 2,000 flora                                  |
 | Clear 1 mimic challenge resource quest                 | experience, 2,000 flora                                  |
-| Clear 1 魔文審査会 (experience resource quest)         | experience, 2,000 flora                                  |
+| Clear 1 魔文審査会 (scroll resource quest)             | experience, 2,000 flora                                  |
 | Participate in 1 arena battle                          | experience, 2,000 flora                                  |
 | Clear 1 witch's examination                            | experience, 5 pure pyrosand                              |
 | Collect the daily rewards from the witch's examination | experience, 5 pyrosand                                   |
 | Clear 1 card quest                                     | 5 pure pyrosand, 1 fashion magazine                      |
 | Clear 1 unit quest                                     | 5 pure pyrosand, 1 fashion magazine                      |
 | Clear Phantom World                                    | 5 pure pyrosand, 1 fashion magazine                      |
+
