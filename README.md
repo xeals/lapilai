@@ -7,7 +7,7 @@ by fans.
 
 ## License
 
-Copyright 2021 xeals and contributors from the Lapis Re:LiGHTs fan Discrd
+Copyright 2021 xeals and contributors from the Lapis Re:LiGHTs fan Discord
 server.
 
 This work is licensed under a [Creative Commons
