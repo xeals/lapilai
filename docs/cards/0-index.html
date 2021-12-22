@@ -5,10 +5,47 @@ aside: false
 ---
 
 <style>
+  .wc__controls {
+    margin-bottom: 1em;
+  }
+
+  .wc__controls__search input {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 4px solid #fc4d50;
+    margin-left: 0.5em;
+  }
+
+  .wc__controls__type {
+    display: flex;
+    gap: 0.2em;
+    align-items: center;
+    display: none;
+  }
+
   .wc__gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 1em;
+  }
+
+  @media (min-width: 350px) {
+    .wc__gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 750px) {
+    .wc__controls {
+      display: flex;
+    }
+    .wc__controls__type {
+      display: flex;
+    }
+    .wc__gallery {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   .wc__item {
@@ -41,14 +78,126 @@ aside: false
     height: 350px;
     max-width: unset !important;
   }
+
+  [hidden] {
+    display: none;
+  }
 </style>
 
-<div class="wc__gallery">
-  {% for card in site.data.cards %}
-  <div class="wc__item" data-type="{{ card.type }}">
-    <a href="{{ card.release | downcase }}-{{ card.rarity | downcase }}-{{ card.witch | downcase }}" >
-      {% include card/image.html card=card %}
-    </a>
+<div class="wc__controls">
+  <div class="wc__controls__search">
+    <i class="fas fa-search"></i>
+    <input type="search" id="wc-search" placeholder="Search" />
   </div>
-  {% endfor %}
+
+  <div style="margin-right: auto"></div>
+
+  <!-- TODO: Mobile layouting -->
+  <div class="wc__controls__type">
+    <input type="radio" name="wc-type" id="wc-type-all" value="" checked />
+    <label for="wc-type-all">All</label>
+    {% for t in site.data.card_types %}
+    <input type="radio" name="wc-type" id="wc-type-{{ t[0] }}" value="{{ t[0] }}" />
+    <label for="wc-type-{{ t[0] }}">{{ t[1] }}</label>
+    {% endfor %}
+  </div>
+
+  <!-- TODO: Pagination -->
+  <!-- <select name="wc-limit" id="wc-limit">
+    <option value="15">15</option>
+    <option value="30">30</option>
+    <option value="50">50</option>
+    <option value="">All</option>
+  </select> -->
 </div>
+
+<div class="wc__gallery"></div>
+
+<script type="text/javascript">
+  (function() {
+    const CARDS = [
+      {%- for card in site.data.cards -%}
+      {
+        "type": {{ card.type | jsonify }},
+        "witch": {{ card.witch | jsonify }},
+        "rarity": {{ card.rarity | jsonify }},
+        "release": {{ card.release | jsonify }},
+        "tags": {{ card.tags | jsonify }},
+      },
+      {%- endfor -%}
+    ];
+
+    function loadCards(cards) {
+      const $gallery = $(".wc__gallery");
+      $gallery.empty();
+      cards.forEach(function(card) {
+        const alt = `${card['release']} ${card['rarity']} ${card['witch']}`;
+        const slug = alt.replaceAll(" ", "-").toLowerCase();
+        $gallery.append(`
+          <div class="wc__item" data-type="${card['type']}">
+            <a href="${slug}">
+              <img
+                class="wc__image"
+                src="{{ site.baseurl }}/assets/cards/${slug}.jpg"
+                alt="${alt}"
+              />
+            </a>
+          </div>
+        `);
+      });
+    }
+
+    function filterCards(val) {
+      if (!val) return CARDS;
+
+      const terms = val.trim().split(" ").map(function(v) { return v.toLowerCase(); });
+      return CARDS.filter(function(item) {
+        const tagsMatch = item["tags"] && terms.every(function(term) {
+          return item["tags"].some(function(tag) {
+            return tag.toLowerCase().includes(term);
+          });
+        })
+        if (tagsMatch) return tagsMatch;
+
+        const witchMatches = item["witch"] && terms.some(function(term) {
+          return item["witch"].toLowerCase().includes(term);
+        });
+        if (witchMatches) return witchMatches;
+
+        return false;
+      });
+    }
+
+    const SOURCES = window.TEXT_VARIABLES.sources;
+    window.Lazyload.js(SOURCES.jquery, function() {
+      $search = $("input#wc-search");
+
+      // Eager searching
+      $search.keyup(function() {
+        loadCards(filterCards($(this).val()));
+      });
+
+      // On-load
+      const prevValue = $search.val();
+      if (prevValue) {
+        loadCards(filterCards(prevValue));
+      } else {
+        loadCards(CARDS);
+      }
+    });
+
+    window.Lazyload.js(SOURCES.jquery, function() {
+      $("input[name=wc-type]").change(function() {
+        const val = $(this).val();
+        if (val) {
+          $(".wc__item").each(function(index, item) {
+            const $item = $(item);
+            $item.attr("hidden", $item.attr("data-type") !== val);
+          });
+        } else {
+          $(".wc__item").attr("hidden", false);
+        };
+      });
+    });
+  })();
+</script>
