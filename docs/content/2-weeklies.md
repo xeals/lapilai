@@ -9,7 +9,7 @@ excerpt: >
 Weekly missions reset each Monday at 4am JST and give some rewards 10 badges.
 You are presented with additional rewards for every 15 badges you collect, up to
 75 badges (5 reward sets). The first two rewards are gems; the third and fourth
-rewards are scrollbooks; and the fifth reward is an SSR+ gacha ticket!
+rewards are scrollbooks; and the fifth reward is an SP summon ticket!
 
 Not all missions below will be available to you every week; you will be assigned
 8 missions, drawn from the pool of guarenteed missions (all), as well as
