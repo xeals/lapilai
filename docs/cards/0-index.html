@@ -8,21 +8,35 @@ excerpt: Interactive card searcher.
 <style>
   .wc__controls {
     margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .wc__controls__search {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
   }
 
   .wc__controls__search input {
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
+    border: none;
     border-bottom: 4px solid #fc4d50;
     margin-left: 0.5em;
+    flex-grow: 1;
+    max-width: 20em;
   }
 
-  .wc__controls__type {
+  .wc__controls__filters {
     display: flex;
     gap: 0.2em;
     align-items: center;
-    display: none;
+  }
+
+  .wc__controls__filters select {
+    border: none;
+    background: none;
+    border-bottom: 4px solid red;
   }
 
   .wc__gallery {
@@ -39,11 +53,9 @@ excerpt: Interactive card searcher.
 
   @media (min-width: 750px) {
     .wc__controls {
-      display: flex;
+      flex-direction: row;
     }
-    .wc__controls__type {
-      display: flex;
-    }
+
     .wc__gallery {
       grid-template-columns: repeat(4, 1fr);
     }
@@ -61,15 +73,19 @@ excerpt: Interactive card searcher.
   .wc__item[data-type="T"] {
     --type-border: lightcoral;
   }
+
   .wc__item[data-type="S"] {
     --type-border: mediumpurple;
   }
+
   .wc__item[data-type="P"] {
     --type-border: goldenrod;
   }
+
   .wc__item[data-type="M"] {
     --type-border: cornflowerblue;
   }
+
   .wc__item[data-type="X"] {
     --type-border: seagreen;
   }
@@ -88,19 +104,39 @@ excerpt: Interactive card searcher.
 <div class="wc__controls">
   <div class="wc__controls__search">
     <i class="fas fa-search"></i>
-    <input type="search" id="wc-search" placeholder="Search" />
+    <input
+      type="search"
+      id="wc-search"
+      title="Search for cards by tag, character, or release"
+      placeholder="Search by tag or character"
+    />
   </div>
 
   <div style="margin-right: auto"></div>
 
-  <!-- TODO: Mobile layouting -->
-  <div class="wc__controls__type">
-    <input type="radio" name="wc-type" id="wc-type-all" value="" checked />
-    <label for="wc-type-all">All</label>
-    {% for t in site.data.card_types %}
-    <input type="radio" name="wc-type" id="wc-type-{{ t[0] }}" value="{{ t[0] }}" />
-    <label for="wc-type-{{ t[0] }}">{{ t[1] }}</label>
-    {% endfor %}
+  <div class="wc__controls__filters">
+    <select name="wc-type" title="Filter cards by type">
+      <option value="">All</option>
+      {% for type in site.data.card_types %}
+      <option value={{ type[0] }}>{{ type[1] }}</option>
+      {% endfor %}
+    </select>
+
+    <select name="wc-release" title="Filter cards by release set">
+      <option value="">All</option>
+      {% assign _releases = site.data.cards | map: "release" | uniq | reverse %}
+      {% for release in _releases %}
+      <option value={{ release }}>{{ release }}</option>
+      {% endfor %}
+    </select>
+
+    <!-- <select name="wc-rarity" title="Filter cards by rarity">
+      <option value="">All</option>
+      <option value="UR">UR</option>
+      <option value="SSR">SSR</option>
+      <option value="SR">SR</option>
+      <option value="R">R</option>
+    </select> -->
   </div>
 
   <!-- TODO: Pagination -->
@@ -112,7 +148,9 @@ excerpt: Interactive card searcher.
   </select> -->
 </div>
 
-<div class="wc__gallery"></div>
+<div class="wc__gallery">
+  Loading...
+</div>
 
 <script type="text/javascript">
   (function() {
@@ -152,8 +190,8 @@ excerpt: Interactive card searcher.
       if (!val) return CARDS;
 
       const terms = val.trim().split(" ").map(function(v) { return v.toLowerCase(); });
-      return CARDS.filter(function (item) {
-        return terms.every(function (term) {
+      return CARDS.filter(function(item) {
+        return terms.every(function(term) {
           const tagsMatch = item["tags"] && item["tags"].some(function(tag) {
             return tag.toLowerCase().includes(term);
           });
@@ -170,36 +208,41 @@ excerpt: Interactive card searcher.
       });
     }
 
+    function loadCardsFiltered(query, type, release) {
+      let cards = filterCards(query);
+
+      if (type) {
+        cards = cards.filter(function(card) {
+          return card.type === type;
+        });
+      }
+
+      if (release) {
+        cards = cards.filter(function(card) {
+          return card.release === release;
+        })
+      }
+
+      loadCards(cards);
+    }
+
     const SOURCES = window.TEXT_VARIABLES.sources;
     window.Lazyload.js(SOURCES.jquery, function() {
       $search = $("input#wc-search");
+      $type = $("select[name=wc-type]");
+      $release = $("select[name=wc-release]");
+
+      function _loadCards() {
+        loadCardsFiltered($search.val(), $type.val(), $release.val());
+      }
 
       // Eager searching
-      $search.keyup(function() {
-        loadCards(filterCards($(this).val()));
-      });
+      $search.keyup(_loadCards);
+      $type.change(_loadCards)
+      $release.change(_loadCards);
 
       // On-load
-      const prevValue = $search.val();
-      if (prevValue) {
-        loadCards(filterCards(prevValue));
-      } else {
-        loadCards(CARDS);
-      }
-    });
-
-    window.Lazyload.js(SOURCES.jquery, function() {
-      $("input[name=wc-type]").change(function() {
-        const val = $(this).val();
-        if (val) {
-          $(".wc__item").each(function(index, item) {
-            const $item = $(item);
-            $item.attr("hidden", $item.attr("data-type") !== val);
-          });
-        } else {
-          $(".wc__item").attr("hidden", false);
-        };
-      });
+      _loadCards();
     });
   })();
 </script>
