@@ -1,0 +1,23 @@
+<meta property="og:title"
+    content="{%- if page.seo.title -%}{{ page.seo.title }}{%- else -%}{{ page.title }}{%- endif -%}" />
+<meta property="og:type" content="{{ page.seo.type | default: 'article' }}" />
+<meta property="og:url" content="{%- include snippets/page-url.html -%}" />
+
+<meta property="og:site_name" content="{{ site.seo.title }}" />
+
+<meta property="og:locale" content="{{ site.seo.locale }}" />
+
+{% if site.seo.image %}
+<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.seo.image.path }}" />
+<meta property="og:image:height" content="{{ site.seo.image.height }}" />
+<meta property="og:image:width" content="{{ site.seo.image.height }}" />
+
+<meta name="twitter:card"
+    content="{{ page.seo.twitter.card | default: site.seo.twitter.card | default: 'summary_large_image' }}" />
+<meta property="twitter:image" content="{{ site.seo.image.path }}" />
+{% else %}
+<meta name="twitter:card" content="summary" />
+{% endif %}
+
+<meta property="og:description"
+    content="{%- if page.excerpt -%}{{ page.excerpt | strip_html | strip_newlines | strip | truncate: 160 }}{%- else -%}{{ site.seo.description }}{%- endif -%}" />
