@@ -152,20 +152,21 @@ excerpt: Interactive card searcher.
       if (!val) return CARDS;
 
       const terms = val.trim().split(" ").map(function(v) { return v.toLowerCase(); });
-      return CARDS.filter(function(item) {
-        const tagsMatch = item["tags"] && terms.every(function(term) {
-          return item["tags"].some(function(tag) {
+      return CARDS.filter(function (item) {
+        return terms.every(function (term) {
+          const tagsMatch = item["tags"] && item["tags"].some(function(tag) {
             return tag.toLowerCase().includes(term);
           });
-        })
-        if (tagsMatch) return tagsMatch;
+          if (tagsMatch) return true;
 
-        const witchMatches = item["witch"] && terms.some(function(term) {
-          return item["witch"].toLowerCase().includes(term);
+          const witchMatches = item["witch"] && item["witch"].toLowerCase().includes(term);
+          if (witchMatches) return true;
+
+          const setMatches = item["release"] && item["release"].toLowerCase().includes(term);
+          if (setMatches) return true;
+
+          return false;
         });
-        if (witchMatches) return witchMatches;
-
-        return false;
       });
     }
 
