@@ -24,6 +24,8 @@ title   : Lapis Re:LiGHTs English Fan Guide
 description: > # this means to ignore newlines until "Language & timezone"
   Fan-made English documentation for helping new players navigating around Lapis Re:LiGHTs.
 
+theme_color: '#e95098'
+
 seo:
   title: Lapis Re:LiGHTs English Fan Guide
   locale: en_AU
