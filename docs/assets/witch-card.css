@@ -1,21 +1,21 @@
 .wc__info [data-type="T"] {
-  color: lightcoral;
+  color: var(--type-tech);
 }
 
 .wc__info [data-type="S"] {
-  color: mediumpurple;
+  color: var(--type-speed);
 }
 
 .wc__info [data-type="P"] {
-  color: goldenrod;
+  color: var(--type-prot);
 }
 
 .wc__info [data-type="M"] {
-  color: cornflowerblue;
+  color: var(--type-magic);
 }
 
 .wc__info [data-type="X"] {
-  color: seagreen;
+  color: var(--type-aux);
 }
 
 .wc__stats {

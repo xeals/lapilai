@@ -1,29 +1,7 @@
-.t-tech {
-    font-weight: bold;
-    color: lightcoral;
-}
-
-.t-speed {
-    font-weight: bold;
-    color: mediumpurple;
-}
-
-.t-prot {
-    font-weight: bold;
-    color: goldenrod;
-}
-
-.t-magic {
-    font-weight: bold;
-    color: cornflowerblue;
-}
-
-.t-aux {
-    font-weight: bold;
-    color: lawngreen;
-}
-
-.t-none {
-    font-weight: bold;
-    color: darkgrey;
+html {
+    --type-tech: lightcoral;
+    --type-speed: mediumpurple;
+    --type-prot: goldenrod;
+    --type-magic: cornflowerblue;
+    --type-aux: seagreen;
 }
