@@ -1,6 +1,7 @@
 # lapilai
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+[![Last deploy](https://badgen.net/github/last-commit/xeals/lapilai/gh-pages)](https://github.com/xeals/lapilai/actions/workflows/build-jekyll.yml)
 
 Documentation for the mobile video game Lapis Re:LiGHTs, translated and compiled
 by fans.
