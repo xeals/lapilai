@@ -39,7 +39,9 @@
     <li>{{ level }}</li>
     {% endfor %}
   </ol>
-  {% endif %} {% if card.special %}
+  {% endif %}
+
+  {% if card.special %}
   <h3
     id="{{ card.special.name | downcase | replace: ' ','-' }}"
     data-type="{{ card.special.type }}"
@@ -47,7 +49,10 @@
     {{ card.special.name }} - Special
   </h3>
 
-  {{ card.special.r0 }} {% endif %} {% for passive in card.passives %}
+  {{ card.special.r0 }}
+  {% endif %}
+
+  {% for passive in card.passives %}
   <a name=""></a>
   <h3 id="{{passive.name | downcase | replace: ' ','-' }}">
     {{ passive.name }} - Passive
