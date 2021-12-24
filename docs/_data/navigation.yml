@@ -15,10 +15,22 @@ guide:
         url: /guide/faq
       - title: Navigation
         url: /guide/navigating
-      - title: Battling
-        url: /guide/battle
       - title: Witches
         url: /guide/witches
+  - title: Combat
+    children:
+      - title: Basics and team-building
+        url: /guide/battle
+      - title: Making attacks
+        url: /guide/attacks
+      - title: Spell Music
+        url: /guide/spells
+      - title: Types
+        url: /guide/types
+      - title: Status conditions
+        url: /guide/status
+      - title: Targeting and overkill
+        url: /guide/overkill
   - title: General mechanics
     children:
       - title: Guild Hall
