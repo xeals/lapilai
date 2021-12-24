@@ -15,8 +15,6 @@ guide:
         url: /guide/faq
       - title: Navigation
         url: /guide/navigating
-      - title: Witches
-        url: /guide/witches
   - title: Combat
     children:
       - title: Basics and team-building
@@ -31,6 +29,18 @@ guide:
         url: /guide/status
       - title: Targeting and overkill
         url: /guide/overkill
+  - title: Witches and cards
+    children:
+      - title: Affection
+        url: /guide/affection
+      - title: Levelling
+        url: /guide/levelling
+      - title: Star ranking
+        url: /guide/star
+      - title: Flower ranking
+        url: /guide/bloom
+      - title: Equipment
+        url: /guide/equipment
   - title: General mechanics
     children:
       - title: Guild Hall
