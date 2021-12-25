@@ -33,6 +33,8 @@ guide:
     children:
       - title: Affection
         url: /guide/affection
+      - title: Stats
+        url: /guide/stats
       - title: Levelling
         url: /guide/levelling
       - title: Star ranking
