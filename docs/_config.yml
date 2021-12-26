@@ -232,6 +232,11 @@ defaults:
       sidebar:
         nav: guide
   - scope:
+      path: "tools"
+    values:
+      sidebar:
+        nav: tools
+  - scope:
       path: "content"
     values:
       sidebar:

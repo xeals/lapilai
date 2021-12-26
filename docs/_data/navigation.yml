@@ -1,10 +1,10 @@
 header:
-  - title: Home
-    url: /
   - title: How to play
     url: /guide/faq
   - title: Translated content
     url: /content
+  - title: Tools
+    url: /tools
   - title: Cards
     url: /card
 
@@ -73,6 +73,12 @@ guide:
         url: /guide/events
       - title: Tea Party Events
         url: /guide/tea-party-event
+
+tools:
+  - title: Tools
+    children:
+      - title: Tea party event calculator
+        url: /tools/tea-party
 
 tcontent:
   - title: Missions

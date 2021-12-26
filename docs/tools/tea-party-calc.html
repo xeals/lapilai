@@ -1,0 +1,261 @@
+---
+title: Tea party event calculator
+permalink: /tools/tea-party
+excerpt: >
+  Rough tool for calculating expected reward income for tea party events.
+---
+
+<style>
+  input {
+    border: none;
+    border-bottom: 4px solid #fc4d50;
+  }
+
+  select {
+    background: none;
+    border: none;
+    border-bottom: 4px solid #fc4d50;
+  }
+
+  .calc {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .calc__duration {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  @media (min-width: 500px) {
+    .calc__duration {
+      flex-direction: row;
+    }
+  }
+
+  .calc__duration label {
+    padding-right: 0.5em;
+  }
+
+  .calc__quests label {
+    padding-right: 1em;
+  }
+
+  .calc__totals {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    border: 3px solid lightgray;
+    border-radius: 0.5em;
+    padding: 1em;
+  }
+
+  .calc__totals label {
+    font-weight: bold;
+  }
+
+  .calc__totals span {
+    padding-bottom: 0.25em;
+  }
+</style>
+
+<p>
+  This calculator aims to give an idea of how much of the event you should be
+  able to clear given your stamina gain and the missions you can clear. To use
+  it, set up your stamina gain (some common options are provided as checkboxes),
+  and the quest nodes that you will be farming on.
+</p>
+
+<p>
+  <b>This is an estimate</b>. Not all variables are accounted for (such as bonus
+  rewards, level up stamina, and so on). In most cases the provided number
+  should be a <i>minimum</i> expected attempts. Like most calculators of this
+  kind, it assumes optimal stamina usage, not letting it sit capped.
+</p>
+
+<hr>
+
+<div class="calc">
+  <div class="calc__duration">
+    <div>
+      <label for="durationDt">Event end time (local)</label>
+      <input type="datetime-local" id="durationDt">
+    </div>
+
+    <div>
+      <label for="duration">Hours remaining</label>
+      <input type="text" id="duration">
+    </div>
+  </div>
+
+  <div id="stamina" class="calc__stamina">
+    <label for="stamina" style="font-weight: bold">Stamina</label>
+
+    <div>
+      <input type="checkbox" id="stamPassive" checked>
+      <label for="stamPassive">Passive restoration</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="stamLogin" checked>
+      <label for="stamLogin">Login bonuses</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="stamFriend">
+      <label for="stamFriend">Friendship tokens</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="stamRoom">
+      <label for="stamRoom">Dining room</label>
+    </div>
+
+    <div>
+      <label for="stamExtra" style="padding-right: 0.25em">Extra per day</label>
+      <input type="text" id="stamExtra">
+    </div>
+
+    <div style="padding-top: 0.5em">
+      <label for="stamTotal">Effective stamina per hour: </label>
+      <span id="stamTotal"></span>
+    </div>
+  </div>
+
+  <div class="calc__quests">
+    <label style="font-weight: bold">Missions</label>
+
+    <div>
+      <label for="quest">Quest:</label>
+      <select id="quest">
+        <option value="1,6">1 / 2</option>
+        <option value="1.5,9">3</option>
+        <option value="2,9">4 / 5</option>
+        <option value="2.5,12">6</option>
+        <option value="3,12">7 / 8</option>
+        <option value="4,15">9 / 10</option>
+        <option value="4.5,15">11</option>
+        <option value="5.5,18">12</option>
+        <option value="6,18">13</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="boss">Boss:</label>
+      <select id="boss">
+        <option value="3,9">Easy</option>
+        <option value="5,12">Normal</option>
+        <option value="7.5,15">Advanced</option>
+        <option value="10,18">Hard</option>
+        <option value="12,21">Extreme</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="calc__totals">
+    <span id="questEff"></span>
+    <span id="bossEff"></span>
+    <label for="total">Expected lottery attempts</label>
+    <span id="total"></span>
+  </div>
+</div>
+
+<script>
+  (function () {
+    const EVENTS = [
+      {
+        name: "Christmas",
+        end: "2022-01-04T12:00+09:00",
+      },
+    ];
+
+    /**
+     * Stamina gain per day.
+     */
+    function staminaGain() {
+      const vals = [
+        $("#stamPassive").prop("checked") ? 240 : 0,
+        $("#stamLogin").prop("checked") ? 140 : 0,
+        $("#stamFriend").prop("checked") ? 100 : 0,
+        $("#stamRoom").prop("checked") ? 120 : 0,
+        $("#stamExtra").val() || 0,
+      ];
+      return vals.reduce(function (prev, curr) {
+        return prev + curr;
+      }, 0) / 24;
+    }
+
+    function questRewards(stamina, node) {
+      const [reward, cost] = node.split(",");
+      return Math.floor(stamina / parseFloat(cost)) * parseFloat(reward);
+    }
+
+    function bossRewards(keys, node) {
+      const [reward, cost] = node.split(",");
+      return Math.floor(keys / parseFloat(cost)) * parseFloat(reward);
+    }
+
+    const SOURCES = window.TEXT_VARIABLES.sources;
+    window.Lazyload.js(SOURCES.jquery, function () {
+      $quest = $("#quest");
+      $boss = $("#boss");
+
+      $duration = $("#duration");
+      $questEff = $("#questEff");
+      $bossEff = $("#bossEff");
+      $total = $("#total");
+
+      function _update() {
+        const duration = $duration.val() || 0;
+        const stamgain = staminaGain();
+        const stamina = stamgain * duration;
+        const rewards = bossRewards(questRewards(stamina, $quest.val()), $boss.val());
+        $total.text(Math.floor(rewards));
+      }
+
+      $duration.change(_update);
+      $quest.change(_update);
+      $boss.change(_update);
+
+      function _updateStamina() {
+        $("#stamTotal").text(staminaGain().toFixed(1));
+      }
+
+      $("#stamina :input").each(function (index, node) {
+        const $node = $(node);
+        $node.change(_update);
+        $node.change(_updateStamina);
+      });
+
+      const $durationDt = $("#durationDt");
+      function _updateDuration() {
+        const ms = new Date($durationDt.val()) - Date.now();
+        const hours = ms / 3600_000;
+        $duration.val(hours.toFixed(2));
+      }
+      $durationDt.change(_updateDuration);
+
+      function _formatDate(date) {
+        return new Date(date - date.getTimezoneOffset() * 60_000).toISOString().slice(0, -1);
+      }
+
+      $duration.change(function () {
+        const hours = $(this).val();
+        const time = Date.now() + parseFloat(hours) * 3600_000;
+        $durationDt.val(_formatDate(new Date(time)));
+      });
+
+      // Load latest event
+      const currEventEnd = new Date(EVENTS[0].end);
+      const localEventEnd = _formatDate(currEventEnd);
+      $durationDt.val(localEventEnd);
+
+      _updateStamina();
+      _updateDuration();
+      _update();
+    });
+  })();
+</script>
