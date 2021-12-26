@@ -181,7 +181,7 @@ excerpt: >
         $("#stamLogin").prop("checked") ? 140 : 0,
         $("#stamFriend").prop("checked") ? 100 : 0,
         $("#stamRoom").prop("checked") ? 120 : 0,
-        $("#stamExtra").val() || 0,
+        parseInt($("#stamExtra").val()) || 0,
       ];
       return vals.reduce(function (prev, curr) {
         return prev + curr;
