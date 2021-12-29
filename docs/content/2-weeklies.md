@@ -32,7 +32,7 @@ This section requires confirmation.
 
 | Share 3 times                                    | 40 gems                                                           |
 | Consume 1500 stamina                             | 1 medium-grade *smash* spellbook, 4 pure pyroxene, 3 skip tickets |
-| Log in for 5 days                                | 40 gems, 1 medium-grade *rush* spellbook, 4 pure pyroxene         |
+| Log in for 5 days                                | 10 gems, 1 medium-grade *rush* spellbook, 4 pure pyroxene         |
 | Complete 30 witch's activities                   | 10 gems, 1 medium-grade *heal* spellbook, 4 pure pyroxene         |
 | Give 50 gifts                                    | 50,000 flora, 1 medium-grade *shield* spellbook                   |
 | Clear 15 mimic challenge resource quests         | 10 gems, 5,000 flora                                              |
