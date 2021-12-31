@@ -6,6 +6,13 @@
 Documentation for the mobile video game Lapis Re:LiGHTs, translated and compiled
 by fans.
 
+## Contributing
+
+We welcome all contributions, corrections, and suggestions to make the guide and
+its offerings even better. Anything from a spelling or grammar correction to an
+entirely new section is appreciated. Before opening an issue or a pull request,
+give the [contributing guidelines](CONTRIBUTING.md) a read.
+
 ## License
 
 Copyright 2021 xeals and contributors from the Lapis Re:LiGHTs fan Discord
