@@ -249,7 +249,7 @@ excerpt: >
       });
 
       // Load latest event
-      const currEventEnd = new Date(EVENTS[0].end);
+      const currEventEnd = new Date(EVENTS[EVENTS.length-1].end);
       const localEventEnd = _formatDate(currEventEnd);
       $durationDt.val(localEventEnd);
 
