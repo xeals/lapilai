@@ -115,6 +115,11 @@ excerpt: >
     </div>
 
     <div>
+      <input type="checkbox" id="stamActivities">
+      <label for="stamActivities">Activities</label>
+    </div>
+
+    <div>
       <label for="stamExtra" style="padding-right: 0.25em">Extra per day</label>
       <input type="text" id="stamExtra">
     </div>
@@ -185,6 +190,7 @@ excerpt: >
         $("#stamLogin").prop("checked") ? 140 : 0,
         $("#stamFriend").prop("checked") ? 100 : 0,
         $("#stamRoom").prop("checked") ? 120 : 0,
+        $("#stamActivities").prop("checked") ? 120 : 0,
         parseInt($("#stamExtra").val()) || 0,
       ];
       return vals.reduce(function (prev, curr) {
