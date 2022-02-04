@@ -27,16 +27,26 @@
   rarity: UR
   _title: A Sky of Stars, Lights, and Snow
   type: P
+  tags:
+    - AoE Attack
+    - Attack Obstruction
+    - Shield Recovery
 - witch: Kaede
   release: Christmas
   rarity: UR
   _title: 上手にできました
   type: M
+  tags:
+    - Single Attack
+    - Abnormal Status
 - witch: Salsa
   release: Christmas
   rarity: UR
   _title: Warm Muffler
   type: S
+  tags:
+    - AoE Attack
+    - Debuff
 - witch: Tiara
   release: Initial
   rarity: UR
