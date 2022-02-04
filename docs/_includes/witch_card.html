@@ -2,7 +2,7 @@
 <div class="wc__info">
 
   {% if include.include_title %}
-  <h2 id="{{ card.release | downcase }}-{{ card.rarity }}-{{ card.witch }}">
+  <h2 id="{% include card/slug.html card=card %}">
     {{ card.release }} {{ card.rarity }} {{ card.witch }}
   </h2>
   {% endif %}
