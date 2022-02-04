@@ -126,7 +126,7 @@ excerpt: Interactive card searcher.
       <option value="">All</option>
       {% assign _releases = site.data.cards | map: "release" | uniq | reverse %}
       {% for release in _releases %}
-      <option value={{ release }}>{{ release }}</option>
+      <option value="{{ release }}">{{ release }}</option>
       {% endfor %}
     </select>
 
