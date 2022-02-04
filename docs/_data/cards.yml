@@ -1,3 +1,27 @@
+- witch: Tiara
+  release: Sky Stage
+  rarity: UR
+  _title: A Singing Voice from the Sky
+  type: T
+  tags:
+    - AoE Attack
+    - Debuff
+- witch: Tsubaki
+  release: Sky Stage
+  rarity: UR
+  _title: The Best Sense of Freedom
+  type: S
+  tags:
+    - Single Attack
+    - Ability Buff
+- witch: Maryberry
+  release: Sky Stage
+  rarity: UR
+  _title: Dashing through the Clouds
+  type: M
+  tags:
+    - AoE Attack
+    - Debuff
 - witch: Lucifer
   release: Christmas
   rarity: UR
