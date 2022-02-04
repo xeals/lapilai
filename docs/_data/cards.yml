@@ -31,14 +31,6 @@
     - AoE Attack
     - Attack Obstruction
     - Shield Recovery
-- witch: Kaede
-  release: Christmas
-  rarity: UR
-  _title: 上手にできました
-  type: M
-  tags:
-    - Single Attack
-    - Abnormal Status
 - witch: Salsa
   release: Christmas
   rarity: UR
@@ -47,6 +39,14 @@
   tags:
     - AoE Attack
     - Debuff
+- witch: Kaede
+  release: Christmas
+  rarity: UR
+  _title: 上手にできました
+  type: M
+  tags:
+    - Single Attack
+    - Abnormal Status
 - witch: Tiara
   release: Initial
   rarity: UR
