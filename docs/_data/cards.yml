@@ -392,6 +392,33 @@
   tags:
     - AoE Attack
     - Debuff
+  spell:
+    name: Sky Stage
+    cost: 9
+    levels:
+      - Inflicts <b>86%</b> (43%, 43%) hybrid damage to all enemies.
+        Decreases all enemies' crit avoidance by <b>14%</b> for 3 turns.
+      - Inflicts <b>114%</b> (57%, 57%) hybrid damage to all enemies.
+        Decreases all enemies' crit avoidance by <b>22%</b> for 3 turns.
+      - Inflicts <b>144%</b> (72%, 72%) hybrid damage to all enemies.
+        Decreases all enemies' crit avoidance by <b>30%</b> for 3 turns.
+  passives:
+    - name: 憧れと決意
+      levels:
+        - When using the red orb, increases all allies' physical and magic attack by <b>6%</b> for the turn.
+        - When using the red orb, increases all allies' physical and magic attack by <b>12%</b> for the turn.
+        - When using the red orb, increases all allies' physical and magic attack by <b>18%</b> for the turn.
+    - name: Flowery Cloud
+      levels:
+        - When any ally critically hits, gain <b>10%</b> critical damage (stacking up to 5 times).
+        - When any ally critically hits, gain <b>15%</b> critical damage (stacking up to 5 times).
+        - When any ally critically hits, gain <b>20%</b> critical damage (stacking up to 5 times).
+  special:
+    name: 天空に咲く花
+    type: T
+    effect: >-
+      Inflicts 120% (30%, 30%, 60%) hybrid damage to 1 enemy.
+      Reduces the target's defence by 25% for 2 turns.
 - witch: Tsubaki
   release: Sky Stage
   rarity: UR
@@ -399,6 +426,36 @@
   tags:
     - Single Attack
     - Ability Buff
+  spell:
+    name: Thousand Balloons
+    cost: 9
+    levels:
+      - Gain <b>24%</b> critical damage and <b>9%</b> crit chance for 2 turns.
+        Inflicts <b>222%</b> (74%, 74%, 74%) physical damage to 1 target.
+      - Gain <b>30%</b> critical damage and <b>15%</b> crit chance for 2 turns.
+        Inflicts <b>294%</b> (98%, 98%, 98%) physical damage to 1 target.
+      - Gain <b>36%</b> critical damage and <b>15%</b> crit chance for 2 turns.
+        Inflicts <b>372%</b> (124%, 124%, 124%) physical damage to 1 target.
+  passives:
+    - name: 弓禅ー如
+      levels:
+        - When attacking with the red orb, increases all allies' physical attack by <b>8%</b> for the turn.
+        - When attacking with the red orb, increases all allies' physical attack by <b>16%</b> for the turn.
+        - When attacking with the red orb, increases all allies' physical attack by <b>24%</b> for the turn.
+    - name: 慈しみの歌声
+      levels:
+        - When an attack hits, gain <b>1%</b> crit chance (stacking up to <b>6</b> times).
+          When an attack critically hits, gain <b>2.5%</b> increased damage (stacking up to <b>6</b> times).
+        - When an attack hits, gain <b>1.25%</b> crit chance (stacking up to <b>8</b> times).
+          When an attack critically hits, gain <b>3.75%</b> increased damage (stacking up to <b>8</b> times).
+        - When an attack hits, gain <b>1.5%</b> crit chance (stacking up to <b>10</b> times).
+          When an attack critically hits, gain <b>5%</b> increased physical attack (stacking up to <b>10</b> times).
+  special:
+    name: Colourful Balloon
+    type: T
+    effect: >-
+      Gain 10% critical damage for 2 turns.
+      Inflicts 70% (20%, 20%, 30%) physical damage to all enemies.
 - witch: Maryberry
   release: Sky Stage
   rarity: UR
@@ -406,6 +463,33 @@
   tags:
     - AoE Attack
     - Debuff
+  spell:
+    name: 羊さん、突撃！
+    cost: 12
+    levels:
+      - Applies 1 stack of damage amplification to all enemies (enemies receive 8% increased damge per stack of damage amplification; stacks up to 6 times, and lasts for 2 turns).
+        Inflicts <b>230%</b> (46%, 46%, 46%, 46%, 46%) magic damage to all enemies.
+      - Applies 1 stack of damage amplification to all enemies (enemies receive 8% increased damge per stack of damage amplification; stacks up to 6 times, and lasts for 2 turns).
+        Inflicts <b>300%</b> (60%, 60%, 60%, 60%, 60%) magic damage to all enemies.
+      - Applies 1 stack of damage amplification to all enemies (enemies receive 8% increased damge per stack of damage amplification; stacks up to 6 times, and lasts for 2 turns).
+        Inflicts <b>370%</b> (74%, 74%, 74%, 74%, 74%) magic damage to all enemies.
+  passives:
+    - name: 小さな発明家
+      levels:
+        - When using the blue orb, restores <b>1</b> MP.
+        - When using the blue orb, restores <b>2</b> MP.
+        - When using the blue orb, restores <b>3</b> MP.
+    - name: こっそりサポート
+      levels:
+        - When any ally critically hits, <b>50%</b> chance to restore <b>1</b> MP for 6 turns.
+        - When any ally critically hits, <b>55%</b> chance to restore <b>2</b> MP for 6 turns.
+        - When any ally critically hits, <b>60%</b> chance to restore <b>3</b> MP for 6 turns.
+  special:
+    name: Impact Sheep
+    type: M
+    effect: >-
+      Inflicts 100% magic damage to all enemies.
+      Applies 1 stack of damage amplification.
 ##
 ## Christmas
 ##
