@@ -18,7 +18,7 @@
 # Schema:
 #   witch: enum [character name; keys of witch_types.json]
 #   release: str
-#   rarity: enum [LG, UR, SSR, SR, R]
+#   rarity: enum [LR, UR, SSR, SR, R]
 #   _title: str
 #   tags: enum array [keys of card_tags.json]
 #   spell:
@@ -170,7 +170,7 @@
 ##
 - witch: Chloe
   release: Initial
-  rarity: LG
+  rarity: LR
   _title: Conductor
   tags:
     - Shield Recovery
@@ -218,7 +218,7 @@
           Increases allies' crit chance by <b>15%</b>.
 - witch: Eliza
   release: Initial
-  rarity: LG
+  rarity: LR
   _title: 幸せを願う歌
   tags:
     - Single Attack
