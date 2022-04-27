@@ -1,3 +1,6 @@
+##
+## Sakura
+##
 - witch: Millefeuille
   release: Sakura
   rarity: UR
@@ -13,6 +16,9 @@
   rarity: UR
   _title: ''
   type: S
+##
+## Initial Ray part 1
+##
 - witch: Chloe
   release: Initial
   rarity: LG
@@ -23,6 +29,9 @@
   rarity: LG
   _title: ''
   type: T
+##
+## Valentine's
+##
 - witch: Lynette
   release: Valentines
   rarity: UR
@@ -38,6 +47,9 @@
   rarity: UR
   _title: 口を開けるし〜♪
   type: T
+##
+## Sky Stage
+##
 - witch: Tiara
   release: Sky Stage
   rarity: UR
@@ -62,6 +74,9 @@
   tags:
     - AoE Attack
     - Debuff
+##
+## Christmas
+##
 - witch: Lucifer
   release: Christmas
   rarity: UR
@@ -87,6 +102,9 @@
   tags:
     - Single Attack
     - Abnormal Status
+##
+## Initial LiGHTs UR
+##
 - witch: Tiara
   release: Initial
   rarity: UR
@@ -129,6 +147,9 @@
   tags:
     - Single Attack
     - Ability Buff
+##
+## Initial IV Klore UR
+##
 - witch: Emilia
   release: Initial
   rarity: UR
@@ -164,6 +185,9 @@
   tags:
     - AoE Attack
     - Attack Obstruction
+##
+## Initial Konohana UR
+##
 - witch: Tsubaki
   release: Initial
   rarity: UR
@@ -188,6 +212,9 @@
   tags:
     - AoE Attack
     - Abnormal Status
+##
+## Initial Sugar Pockets UR
+##
 - witch: Ratura
   release: Initial
   rarity: UR
@@ -213,6 +240,9 @@
     - Single Attack
     - Debuff
     - Abnormal Status
+##
+## Initial Sadistic Candy UR
+##
 - witch: Angelica
   release: Initial
   rarity: UR
@@ -231,6 +261,9 @@
     - Single Attack
     - Attack Obstruction
     - Shield Recovery
+##
+## Initial supernova UR
+##
 - witch: Yue
   release: Initial
   rarity: UR
@@ -257,6 +290,9 @@
     - AoE Attack
     - Abnormal Status
     - Debuff
+##
+## Initial LiGHTs SSR
+##
 - witch: Tiara
   release: Initial
   rarity: SSR
@@ -298,6 +334,9 @@
   tags:
     - AoE Attack
     - Debuff
+##
+## Initial IV Klore SSR
+##
 - witch: Emilia
   release: Initial
   rarity: SSR
@@ -306,3 +345,7 @@
   tags:
     - Single Attack
     - Abnormal Status
+
+# Local Variables:
+# outline-regexp: "^## .*"
+# End:
