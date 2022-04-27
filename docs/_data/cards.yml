@@ -69,7 +69,7 @@
     name: 満開ブロッサムス
     type: T
     effect: >-
-      Inflicts 70% physical damage (35% + 35%) to all enemies.
+      Inflicts 70% physical damage (35%, 35%) to all enemies.
       Affected enemies receive 50% increased damage from poison for 4 turns.
   passives:
     - name: 夜桜の慈しみ
