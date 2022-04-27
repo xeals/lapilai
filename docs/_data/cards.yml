@@ -305,6 +305,172 @@
   tags:
     - Single Attack
     - Abnormal Status
+- witch: Alpha
+  release: Initial
+  rarity: SSR
+  _title: ''
+- witch: Salsa
+  release: Initial
+  rarity: SSR
+  _title: ''
+- witch: Garnet
+  release: Initial
+  rarity: SSR
+  _title: ''
+##
+## Initial Konohana SSR
+##
+- witch: Tsubaki
+  release: Initial
+  rarity: SSR
+  _title: ''
+- witch: Nadeshiko
+  release: Initial
+  rarity: SSR
+  _title: ''
+- witch: Kaede
+  release: Initial
+  rarity: SSR
+  _title: ''
+##
+## Initial Sugar Pockets SSR
+##
+- witch: Ratura
+  release: Initial
+  rarity: SSR
+  _title: ''
+- witch: Champe
+  release: Initial
+  rarity: SSR
+  _title: ''
+- witch: Maryberry
+  release: Initial
+  rarity: SSR
+  _title: ''
+##
+## Initial Sadistic Candy SSR
+##
+- witch: Angelica
+  release: Initial
+  rarity: SSR
+  _title: ''
+- witch: Lucifer
+  release: Initial
+  rarity: SSR
+  _title: ''
+##
+## Initial supernova SSR
+##
+- witch: Yue
+  release: Initial
+  rarity: SSR
+  _title: ''
+- witch: Millefeuille
+  release: Initial
+  rarity: SSR
+  _title: ''
+- witch: Fiona
+  release: Initial
+  rarity: SSR
+  _title: ''
+##
+## Initial LiGHTs SR
+##
+- witch: Tiara
+  release: Initial
+  rarity: SR
+  _title: ''
+- witch: Rosetta
+  release: Initial
+  rarity: SR
+  _title: ''
+- witch: Lavie
+  release: Initial
+  rarity: SR
+  _title: ''
+- witch: Ashley
+  release: Initial
+  rarity: SR
+  _title: ''
+- witch: Lynette
+  release: Initial
+  rarity: SR
+  _title: ''
+##
+## Initial IV Klore SR
+##
+- witch: Emilia
+  release: Initial
+  rarity: SR
+  _title: ''
+- witch: Alpha
+  release: Initial
+  rarity: SR
+  _title: ''
+- witch: Salsa
+  release: Initial
+  rarity: SR
+  _title: ''
+- witch: Garnet
+  release: Initial
+  rarity: SR
+  _title: ''
+##
+## Initial Konohana SR
+##
+- witch: Tsubaki
+  release: Initial
+  rarity: SR
+  _title: ''
+- witch: Nadeshiko
+  release: Initial
+  rarity: SR
+  _title: ''
+- witch: Kaede
+  release: Initial
+  rarity: SR
+  _title: ''
+##
+## Initial Sugar Pockets SR
+##
+- witch: Ratura
+  release: Initial
+  rarity: SR
+  _title: ''
+- witch: Champe
+  release: Initial
+  rarity: SR
+  _title: ''
+- witch: Maryberry
+  release: Initial
+  rarity: SR
+  _title: ''
+##
+## Initial Sadistic Candy SR
+##
+- witch: Angelica
+  release: Initial
+  rarity: SR
+  _title: ''
+- witch: Lucifer
+  release: Initial
+  rarity: SR
+  _title: ''
+##
+## Initial supernova SR
+##
+- witch: Yue
+  release: Initial
+  rarity: SR
+  _title: ''
+- witch: Millefeuille
+  release: Initial
+  rarity: SR
+  _title: ''
+- witch: Fiona
+  release: Initial
+  rarity: SR
+  _title: ''
 
 # Local Variables:
 # outline-regexp: "^## .*"
