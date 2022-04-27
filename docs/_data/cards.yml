@@ -211,12 +211,12 @@
           When using the yellow orb, restores <b>12%</b> of the magic shield.
     - name: 蒼き死神の矜持
       levels:
-        - Increases allies' damage by <b>5%</b>.
-          Increases allies' crit chance by <b>5%</b>.
-        - Increases allies' damage by <b>10%</b>.
-          Increases allies' crit chance by <b>10%</b>.
-        - Increases allies' damage by <b>15%</b>.
-          Increases allies' crit chance by <b>15%</b>.
+        - Increases allies' damage by <b>5%</b>
+          and crit chance by <b>5%</b>.
+        - Increases allies' damage by <b>10%</b>
+          and crit chance by <b>10%</b>.
+        - Increases allies' damage by <b>15%</b>
+          and crit chance by <b>15%</b>.
 - witch: Eliza
   release: Initial
   rarity: LR
@@ -328,12 +328,12 @@
           Gains <b>35%</b> crit chance against enemies that are charmed or have cursed wounds.
     - name: 極甘プレゼント
       levels:
-        - When using the blue orb, restores <b>5%</b> HP.
-          When using the blue orb, increases allies' attack by <b>8%</b>.
-        - When using the blue orb, restores <b>10%</b> HP.
-          When using the blue orb, increases allies' attack by <b>16%</b>.
-        - When using the blue orb, restores <b>15%</b> HP.
-          When using the blue orb, increases allies' attack by <b>24%</b>.
+        - When using the blue orb, restores <b>5%</b> HP,
+          and increases allies' attack by <b>8%</b>.
+        - When using the blue orb, restores <b>10%</b> HP,
+          and increases allies' attack by <b>16%</b>.
+        - When using the blue orb, restores <b>15%</b> HP,
+          and increases allies' attack by <b>24%</b>.
   special:
     name: 恋の邪魔は禁止です
     effect: >-
