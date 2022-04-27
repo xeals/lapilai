@@ -146,7 +146,7 @@
       - Inflicts <b>480%</b> physical damage to 1 enemy.
         Removes all stacks of poison from all enemies, and inflicts damage for each turn remaining.
   special:
-    name: 特殊指令珠
+    name: 繚乱ムーンライト
     type: T
     effect: >-
       Inflicts 144% physical damage (36%, 36%, 72%) to 1 enemy.
@@ -165,6 +165,7 @@
         - Inflict <b>10%</b> increased damage to poisoned enemies.
         - Inflict <b>20%</b> increased damage to poisoned enemies.
         - Inflict <b>30%</b> increased damage to poisoned enemies.
+
 ##
 ## Initial Ray part 1
 ##
@@ -190,7 +191,7 @@
         20% chance to restore <b>30%</b> HP each turn for 4 turns.
         <b>Increases allies' physical and magical attack by 50% for 4 turns.</b>
   special:
-    name: 特殊指令珠
+    name: 冥府の裁きたる大鎌
     type: P
     effect: >-
       Inflicts 120% physical damage to all enemies.
@@ -233,7 +234,7 @@
       - Inflicts <b>540%</b> (54%, 54%, 81%, 81%, 81%, 189%) physical damage to 1 enemy, <b>and inflicts 162% (16.2%, 16.2%, 24.3%, 24.3%, 24.3%, 56.7%) physical damage to 2 other random enemies</b>.
         Applies 1 stack of burn.
   special:
-    name: 特殊指令珠
+    name: Crimson Sword
     type: T
     effect: >-
       Increases crit chance by 20% for 2 turns.
@@ -255,6 +256,7 @@
           and <b>3%</b> increased critical damage (stacking up to 10 times).
         - When an attack hits, gain <b>1.2%</b> increased damage (stacking up to 10 times)
           and <b>4.5%</b> increased critical damage (stacking up to 10 times).
+
 ##
 ## Valentine's
 ##
