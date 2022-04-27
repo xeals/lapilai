@@ -328,12 +328,12 @@
           Gains <b>35%</b> crit chance against enemies that are charmed or have cursed wounds.
     - name: 極甘プレゼント
       levels:
-        - When using the blue orb, restores <b>5%</b> HP,
-          and increases allies' attack by <b>8%</b>.
+        - When using the blue orb, restores <b>5%</b> HP.
+          When part of a blue chain attack, gain <b>8%</b> increased attack.
         - When using the blue orb, restores <b>10%</b> HP,
-          and increases allies' attack by <b>16%</b>.
+          When part of a blue chain attack, gain <b>16%</b> increased attack.
         - When using the blue orb, restores <b>15%</b> HP,
-          and increases allies' attack by <b>24%</b>.
+          When part of a blue chain attack, gain <b>24%</b> increased attack.
   special:
     name: 恋の邪魔は禁止です
     effect: >-
