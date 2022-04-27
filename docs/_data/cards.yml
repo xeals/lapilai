@@ -1,4 +1,38 @@
 ##
+## Docs
+##
+# This file contains flat definitions of all cards in the game, available or
+# otherwise revealed.
+#
+# Most missing keys are gracefully handled. Cards without spell entries are
+# assumed to be untranslated (i.e., that it also doesn't have a special or
+# passive entry) and are marked as such in the gallery.
+#
+# Witch, release, and rarity are required values as they form the unique key of
+# an entry.
+#
+# Exceptions:
+#   - missing spell.cost displays the cost indicator (label and icon) but no
+#     value
+#
+# Schema:
+#   witch: enum [character name; keys of witch_types.json]
+#   release: str
+#   rarity: enum [LG, UR, SSR, SR, R]
+#   _title: str
+#   tags: enum array [keys of card_tags.json]
+#   spell:
+#     name: str
+#     cost: int
+#     levels: str array [of ranks]
+#   special:
+#     name: str
+#     effect: str
+#   passives: array [0 - 2]
+#     name: str
+#     levels: str array [of ranks]
+
+##
 ## Sakura
 ##
 - witch: Millefeuille
