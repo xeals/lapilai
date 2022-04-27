@@ -262,14 +262,124 @@
   release: Valentines
   rarity: UR
   _title: 違うんですー！
+  tags:
+    - AoE Attack
+    - Abnormal Status
+    - MP Gain
+  spell:
+    name: I'm the Present?!
+    cost: 12
+    levels:
+      - Inflicts <b>190%</b> magic damage to all enemies.
+        Applies <b>1</b> stack of charm to all enemies.
+      - Inflicts <b>230%</b> magic damage to all enemies.
+        Applies <b>1</b> stack of charm to all enemies.
+      - Inflicts <b>270%</b> magic damage to all enemies.
+        Applies <b>2</b> stacks of charm to all enemies.
+  passives:
+    - name: Energy Gain
+      levels:
+        - Restores <b>10</b> MP when an enemy dies.
+        - Restores <b>15</b> MP when an enemy dies.
+        - Restores <b>20</b> MP when an enemy dies.
+    - name: ドキドキハート
+      levels:
+        - Attacks have a <b>25%</b> chance to apply 1 stack of charm.
+          When using the blue orb, restores <b>1</b> MP.
+        - Attacks have a <b>37.5%</b> chance to apply 1 stack of charm.
+          When using the blue orb, restores <b>2</b> MP.
+        - Attacks have a <b>50%</b> chance to apply 1 stack of charm.
+          When using the blue orb, restores <b>3</b> MP.
+  special:
+    name: Magical Ribbon
+    effect: >-
+      Inflicts 144% (36%, 36%, 72%) magic damage to 1 enemy.
+      Restores 2 MP each turn for 2 turns.
 - witch: Garnet
   release: Valentines
   rarity: UR
   _title: 心ここにこめて
+  tags:
+    - Single Attack
+    - Abnormal Status
+  spell:
+    name: On Valentine's Night
+    cost: 10
+    levels:
+      - Applies 1 stack of cursed wounds to 1 enemy (enemies receive 10% increased damage per stack of cursed wounds; stacks up to 3 times, and lasts for 4 turns).
+        Applies 1 stack of charm to the target.
+        Inflicts <b>330%</b> magic damage to the target.
+      - Applies 1 stack of cursed wounds to 1 enemy (enemies receive 10% increased damage per stack of cursed wounds; stacks up to 3 times, and lasts for 4 turns).
+        Applies 1 stack of charm to the target.
+        Inflicts <b>445%</b> magic damage to the target.
+      - Applies 1 stack of cursed wounds to 1 enemy (enemies receive 10% increased damage per stack of cursed wounds; stacks up to 3 times, and lasts for 4 turns).
+        Applies 1 stack of charm to the target.
+        Inflicts <b>560%</b> magic damage to the target.
+  passives:
+    - name: Lovely Gift
+      levels:
+        - Critical hits from normal attacks restore <b>2</b> MP.
+          Gains <b>25%</b> crit chance against enemies that are charmed or have cursed wounds.
+        - Critical hits from normal attacks restore <b>3</b> MP.
+          Gains <b>25%</b> crit chance against enemies that are charmed or have cursed wounds.
+        - Critical hits from normal attacks restore <b>4</b> MP.
+          Gains <b>35%</b> crit chance against enemies that are charmed or have cursed wounds.
+    - name: 極甘プレゼント
+      levels:
+        - When using the blue orb, restores <b>5%</b> HP.
+          When using the blue orb, increases allies' attack by <b>8%</b>.
+        - When using the blue orb, restores <b>10%</b> HP.
+          When using the blue orb, increases allies' attack by <b>16%</b>.
+        - When using the blue orb, restores <b>15%</b> HP.
+          When using the blue orb, increases allies' attack by <b>24%</b>.
+  special:
+    name: 恋の邪魔は禁止です
+    effect: >-
+      Inflicts 160% magic damage to 1 enemy, or 320% magic damage if the enemy is charmed.
 - witch: Ratura
   release: Valentines
   rarity: UR
   _title: 口を開けるし〜♪
+  tags:
+    - Single Attack
+    - Abnormal Status
+    - Healing
+  spell:
+    name: 大胆アタック！
+    cost: 7
+    levels:
+      - Inflicts <b>120%</b> hybrid damage to all enemies.
+        Removes all status conditions from all allies.
+        Protects allies from sleep, stun, charm, and freeze for <b>1</b> turn.
+      - Inflicts <b>130%</b> hybrid damage to all enemies.
+        Removes all status conditions from all allies.
+        Protects allies from sleep, stun, charm, and freeze for <b>1</b> turn.
+      - Inflicts <b>140%</b> hybrid damage to all enemies.
+        Removes all status conditions from all allies.
+        Protects allies from sleep, stun, charm, and freeze for <b>2</b> turns.
+  passives:
+    - name: スイートムード
+      levels:
+        - Removes any impairing status condition received (sleep, stun, charm, or freeze).
+          <b>5</b> turn cooldown.
+        - Removes any impairing status condition received (sleep, stun, charm, or freeze).
+          <b>4</b> turn cooldown.
+        - Removes any impairing status condition received (sleep, stun, charm, or freeze).
+          <b>3</b> turn cooldown.
+    - name: 甘すぎシュガー
+      levels:
+        - Decreases all enemies' physical attack by <b>15%</b> for 4 turns.
+          When using the blue orb, restores <b>1</b> MP.
+        - Decreases all enemies' physical attack by <b>30%</b> for 4 turns.
+          When using the blue orb, restores <b>2</b> MP.
+        - Decreases all enemies' physical attack by <b>45%</b> for 4 turns.
+          When using the blue orb, restores <b>3</b> MP.
+  special:
+    name: Silky Melt
+    effect: >-
+      Inflicts 100% (30%, 30%, 40%) hybrid damage to all enemies.
+      Applies 1 stack of charm.
+
 ##
 ## Sky Stage
 ##
