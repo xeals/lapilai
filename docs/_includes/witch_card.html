@@ -65,4 +65,14 @@
     {% endfor %}
   </ol>
   {% endfor %}
+
+  {% if card.notes %}
+  <h3 id="notes">Notes</h3>
+  <dl>
+  {% for kv in card.notes %}
+    <dt>{{ kv[0] }}</dt>
+    <dd>{{ kv[1] }}</dd>
+  {% endfor %}
+  </dl>
+  {% endif %}
 </div>

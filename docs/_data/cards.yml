@@ -308,13 +308,13 @@
     name: On Valentine's Night
     cost: 10
     levels:
-      - Applies 1 stack of cursed wounds to 1 enemy (enemies receive 10% increased damage per stack of cursed wounds; stacks up to 3 times, and lasts for 4 turns).
+      - Applies 1 stack of cursed wounds to 1 enemy.
         Applies 1 stack of charm to the target.
         Inflicts <b>330%</b> magic damage to the target.
-      - Applies 1 stack of cursed wounds to 1 enemy (enemies receive 10% increased damage per stack of cursed wounds; stacks up to 3 times, and lasts for 4 turns).
+      - Applies 1 stack of cursed wounds to 1 enemy.
         Applies 1 stack of charm to the target.
         Inflicts <b>445%</b> magic damage to the target.
-      - Applies 1 stack of cursed wounds to 1 enemy (enemies receive 10% increased damage per stack of cursed wounds; stacks up to 3 times, and lasts for 4 turns).
+      - Applies 1 stack of cursed wounds to 1 enemy.
         Applies 1 stack of charm to the target.
         Inflicts <b>560%</b> magic damage to the target.
   passives:
@@ -338,6 +338,8 @@
     name: 恋の邪魔は禁止です
     effect: >-
       Inflicts 160% magic damage to 1 enemy, or 320% magic damage if the enemy is charmed.
+  notes:
+    Cursed wounds: Enemies receive 10% increased damage per stack of cursed wounds; stacks up to 3 times, and lasts for 4 turns.
 - witch: Ratura
   release: Valentines
   rarity: UR
@@ -467,11 +469,11 @@
     name: 羊さん、突撃！
     cost: 12
     levels:
-      - Applies 1 stack of damage amplification to all enemies (enemies receive 8% increased damge per stack of damage amplification; stacks up to 6 times, and lasts for 2 turns).
+      - Applies 1 stack of damage amplification to all enemies.
         Inflicts <b>230%</b> (46%, 46%, 46%, 46%, 46%) magic damage to all enemies.
-      - Applies 1 stack of damage amplification to all enemies (enemies receive 8% increased damge per stack of damage amplification; stacks up to 6 times, and lasts for 2 turns).
+      - Applies 1 stack of damage amplification to all enemies.
         Inflicts <b>300%</b> (60%, 60%, 60%, 60%, 60%) magic damage to all enemies.
-      - Applies 1 stack of damage amplification to all enemies (enemies receive 8% increased damge per stack of damage amplification; stacks up to 6 times, and lasts for 2 turns).
+      - Applies 1 stack of damage amplification to all enemies.
         Inflicts <b>370%</b> (74%, 74%, 74%, 74%, 74%) magic damage to all enemies.
   passives:
     - name: 小さな発明家
@@ -490,6 +492,8 @@
     effect: >-
       Inflicts 100% magic damage to all enemies.
       Applies 1 stack of damage amplification.
+  notes:
+    Damage amplification: Enemies receive 8% increased damge per stack of damage amplification; stacks up to 6 times, and lasts for 2 turns.
 ##
 ## Christmas
 ##
