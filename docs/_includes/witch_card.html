@@ -11,7 +11,8 @@
     {% include card/image.html card=card %}
     <i>{{ card._title }}</i>
 
-    <b data-type="{{ card.type }}">{{ site.data.card_types[card.type] }}</b>
+    {% assign short_type = site.data.witch_types[card.witch] %}
+    <b data-type="{{ short_type }}">{{ site.data.card_types[short_type] }}</b>
 
     {% if card.tags %}
     <div class="wc__tags">

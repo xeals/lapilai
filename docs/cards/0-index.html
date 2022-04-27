@@ -169,7 +169,7 @@ excerpt: Interactive card searcher.
     const CARDS = [
       {%- for card in site.data.cards -%}
       {
-        "type": {{ card.type | jsonify }},
+        "type": {{ site.data.witch_types[card.witch] | jsonify }},
         "witch": {{ card.witch | jsonify }},
         "rarity": {{ card.rarity | jsonify }},
         "release": {{ card.release | jsonify }},

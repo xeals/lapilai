@@ -5,17 +5,14 @@
   release: Sakura
   rarity: UR
   _title: ''
-  type: S
 - witch: Alpha
   release: Sakura
   rarity: UR
   _title: ''
-  type: S
 - witch: Rosetta
   release: Sakura
   rarity: UR
   _title: ''
-  type: S
 ##
 ## Initial Ray part 1
 ##
@@ -23,12 +20,10 @@
   release: Initial
   rarity: LG
   _title: ''
-  type: P
 - witch: Eliza
   release: Initial
   rarity: LG
   _title: ''
-  type: T
 ##
 ## Valentine's
 ##
@@ -36,17 +31,14 @@
   release: Valentines
   rarity: UR
   _title: 違うんですー！
-  type: M
 - witch: Garnet
   release: Valentines
   rarity: UR
   _title: 心ここにこめて
-  type: M
 - witch: Ratura
   release: Valentines
   rarity: UR
   _title: 口を開けるし〜♪
-  type: T
 ##
 ## Sky Stage
 ##
@@ -54,7 +46,6 @@
   release: Sky Stage
   rarity: UR
   _title: A Singing Voice from the Sky
-  type: T
   tags:
     - AoE Attack
     - Debuff
@@ -62,7 +53,6 @@
   release: Sky Stage
   rarity: UR
   _title: The Best Sense of Freedom
-  type: S
   tags:
     - Single Attack
     - Ability Buff
@@ -70,7 +60,6 @@
   release: Sky Stage
   rarity: UR
   _title: Dashing through the Clouds
-  type: M
   tags:
     - AoE Attack
     - Debuff
@@ -81,7 +70,6 @@
   release: Christmas
   rarity: UR
   _title: A Sky of Stars, Lights, and Snow
-  type: P
   tags:
     - AoE Attack
     - Attack Obstruction
@@ -90,7 +78,6 @@
   release: Christmas
   rarity: UR
   _title: Warm Muffler
-  type: S
   tags:
     - AoE Attack
     - Debuff
@@ -98,7 +85,6 @@
   release: Christmas
   rarity: UR
   _title: 上手にできました
-  type: M
   tags:
     - Single Attack
     - Abnormal Status
@@ -109,7 +95,6 @@
   release: Initial
   rarity: UR
   _title: Glowing Pyroxene Forest
-  type: T
   tags:
     - Resuscitation
     - Recovery
@@ -118,7 +103,6 @@
   release: Initial
   rarity: UR
   _title: Time's Unknown Land
-  type: S
   tags:
     - AoE Attack
     - Attack Obstruction
@@ -126,7 +110,6 @@
   release: Initial
   rarity: UR
   _title: The Big Stage of Dreams
-  type: X
   tags:
     - Recovery
     - Ability Buff
@@ -134,7 +117,6 @@
   release: Initial
   rarity: UR
   _title: A Knight's Wish
-  type: P
   tags:
     - AoE Attack
     - Shield Recovery
@@ -143,7 +125,6 @@
   release: Initial
   rarity: UR
   _title: Bookshelf of Delusions
-  type: M
   tags:
     - Single Attack
     - Ability Buff
@@ -154,7 +135,6 @@
   release: Initial
   rarity: UR
   _title: Pride Blooming in the Darkness
-  type: T
   tags:
     - Single Attack
     - Ability Buff
@@ -163,7 +143,6 @@
   release: Initial
   rarity: UR
   _title: Dance in the Moonlight
-  type: P
   tags:
     - Shield Recovery
     - AoE Attack
@@ -172,7 +151,6 @@
   release: Initial
   rarity: UR
   _title: Brighter than the Moon
-  type: S
   tags:
     - Single Attack
     - Debuff
@@ -181,7 +159,6 @@
   release: Initial
   rarity: UR
   _title: Butterflies Fluttering in the Night
-  type: M
   tags:
     - AoE Attack
     - Attack Obstruction
@@ -192,7 +169,6 @@
   release: Initial
   rarity: UR
   _title: Fluttering Flames
-  type: S
   tags:
     - AoE Attack
     - Abnormal Status
@@ -200,7 +176,6 @@
   release: Initial
   rarity: UR
   _title: Accept the Night Sky
-  type: P
   tags:
     - Shield Recovery
     - AoE Attack
@@ -208,7 +183,6 @@
   release: Initial
   rarity: UR
   _title: Hidden Hard Work
-  type: M
   tags:
     - AoE Attack
     - Abnormal Status
@@ -219,7 +193,6 @@
   release: Initial
   rarity: UR
   _title: Shining Step
-  type: T
   tags:
     - Single Attack
     - Healing
@@ -227,7 +200,6 @@
   release: Initial
   rarity: UR
   _title: In the Flower Field
-  type: S
   tags:
     - Single Attack
     - Ability Buff
@@ -235,7 +207,6 @@
   release: Initial
   rarity: UR
   _title: Exciting Award Ceremony
-  type: M
   tags:
     - Single Attack
     - Debuff
@@ -247,7 +218,6 @@
   release: Initial
   rarity: UR
   _title: Healing Light
-  type: X
   tags:
     - Recovery
     - Ability Buff
@@ -256,7 +226,6 @@
   release: Initial
   rarity: UR
   _title: The King's Challenge
-  type: P
   tags:
     - Single Attack
     - Attack Obstruction
@@ -268,7 +237,6 @@
   release: Initial
   rarity: UR
   _title: Tiny Friend
-  type: X
   tags:
     - Recovery
     - Ability Buff
@@ -276,7 +244,6 @@
   release: Initial
   rarity: UR
   _title: Aquatic Dance
-  type: S
   tags:
     - Single Attack
     - Debuff
@@ -285,7 +252,6 @@
   release: Initial
   rarity: UR
   _title: Premonition of a Great Voyage
-  type: T
   tags:
     - AoE Attack
     - Abnormal Status
@@ -297,7 +263,6 @@
   release: Initial
   rarity: SSR
   _title: Blooming in the Night
-  type: T
   tags:
     - AoE Attack
     - Abnormal Status
@@ -305,7 +270,6 @@
   release: Initial
   rarity: SSR
   _title: Letter of Happiness
-  type: S
   tags:
     - Single Attack
     - Ability Buff
@@ -313,7 +277,6 @@
   release: Initial
   rarity: SSR
   _title: Cutting Edge Fashion
-  type: X
   tags:
     - Recovery
     - Ability Buff
@@ -321,7 +284,6 @@
   release: Initial
   rarity: SSR
   _title: The Situation She Was Found In
-  type: P
   tags:
     - Single Attack
     - Shield Recovery
@@ -330,7 +292,6 @@
   release: Initial
   rarity: SSR
   _title: Afternoon Daydreaming
-  type: M
   tags:
     - AoE Attack
     - Debuff
@@ -341,7 +302,6 @@
   release: Initial
   rarity: SSR
   _title: Salty Breeze Balcony
-  type: T
   tags:
     - Single Attack
     - Abnormal Status
