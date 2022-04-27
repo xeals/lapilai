@@ -27,10 +27,23 @@
 #     levels: str array [of ranks]
 #   special:
 #     name: str
+#     type: enum [T (red), M (blue), P (yellow)]
 #     effect: str
 #   passives: array [0 - 2]
 #     name: str
 #     levels: str array [of ranks]
+#
+# Terminology:
+# - Use present tense ("applies", "increases", "inflicts").
+# - Condition first (once per turn, when receiving damage, when dealing damage,
+#   when attacking).
+# - Inflict X TYPE damage to (X | all) enemies.
+# - Applies X stacks of DEBUFF to (X | all) enemies
+# - Increases / Decreases TARGET STAT by X% for (the | X) turn.
+#
+# Formatting:
+# - One line, one effect.
+# - Bold variable numbers (changing between levels).
 
 ##
 ## Sakura
@@ -38,26 +51,210 @@
 - witch: Millefeuille
   release: Sakura
   rarity: UR
-  _title: ''
+  _title: 花風に揺られて
+  tags:
+    - AoE Attack
+    - Debuff
+  spell:
+    name: 桜花流光
+    cost: 7
+    levels:
+      - Inflicts <b>140%</b> physical damage to all enemies.
+        Applies <b>2</b> stacks of poison to all enemies.
+      - Inflicts <b>190%</b> physical damage to all enemies.
+        Applies <b>3</b> stacks of poison to all enemies.
+      - Inflicts <b>240%</b> physical damage to all enemies.
+        Applies <b>4</b> stacks of poison to all enemies.
+  special:
+    name: 満開ブロッサムス
+    type: T
+    effect: >-
+      Inflicts 70% physical damage (35% + 35%) to all enemies.
+      Affected enemies receive 50% increased damage from poison for 4 turns.
+  passives:
+    - name: 夜桜の慈しみ
+      levels:
+        - When using the red orb, increases allies' attack by <b>8%</b> for the turn.
+        - When using the red orb, increases allies' attack by <b>16%</b> for the turn.
+        - When using the red orb, increases allies' attack by <b>24%</b> for the turn.
+    - name: 春風の香り
+      levels:
+        - Normal attacks have a <b>25%</b> chance to apply 1 stack of poison.
+        - Normal attacks have a <b>50%</b> chance to apply 1 stack of poison.
+        - Normal attacks have a <b>75%</b> chance to apply 1 stack of poison.
 - witch: Alpha
   release: Sakura
   rarity: UR
-  _title: ''
+  _title: 散る花びらを手に
+  tags:
+    - AoE Attack
+    - Shield Recovery
+  spell:
+    name: 桜嵐舞踏
+    cost: 10
+    levels:
+      - Inflicts <b>105%</b> physical damage to 1 enemy.
+        Taunts all enemies for 3 turns.
+        Gain <b>8%</b> damage reduction for 3 turns.
+        All allies gain <b>30%</b> damage reduction for 3 turns.
+      - Inflicts <b>195%</b> physical damage to 1 enemy.
+        Taunts all enemies for 3 turns.
+        Gain <b>16%</b> damage reduction for 3 turns.
+        All allies gain <b>40%</b> damage reduction for 3 turns.
+      - Inflicts <b>285%</b> physical damage to 1 enemy.
+        Taunts all enemies for 3 turns.
+        Gain <b>24%</b> damage reduction for 3 turns.
+        All allies gain <b>50%</b> damage reduction for 3 turns.
+  special:
+    name: 花月ミッドナイト
+    type: P
+    effect: >-
+      Inflicts 100% physical damage (30%, 30%, 40%) to all enemies.
+      Restores 15% of the magic shield.
+      Applies 1 stack of poison to all enemies.
+  passives:
+    - name: 夜桜の守護
+      levels:
+        - When using the yellow orb, restores <b>4%</b> of the magic shield.
+          33% chance when receiving damage to restore <b>25%</b> of the magic shield.
+        - When using the yellow orb, restores <b>8%</b> of the magic shield.
+          33% chance when receiving damage to restore <b>35%</b> of the magic shield.
+        - When using the yellow orb, restores <b>12%</b> of the magic shield.
+          33% chance when receiving damage to restore <b>45%</b> of the magic shield.
+    - name: 春の祝福
+      levels:
+        - <b>75%</b> chance when attacked to apply 1 stack of poison to the attacker.
+          Once per turn, when damaged by a status condition, restores <b>10%</b> HP.
+        - <b>100%</b> chance when attacked to apply 1 stack of poison to the attacker.
+          Once per turn, when damaged by a status condition, restores <b>15%</b> HP.
+        - <b>100%</b> chance when attacked to apply 1 stack of poison to the attacker.
+          Once per turn, when damaged by a status condition, restores <b>20%</b> HP.
 - witch: Rosetta
   release: Sakura
   rarity: UR
-  _title: ''
+  _title: 夜桜と昇る月
+  tags:
+    - AoE Attack
+  spell:
+    name: 月光桜影
+    cost: 12
+    levels:
+      - Inflicts <b>240%</b> physical damage to 1 enemy.
+        Removes all stacks of poison from all enemies, and inflicts damage for each turn remaining.
+      - Inflicts <b>360%</b> physical damage to 1 enemy.
+        Removes all stacks of poison from all enemies, and inflicts damage for each turn remaining.
+      - Inflicts <b>480%</b> physical damage to 1 enemy.
+        Removes all stacks of poison from all enemies, and inflicts damage for each turn remaining.
+  special:
+    name: 特殊指令珠
+    type: T
+    effect: >-
+      Inflicts 144% physical damage (36%, 36%, 72%) to 1 enemy.
+      Applies 2 stacks of poison.
+  passives:
+    - name: 夜桜の宴
+      levels:
+        - After attacking 2 times, gain <b>20%</b> crit chance for 2 turns.
+          Critical hits apply 1 stack of poison.
+        - After attacking 2 times, gain <b>30%</b> crit chance for 2 turns.
+          Critical hits apply 1 stack of poison.
+        - After attacking 2 times, gain <b>40%</b> crit chance for 2 turns.
+          Critical hits apply 1 stack of poison.
+    - name: 春色爛漫
+      levels:
+        - Inflict <b>10%</b> increased damage to poisoned enemies.
+        - Inflict <b>20%</b> increased damage to poisoned enemies.
+        - Inflict <b>30%</b> increased damage to poisoned enemies.
 ##
 ## Initial Ray part 1
 ##
 - witch: Chloe
   release: Initial
   rarity: LG
-  _title: ''
+  _title: Conductor
+  tags:
+    - Shield Recovery
+    - Ability Buff
+  spell:
+    name: イリュージョンタクト
+    cost: 12
+    levels:
+      - Inflicts <b>150%</b> physical damage to all enemies.
+        Restores <b>27%</b> of the magic shield.
+        20% chance to restore <b>10%</b> HP each turn for 4 turns.
+      - Inflicts <b>200%</b> physical damage to all enemies.
+        Restores <b>34%</b> of the magic shield.
+        20% chance to restore <b>20%</b> HP each turn for 4 turns.
+      - Inflicts <b>250%</b> physical damage to all enemies.
+        Restores <b>41%</b> of the magic shield.
+        20% chance to restore <b>30%</b> HP each turn for 4 turns.
+        <b>Increases allies' physical and magical attack by 50% for 4 turns.</b>
+  special:
+    name: 特殊指令珠
+    type: P
+    effect: >-
+      Inflicts 120% physical damage to all enemies.
+      Restores 20% of the magic shield.
+      Taunts all enemies for 2 turns.
+  passives:
+    - name: 冷静沈着
+      levels:
+        - Reduces damage done to the magic shield by <b>20%</b>.
+          Once per attack, 20% chance when taking damage to restore <b>10%</b> of the magic shield.
+          When using the yellow orb, restores <b>4%</b> of the magic shield.
+        - Reduces damage done to the magic shield by <b>30%</b>.
+          Once per attack, 20% chance when taking damage to restore <b>15%</b> of the magic shield.
+          When using the yellow orb, restores <b>8%</b> of the magic shield.
+        - Reduces damage done to the magic shield by <b>40%</b>.
+          Once per attack, 20% chance when taking damage to restore <b>20%</b> of the magic shield.
+          When using the yellow orb, restores <b>12%</b> of the magic shield.
+    - name: 蒼き死神の矜持
+      levels:
+        - Increases allies' damage by <b>5%</b>.
+          Increases allies' crit chance by <b>5%</b>.
+        - Increases allies' damage by <b>10%</b>.
+          Increases allies' crit chance by <b>10%</b>.
+        - Increases allies' damage by <b>15%</b>.
+          Increases allies' crit chance by <b>15%</b>.
 - witch: Eliza
   release: Initial
   rarity: LG
-  _title: ''
+  _title: 幸せを願う歌
+  tags:
+    - Single Attack
+  spell:
+    name: Princess Melody
+    cost: 10
+    levels:
+      - Inflicts <b>300%</b> (30%, 30%, 45%, 45%, 45%, 105%) physical damage to 1 enemy.
+        Applies 1 stack of burn.
+      - Inflicts <b>420%</b> (42%, 42%, 63%, 63%, 63%, 147%) physical damage to 1 enemy.
+        Applies 1 stack of burn.
+      - Inflicts <b>540%</b> (54%, 54%, 81%, 81%, 81%, 189%) physical damage to 1 enemy, <b>and inflicts 162% (16.2%, 16.2%, 24.3%, 24.3%, 24.3%, 56.7%) physical damage to 2 other random enemies</b>.
+        Applies 1 stack of burn.
+  special:
+    name: 特殊指令珠
+    type: T
+    effect: >-
+      Increases crit chance by 20% for 2 turns.
+      Inflicts 150% (30%, 30%, 40%, 50%) physical damage to 1 enemy.
+  passives:
+    - name: 緋色の剣技
+      levels:
+        - When using with the red orb, increases allies' attack by <b>8%</b> for the turn.
+          Normal attacks have a <b>25%</b> chance to apply 1 stack of burn.
+        - When using with the red orb, increases allies' attack by <b>16%</b> for the turn.
+          Normal attacks have a <b>50%</b> chance to apply 1 stack of burn.
+        - When using with the red orb, increases allies' attack by <b>24%</b> for the turn.
+          Normal attacks have a <b>75%</b> chance to apply 1 stack of burn.
+    - name: 凛然たる眼差し
+      levels:
+        - When an attack hits, gain <b>0.4%</b> increased damage (stacking up to 10 times)
+          and <b>1.5%</b> increased critical damage (stacking up to 10 times).
+        - When an attack hits, gain <b>0.8%</b> increased damage (stacking up to 10 times)
+          and <b>3%</b> increased critical damage (stacking up to 10 times).
+        - When an attack hits, gain <b>1.2%</b> increased damage (stacking up to 10 times)
+          and <b>4.5%</b> increased critical damage (stacking up to 10 times).
 ##
 ## Valentine's
 ##
