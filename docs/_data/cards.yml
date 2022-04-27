@@ -74,9 +74,9 @@
   passives:
     - name: 夜桜の慈しみ
       levels:
-        - When using the red orb, increases allies' attack by <b>8%</b> for the turn.
-        - When using the red orb, increases allies' attack by <b>16%</b> for the turn.
-        - When using the red orb, increases allies' attack by <b>24%</b> for the turn.
+        - When using the red orb, increases allies' physical attack by <b>8%</b> for the turn.
+        - When using the red orb, increases allies' physical attack by <b>16%</b> for the turn.
+        - When using the red orb, increases allies' physical attack by <b>24%</b> for the turn.
     - name: 春風の香り
       levels:
         - Normal attacks have a <b>25%</b> chance to apply 1 stack of poison.
