@@ -86,14 +86,14 @@ excerpt: Interactive card searcher.
 
   <div class="wc__controls__filters">
     <select name="wc-type" title="Filter cards by type">
-      <option value="">All</option>
+      <option value="">All types</option>
       {% for type in site.data.card_types %}
-      <option value={{ type[0] }}>{{ type[1] }}</option>
+      <option value="{{ type[0] }}">{{ type[1] }}</option>
       {% endfor %}
     </select>
 
     <select name="wc-release" title="Filter cards by release set">
-      <option value="">All</option>
+      <option value="">All sets</option>
       {% assign _releases = site.data.cards | map: "release" | uniq | reverse %}
       {% for release in _releases %}
       <option value="{{ release }}">{{ release }}</option>
