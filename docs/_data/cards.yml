@@ -534,21 +534,21 @@
       - Inflicts <b>30%</b> physical damage to all enemies.
         Taunts all enemies for 2 turns.
         All allies gain <b>10%</b> damage reduction for 2 turns.
-        Restores the magic shield by <b>10%</b>.
+        Restores <b>10%</b> of the magic shield.
       - Inflicts <b>35%</b> physical damage to all enemies.
         Taunts all enemies for 2 turns.
         All allies gain <b>15%</b> damage reduction for 2 turns.
-        Restores the magic shield by <b>12.5%</b>.
+        Restores <b>12.5%</b> of the magic shield.
       - Inflicts <b>40%</b> physical damage to all enemies.
         Taunts all enemies for 2 turns.
         All allies gain <b>20%</b> damage reduction for 2 turns.
-        Restores the magic shield by <b>15%</b>.
+        Restores <b>15%</b> of the magic shield.
   passives:
     - name: ハート・イルミネイト
       levels:
-        - When using the yellow orb, restores the magic shield by <b>4%</b>.
-        - When using the yellow orb, restores the magic shield by <b>8%</b>.
-        - When using the yellow orb, restores the magic shield by <b>12%</b>.
+        - When using the yellow orb, restores <b>4%</b> of the magic shield.
+        - When using the yellow orb, restores <b>8%</b> of the magic shield.
+        - When using the yellow orb, restores <b>12%</b> of the magic shield.
     - name: 白雪の印
       levels:
         - <b>33%</b> chance when hit to apply 1 stack of freeze to the attacker for 3 turns.
