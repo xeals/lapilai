@@ -169,12 +169,12 @@ excerpt: Interactive card searcher.
     const CARDS = [
       {%- for card in site.data.cards -%}
       {
-        "type": {{ site.data.witch_types[card.witch] | jsonify }},
-        "witch": {{ card.witch | jsonify }},
-        "rarity": {{ card.rarity | jsonify }},
-        "release": {{ card.release | jsonify }},
-        "tags": {{ card.tags | jsonify }},
-        "has_translation": {% if card.spell %}true{% else %}false{% endif %},
+        type: {{ site.data.witch_types[card.witch] | jsonify }},
+        witch: {{ card.witch | jsonify }},
+        rarity: {{ card.rarity | jsonify }},
+        release: {{ card.release | jsonify }},
+        tags: {{ card.tags | jsonify }},
+        has_translation: {% if card.spell %}true{% else %}false{% endif %},
       },
       {%- endfor -%}
     ];
@@ -183,10 +183,10 @@ excerpt: Interactive card searcher.
       const $gallery = $(".wc__gallery");
       $gallery.empty();
       cards.forEach(function(card) {
-        const alt = `${card['release']} ${card['rarity']} ${card['witch']}`;
+        const alt = `${card.release} ${card.rarity} ${card.witch}`;
         const slug = alt.replaceAll(" ", "-").toLowerCase();
         $gallery.append(`
-          <div class="wc__item" data-type="${card['type']}">
+          <div class="wc__item" card-type="${card.type}">
             <a href="{{site.baseurl}}{{ page.url }}/${slug}">
               <img
                 class="wc__image"
@@ -194,7 +194,7 @@ excerpt: Interactive card searcher.
                 alt="${alt}"
               />
             </a>
-            ${card['has_translation'] ? "" : `
+            ${card.has_translation ? "" : `
             <div class="wc__missing">
               Missing translation
             </div>
@@ -207,39 +207,18 @@ excerpt: Interactive card searcher.
     function filterCards(val) {
       if (!val) return CARDS;
 
-      const terms = val.trim().split(" ").map(function(v) { return v.toLowerCase(); });
-      return CARDS.filter(function(item) {
-        return terms.every(function(term) {
-          const tagsMatch = item["tags"] && item["tags"].some(function(tag) {
-            return tag.toLowerCase().includes(term);
-          });
-          if (tagsMatch) return true;
-
-          const witchMatches = item["witch"] && item["witch"].toLowerCase().includes(term);
-          if (witchMatches) return true;
-
-          const setMatches = item["release"] && item["release"].toLowerCase().includes(term);
-          if (setMatches) return true;
-
-          return false;
-        });
-      });
+      const terms = val.trim().split(" ").map((v) => v.toLowerCase());
+      return CARDS.filter((item) =>
+        terms.every((term) =>
+          (item.tags && item.tags.some((tag) => tag.toLowerCase().includes(term)))
+          || (item.witch && item.witch.toLowerCase().includes(term))
+          || (item.release && item.release.toLowerCase().includes(term))));
     }
 
     function loadCardsFiltered(query, type, release) {
-      let cards = filterCards(query);
-
-      if (type) {
-        cards = cards.filter(function(card) {
-          return card.type === type;
-        });
-      }
-
-      if (release) {
-        cards = cards.filter(function(card) {
-          return card.release === release;
-        })
-      }
+      const cards = filterCards(query)
+        .filter((card) => !type || card.type === type)
+        .filter((card) => !release || card.release === release);
 
       loadCards(cards);
     }
@@ -250,9 +229,7 @@ excerpt: Interactive card searcher.
       $type = $("select[name=wc-type]");
       $release = $("select[name=wc-release]");
 
-      function _loadCards() {
-        loadCardsFiltered($search.val(), $type.val(), $release.val());
-      }
+      _loadCards = () => loadCardsFiltered($search.val(), $type.val(), $release.val());
 
       // Eager searching
       $search.keyup(_loadCards);
