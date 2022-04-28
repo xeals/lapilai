@@ -32,6 +32,7 @@ export class Card extends LitElement {
       height: 350px;
       width: 100%;
       object-fit: cover;
+      background-image: transparent;
     }
 
     caption {
