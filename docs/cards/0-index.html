@@ -39,25 +39,9 @@ excerpt: Interactive card searcher.
     border-bottom: 4px solid red;
   }
 
-  .wc__gallery {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1em;
-  }
-
-  @media (min-width: 350px) {
-    .wc__gallery {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
   @media (min-width: 750px) {
     .wc__controls {
       flex-direction: row;
-    }
-
-    .wc__gallery {
-      grid-template-columns: repeat(4, 1fr);
     }
   }
 
@@ -69,12 +53,6 @@ excerpt: Interactive card searcher.
     border: 0.2em solid var(--type-color, #000);
     box-sizing: border-box;
     position: relative;
-  }
-
-  .wc__image {
-    display: block;
-    height: 350px;
-    max-width: unset !important;
   }
 
   .wc__missing {
@@ -140,9 +118,14 @@ excerpt: Interactive card searcher.
   </select> -->
 </div>
 
-<div class="wc__gallery">
-  Loading...
-</div>
+<wc-gallery></wc-gallery>
+
+<script type="text/javascript">
+  window.BASEURL = {{ site.baseurl | jsonify }};
+</script>
+
+<script type="module" src="{{ site.baseurl }}/assets/js/wc-card.js"></script>
+<script type="module" src="{{ site.baseurl }}/assets/js/wc-gallery.js"></script>
 
 <script type="text/javascript">
   (function() {
@@ -154,34 +137,13 @@ excerpt: Interactive card searcher.
         rarity: {{ card.rarity | jsonify }},
         release: {{ card.release | jsonify }},
         tags: {{ card.tags | jsonify }},
-        has_translation: {% if card.spell %}true{% else %}false{% endif %},
+        hasTranslation: {% if card.spell %}true{% else %}false{% endif %},
       },
       {%- endfor -%}
     ];
 
     function loadCards(cards) {
-      const $gallery = $(".wc__gallery");
-      $gallery.empty();
-      cards.forEach(function(card) {
-        const alt = `${card.release} ${card.rarity} ${card.witch}`;
-        const slug = alt.replaceAll(" ", "-").toLowerCase();
-        $gallery.append(`
-          <div class="wc__item" card-type="${card.type}">
-            <a href="{{site.baseurl}}{{ page.url }}/${slug}">
-              <img
-                class="wc__image"
-                src="{{ site.baseurl }}/assets/cards/${slug}.jpg"
-                alt="${alt}"
-              />
-            </a>
-            ${card.has_translation ? "" : `
-            <div class="wc__missing">
-              Missing translation
-            </div>
-            `}
-          </div>
-        `);
-      });
+      $("wc-gallery").prop("cards", cards);
     }
 
     function filterCards(val) {
