@@ -10,7 +10,7 @@ export class Card extends LitElement {
     witch: { type: String },
     rarity: { type: String },
     release: { type: String },
-    missingTranslation: { attribute: "missing-translation", type: Boolean },
+    translated: { type: Boolean },
     baseUrl: { state: true },
   };
 
@@ -57,7 +57,7 @@ export class Card extends LitElement {
           loading="lazy"
         />
       </a>
-      ${this.missingTranslation
+      ${!this.translated
         ? html`
             <caption>
               Missing translation

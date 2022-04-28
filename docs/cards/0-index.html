@@ -146,7 +146,7 @@ excerpt: Interactive card searcher.
         {% assign tags = tags | append: "," | append: t %}
         {% endfor %}
         tags: {{ tags | split: "," | jsonify }},
-        hasTranslation: {% if card.spell %}true{% else %}false{% endif %},
+        translated: {% if card.spell %}true{% else %}false{% endif %},
       },
       {%- endfor -%}
     ];

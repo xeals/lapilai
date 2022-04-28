@@ -44,7 +44,7 @@ export class Gallery extends LitElement {
             this._id,
             (item, index) => html`
               <wc-card
-                ?missing-translation="${!item.hasTranslation}"
+                ?translated="${item.translated}"
                 card-type="${item.type}"
                 rarity="${item.rarity}"
                 release="${item.release}"
