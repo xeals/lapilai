@@ -512,6 +512,7 @@
       Applies 1 stack of damage amplification.
   notes:
     Damage amplification: Enemies receive 8% increased damge per stack of damage amplification; stacks up to 6 times, and lasts for 2 turns.
+
 ##
 ## Christmas
 ##
@@ -524,7 +525,42 @@
     - Attack Obstruction
     - Shield Recovery
   hidden_tags:
+    - Damage Reduction
     - Freeze
+  spell:
+    name: Christmas Light
+    cost: 10
+    levels:
+      - Inflicts <b>30%</b> physical damage to all enemies.
+        Taunts all enemies for 2 turns.
+        All allies gain <b>10%</b> damage reduction for 2 turns.
+        Restores the magic shield by <b>10%</b>.
+      - Inflicts <b>35%</b> physical damage to all enemies.
+        Taunts all enemies for 2 turns.
+        All allies gain <b>15%</b> damage reduction for 2 turns.
+        Restores the magic shield by <b>12.5%</b>.
+      - Inflicts <b>40%</b> physical damage to all enemies.
+        Taunts all enemies for 2 turns.
+        All allies gain <b>20%</b> damage reduction for 2 turns.
+        Restores the magic shield by <b>15%</b>.
+  passives:
+    - name: ハート・イルミネイト
+      levels:
+        - When using the yellow orb, restores the magic shield by <b>4%</b>.
+        - When using the yellow orb, restores the magic shield by <b>8%</b>.
+        - When using the yellow orb, restores the magic shield by <b>12%</b>.
+    - name: 白雪の印
+      levels:
+        - <b>33%</b> chance when hit to apply 1 stack of freeze to the attacker for 3 turns.
+        - <b>41%</b> chance when hit to apply 1 stack of freeze to the attacker for 3 turns.
+        - <b>50%</b> chance when hit to apply 1 stack of freeze to the attacker for 3 turns.
+  special:
+    name: 聖夜の堕天使
+    type: P
+    effect: >-
+      Inflicts 80% to 160% physical to 1 enemy.
+      Gain a barrier absorbing 10% of maximum HP for 2 turns.
+      Restores 10% maximum HP to the weakest ally.
 - witch: Salsa
   release: Christmas
   rarity: UR
@@ -534,6 +570,33 @@
     - Debuff
   hidden_tags:
     - Freeze
+  spell:
+    name: Christmas Gift
+    cost: 15
+    levels:
+      - Applies <b>1</b> stack of freeze to all enemies.
+        Inflicts <b>355%</b> (60%, 135%, 160%) physical damage to all enemies.
+      - Applies <b>1</b> stack of freeze to all enemies.
+        Inflicts <b>370%</b> (65%, 140%, 165%) physical damage to all enemies.
+      - Applies <b>2</b> stack of freeze to all enemies.
+        Inflicts <b>395%</b> (70%, 145%, 170%) physical damage to all enemies.
+  passives:
+    - name: ハートフルマフラー
+      levels:
+        - When using the red orb, increases allies' physical attack by <b>8%</b> for the turn.
+        - When using the red orb, increases allies' physical attack by <b>16%</b> for the turn.
+        - When using the red orb, increases allies' physical attack by <b>24%</b> for the turn.
+    - name: Snow Marker
+      levels:
+        - Normal attacks have a <b>12.5%</b> chance to apply 1 stack of freeze.
+        - Normal attacks have a <b>25%</b> chance to apply 1 stack of freeze.
+        - Normal attacks have a <b>37.5%</b> chance to apply 1 stack of freeze.
+  special:
+    name: 聖夜のオオカミ
+    type: T
+    effect: >-
+      Inflicts 70% (20%, 20%, 30%) physical damage to all enemies.
+      Applies 1 stack of freeze.
 - witch: Kaede
   release: Christmas
   rarity: UR
@@ -543,6 +606,39 @@
     - Abnormal Status
   hidden_tags:
     - Freeze
+  spell:
+    name: Christmas Magic
+    cost: 10
+    levels:
+      - Inflicts <b>180%</b> magic damage to 1 enemy.
+        If the target is frozen, inflicts an additional <b>260%</b> magic damage, and applies 1 stack of crush to all enemies.
+      - Inflicts <b>195%</b> magic damage to 1 enemy.
+        If the target is frozen, inflicts an additional <b>290%</b> magic damage, and applies 1 stack of crush to all enemies.
+      - Inflicts <b>210%</b> magic damage to 1 enemy.
+        If the target is frozen, inflicts an additional <b>320%</b> magic damage, and applies 1 stack of crush to all enemies.
+  passives:
+    - name: 心からのプレゼント
+      levels:
+        - When using the blue orb, restores <b>1</b> MP.
+        - When using the blue orb, restores <b>2</b> MP.
+        - When using the blue orb, restores <b>3</b> MP.
+    - name: 雪やこんこ
+      levels:
+        - When using the blue orb, increases allies' magic attack by <b>6%</b> for the turn.
+          Gain <b>20%</b> crit chance when attacking a frozen enemy.
+        - When using the blue orb, increases allies' magic attack by <b>12%</b> for the turn.
+          Gain <b>25%</b> crit chance when attacking a frozen enemy.
+        - When using the blue orb, increases allies' magic attack by <b>18%</b> for the turn.
+          Gain <b>30%</b> crit chance when attacking a frozen enemy.
+  special:
+    name: 聖夜の巫女
+    type: M
+    effect: >-
+      Inflicts 144% (36%, 36%, 72%) magic damage to 1 enemy.
+      Applies 1 stack of freeze.
+  notes:
+    Crush: Enemies have 16% reduced defence per stack of crush; stacks up to 6 times, and lasts for 4 turns.
+
 ##
 ## Initial LiGHTs UR
 ##
