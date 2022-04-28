@@ -50,7 +50,7 @@ export class Card extends LitElement {
     const alt = this.release + " " + this.rarity + " " + this.witch;
     const slug = alt.replaceAll(" ", "-").toLowerCase();
     return html`
-      <a href="${slug}">
+      <a href="${this.baseUrl}/card/${slug}">
         <img
           src="${this.baseUrl}/assets/images/cards/${slug}.jpg"
           alt="${alt}"
