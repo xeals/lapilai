@@ -100,13 +100,14 @@ excerpt: Interactive card searcher.
       {% endfor %}
     </select>
 
-    <!-- <select name="wc-rarity" title="Filter cards by rarity">
-      <option value="">All</option>
+    <select name="wc-rarity" title="Filter cards by rarity">
+      <option value="">All rarities</option>
+      <option value="LR">Legendary</option>
       <option value="UR">UR</option>
       <option value="SSR">SSR</option>
       <option value="SR">SR</option>
       <option value="R">R</option>
-    </select> -->
+    </select>
   </div>
 
   <!-- TODO: Pagination -->
@@ -157,10 +158,11 @@ excerpt: Interactive card searcher.
           || (item.release && item.release.toLowerCase().includes(term))));
     }
 
-    function loadCardsFiltered(query, type, release) {
+    function loadCardsFiltered(query, type, release, rarity) {
       const cards = filterCards(query)
         .filter((card) => !type || card.type === type)
-        .filter((card) => !release || card.release === release);
+        .filter((card) => !release || card.release === release)
+        .filter((card) => !rarity || card.rarity === rarity);
 
       loadCards(cards);
     }
@@ -170,16 +172,24 @@ excerpt: Interactive card searcher.
       $search = $("input#wc-search");
       $type = $("select[name=wc-type]");
       $release = $("select[name=wc-release]");
+      $rarity = $("select[name=wc-rarity]");
 
-      _loadCards = () => loadCardsFiltered($search.val(), $type.val(), $release.val());
+      _loadCards = () => loadCardsFiltered($search.val(), $type.val(), $release.val(), $rarity.val());
 
       // Eager searching
       $search.keyup(_loadCards);
       $type.change(_loadCards)
       $release.change(_loadCards);
+      $rarity.change(_loadCards);
 
       // On-load
       _loadCards();
     });
   })();
 </script>
+
+<!--
+// Local Variables:
+// js-indent-level: 2
+// End:
+-->
