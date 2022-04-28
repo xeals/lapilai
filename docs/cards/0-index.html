@@ -137,7 +137,15 @@ excerpt: Interactive card searcher.
         witch: {{ card.witch | jsonify }},
         rarity: {{ card.rarity | jsonify }},
         release: {{ card.release | jsonify }},
-        tags: {{ card.tags | jsonify }},
+        {% comment %}
+        God I hate Liquid\'s dynamic array handling. Gist is that we need to
+        convert to a CSV list, append to that, then split again.
+        {% endcomment %}
+        {% assign tags = card.tags | join: "," %}
+        {% for t in card.hidden_tags %}
+        {% assign tags = tags | append: "," | append: t %}
+        {% endfor %}
+        tags: {{ tags | split: "," | jsonify }},
         hasTranslation: {% if card.spell %}true{% else %}false{% endif %},
       },
       {%- endfor -%}

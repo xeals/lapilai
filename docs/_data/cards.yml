@@ -21,6 +21,7 @@
 #   rarity: enum [LR, UR, SSR, SR, R]
 #   _title: str
 #   tags: enum array [keys of card_tags.json]
+#   hidden_tags: str array [non-game-defined tags that make it easier to search for stuff; conditions, etc.]
 #   spell:
 #     name: str
 #     cost: int
@@ -55,6 +56,8 @@
   tags:
     - AoE Attack
     - Debuff
+  hidden_tags:
+    - Poison
   spell:
     name: 桜花流光
     cost: 7
@@ -89,6 +92,9 @@
   tags:
     - AoE Attack
     - Shield Recovery
+  hidden_tags:
+    - Damage Reduction
+    - Poison
   spell:
     name: 桜嵐舞踏
     cost: 10
@@ -135,6 +141,8 @@
   _title: 夜桜と昇る月
   tags:
     - AoE Attack
+  hidden_tags:
+    - Poison
   spell:
     name: 月光桜影
     cost: 12
@@ -223,6 +231,8 @@
   _title: 幸せを願う歌
   tags:
     - Single Attack
+  hidden_tags:
+    - Burn
   spell:
     name: Princess Melody
     cost: 10
@@ -268,6 +278,8 @@
     - AoE Attack
     - Abnormal Status
     - MP Gain
+  hidden_tags:
+    - Charm
   spell:
     name: I'm the Present?!
     cost: 12
@@ -304,6 +316,9 @@
   tags:
     - Single Attack
     - Abnormal Status
+  hidden_tags:
+    - Charm
+    - Damage Amplification
   spell:
     name: On Valentine's Night
     cost: 10
@@ -465,6 +480,9 @@
   tags:
     - AoE Attack
     - Debuff
+  hidden_tags:
+    - Damage Amplification
+    - MP Gain
   spell:
     name: 羊さん、突撃！
     cost: 12
@@ -505,6 +523,8 @@
     - AoE Attack
     - Attack Obstruction
     - Shield Recovery
+  hidden_tags:
+    - Freeze
 - witch: Salsa
   release: Christmas
   rarity: UR
@@ -512,6 +532,8 @@
   tags:
     - AoE Attack
     - Debuff
+  hidden_tags:
+    - Freeze
 - witch: Kaede
   release: Christmas
   rarity: UR
@@ -519,6 +541,8 @@
   tags:
     - Single Attack
     - Abnormal Status
+  hidden_tags:
+    - Freeze
 ##
 ## Initial LiGHTs UR
 ##
@@ -537,6 +561,8 @@
   tags:
     - AoE Attack
     - Attack Obstruction
+  hidden_tags:
+    - Freeze
 - witch: Lavie
   release: Initial
   rarity: UR
@@ -603,6 +629,8 @@
   tags:
     - AoE Attack
     - Abnormal Status
+  hidden_tags:
+    - Burn
 - witch: Nadeshiko
   release: Initial
   rarity: UR
@@ -617,6 +645,8 @@
   tags:
     - AoE Attack
     - Abnormal Status
+  hidden_tags:
+    - Burn
 ##
 ## Initial Sugar Pockets UR
 ##
@@ -697,6 +727,8 @@
   tags:
     - AoE Attack
     - Abnormal Status
+  hidden_tags:
+    - Poison
 - witch: Rosetta
   release: Initial
   rarity: SSR
