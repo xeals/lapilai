@@ -12,12 +12,12 @@
     <i>{{ card._title }}</i>
 
     {% assign short_type = site.data.witch_types[card.witch] %}
-    <b data-type="{{ short_type }}">{{ site.data.card_types[short_type] }}</b>
+    <b card-type="{{ short_type }}">{{ site.data.card_types[short_type] }}</b>
 
     {% if card.tags %}
     <div class="wc__tags">
       {% for tag in card.tags %}
-      <span class="wc__tag" data-type="{{ site.data.card_tags[tag] }}">
+      <span class="wc__tag" card-type="{{ site.data.card_tags[tag] }}">
         {{ tag }}
       </span>
       {% endfor %}
@@ -28,7 +28,7 @@
   {% if card.spell %}
   <h3
     id="{{ card.spell.name | downcase | replace:' ','-' }}"
-    data-type="{{ card.spell.type }}"
+    card-type="{{ card.spell.type }}"
   >
     {{ card.spell.name }}
   </h3>
@@ -45,7 +45,7 @@
   {% if card.special %}
   <h3
     id="{{ card.special.name | downcase | replace: ' ','-' }}"
-    data-type="{{ card.special.type }}"
+    card-type="{{ card.special.type }}"
   >
     {{ card.special.name }} - Special
   </h3>
