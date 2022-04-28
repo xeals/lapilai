@@ -52,7 +52,7 @@ export class Card extends LitElement {
     return html`
       <a href="${slug}">
         <img
-          src="${this.baseUrl}/assets/cards/${slug}.jpg"
+          src="${this.baseUrl}/assets/images/cards/${slug}.jpg"
           alt="${alt}"
           loading="lazy"
         />
