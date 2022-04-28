@@ -24,6 +24,7 @@ export class Card extends LitElement {
       border: 0.2em solid var(--type-color, #000);
       box-sizing: border-box;
       position: relative;
+      height: 350px;
     }
 
     img {
@@ -50,7 +51,11 @@ export class Card extends LitElement {
     const slug = alt.replaceAll(" ", "-").toLowerCase();
     return html`
       <a href="${slug}">
-        <img src="${this.baseUrl}/assets/cards/${slug}.jpg" alt="${alt}" />
+        <img
+          src="${this.baseUrl}/assets/cards/${slug}.jpg"
+          alt="${alt}"
+          loading="lazy"
+        />
       </a>
       ${this.missingTranslation
         ? html`
