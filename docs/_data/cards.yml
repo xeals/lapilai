@@ -659,6 +659,30 @@
     - Attack Obstruction
   hidden_tags:
     - Freeze
+  spell:
+    name: クロノス・レイ
+    cost: 12
+    levels:
+      - Inflicts <b>153%</b> (51%, 51%, 51%) physical damage to <b>2 enemies with the lowest physical defense</b>.
+      - Inflicts <b>192%</b> (64%, 64%, 64%) physical damage to <b>2 enemies with the lowest physical defense</b>.
+      - Inflicts <b>231%</b> (77%, 77%, 77%) physical damage to <b>all enemies</b>.
+  passives:
+    - name: 精密射撃
+      levels:
+        - When using the red orb, increases allies' physical attack by <b>8%</b> for the turn.
+        - When using the red orb, increases allies' physical attack by <b>16%</b> for the turn.
+        - When using the red orb, increases allies' physical attack by <b>24%</b> for the turn.
+    - name: テンションアップ
+      levels:
+        - When using the red orb, increases all allies' physical attack by <b>15%</b> for the next 2 attacks.
+        - When using the red orb, increases all allies' physical attack by <b>22.5%</b> for the next 2 attacks.
+        - When using the red orb, increases all allies' physical attack by <b>30%</b> for the next 2 attacks.
+  special:
+    name: Frozen Palette
+    type: M
+    effect: >-
+      Inflicts 120% (30%, 30%, 60%) physical damage to 1 enemy.
+      Applies 1 stack of freeze.
 - witch: Lavie
   release: Initial
   rarity: UR
@@ -674,6 +698,33 @@
     - AoE Attack
     - Shield Recovery
     - Persistence
+  spell:
+    name: 祈りと断罪の誓剣
+    cost: 12
+    levels:
+      - Inflicts <b>128%</b> physical damage to all enemies, and inflicts additional damage based on the strength of the magic shield.
+        Protects the <b>weakest ally</b> from all damage for <b>1</b> attack or 2 turns.
+      - Inflicts <b>160%</b> physical damage to all enemies, and inflicts additional damage based on the strength of the magic shield.
+        Protects the <b>2 weakest allies</b> from all damage for <b>2</b> attacks or 2 turns.
+      - Inflicts <b>192%</b> physical damage to all enemies, and inflicts additional damage based on the strength of the magic shield.
+        Protects the <b>3 weakest allies</b> from all damage for <b>2</b> attacks or 2 turns.
+  passives:
+    - name: 不撓不屈
+      levels:
+        - When using the yellow orb, restores <b>4%</b> of the magic shield.
+        - When using the yellow orb, restores <b>8%</b> of the magic shield.
+        - When using the yellow orb, restores <b>12%</b> of the magic shield.
+    - name: 騎士の矜持
+      levels:
+        - Gain <b>15%</b> increased physical attack when below 50% HP.
+        - Gain <b>22.5%</b> increased physical attack when below 50% HP.
+        - Gain <b>30%</b> increased physical attack when below 50% HP.
+  special:
+    name: Bright Sword
+    type: P
+    effect: >-
+      Inflicts 100% physical damage to all enemies, and inflicts 30% physical damage to 2 other random enemies.
+      Restores 9% of the magic shield.
 - witch: Lynette
   release: Initial
   rarity: UR
@@ -681,6 +732,31 @@
   tags:
     - Single Attack
     - Ability Buff
+  spell:
+    name: 優しき精霊の書
+    cost: 10
+    levels:
+      - Inflicts <b>373%</b> magic damage to 1 target, and inflicts additional damage based on the current HP of the target (up to <b>17.5%</b>).
+      - Inflicts <b>467%</b> magic damage to 1 target, and inflicts additional damage based on the current HP of the target (up to <b>20%</b>).
+      - Inflicts <b>560%</b> magic damage to 1 target, and inflicts additional damage based on the current HP of the target (up to <b>25%</b>).
+  passives:
+    - name: 魔導書の導き
+      levels:
+        - When using the blue orb, increases allies' magic attack by <b>6%</b> for the turn.
+        - When using the blue orb, increases allies' magic attack by <b>12%</b> for the turn.
+        - When using the blue orb, increases allies' magic attack by <b>18%</b> for the turn.
+    - name: 読み解くもの
+      levels:
+        - Increases the magic attack of <span card-type="M">magic type</span> allies by <b>4%</b>
+        - Increases the magic attack of <span card-type="M">magic type</span> allies by <b>8%</b>
+        - Increases the magic attack of <span card-type="M">magic type</span> allies by <b>12%</b>
+  special:
+    name: Ars Notria
+    type: M
+    effect: >-
+      Inflicts 120% (30%, 30%, 60%) magic damage to 1 enemy.
+      Gain 15% magic attack for 2 turns.
+
 ##
 ## Initial IV Klore UR
 ##
