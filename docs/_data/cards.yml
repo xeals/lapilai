@@ -197,7 +197,7 @@
       - Inflicts <b>250%</b> physical damage to all enemies.
         Restores <b>41%</b> of the magic shield.
         20% chance to restore <b>30%</b> HP each turn for 4 turns.
-        <b>Increases allies' physical and magical attack by 50% for 4 turns.</b>
+        <b>Increases allies' physical and magic attack by 50% for 4 turns.</b>
   special:
     name: 冥府の裁きたる大鎌
     type: P
