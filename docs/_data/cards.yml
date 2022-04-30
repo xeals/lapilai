@@ -427,9 +427,9 @@
         - When using the red orb, increases all allies' physical and magic attack by <b>18%</b> for the turn.
     - name: Flowery Cloud
       levels:
-        - When any ally critically hits, gain <b>10%</b> critical damage (stacking up to 5 times).
-        - When any ally critically hits, gain <b>15%</b> critical damage (stacking up to 5 times).
-        - When any ally critically hits, gain <b>20%</b> critical damage (stacking up to 5 times).
+        - When any ally critically hits, they gain <b>10%</b> critical damage (stacking up to 5 times).
+        - When any ally critically hits, they gain <b>15%</b> critical damage (stacking up to 5 times).
+        - When any ally critically hits, they gain <b>20%</b> critical damage (stacking up to 5 times).
   special:
     name: 天空に咲く花
     type: T
