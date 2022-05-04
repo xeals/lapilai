@@ -465,9 +465,9 @@
     - name: 慈しみの歌声
       levels:
         - When an attack hits, gain <b>1%</b> crit chance (stacking up to <b>6</b> times).
-          When an attack critically hits, gain <b>2.5%</b> increased damage (stacking up to <b>6</b> times).
+          When an attack critically hits, gain <b>2.5%</b> increased physical attack (stacking up to <b>6</b> times).
         - When an attack hits, gain <b>1.25%</b> crit chance (stacking up to <b>8</b> times).
-          When an attack critically hits, gain <b>3.75%</b> increased damage (stacking up to <b>8</b> times).
+          When an attack critically hits, gain <b>3.75%</b> increased physical attack (stacking up to <b>8</b> times).
         - When an attack hits, gain <b>1.5%</b> crit chance (stacking up to <b>10</b> times).
           When an attack critically hits, gain <b>5%</b> increased physical attack (stacking up to <b>10</b> times).
   special:
