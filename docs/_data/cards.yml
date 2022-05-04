@@ -422,9 +422,12 @@
   passives:
     - name: 憧れと決意
       levels:
-        - When using the red orb, increases all allies' physical and magic attack by <b>6%</b> for the turn.
-        - When using the red orb, increases all allies' physical and magic attack by <b>12%</b> for the turn.
-        - When using the red orb, increases all allies' physical and magic attack by <b>18%</b> for the turn.
+        - When using the red orb, increases all allies' physical attack by <b>6%</b> for the turn.
+          When using the blue orb, increases all allies' magic attack by <b>6%</b> for the turn.
+        - When using the red orb, increases all allies' physical attack by <b>12%</b> for the turn.
+          When using the blue orb, increases all allies' magic attack by <b>12%</b> for the turn.
+        - When using the red orb, increases all allies' physical attack by <b>18%</b> for the turn.
+          When using the blue orb, increases all allies' magic attack by <b>18%</b> for the turn.
     - name: Flowery Cloud
       levels:
         - When any ally critically hits, they gain <b>10%</b> critical damage (stacking up to 5 times).
