@@ -77,9 +77,9 @@
   passives:
     - name: 夜桜の慈しみ
       levels:
-        - When using the red orb, increases allies' physical attack by <b>8%</b> for the turn.
-        - When using the red orb, increases allies' physical attack by <b>16%</b> for the turn.
-        - When using the red orb, increases allies' physical attack by <b>24%</b> for the turn.
+        - When using the red orb, increases all allies' physical attack by <b>8%</b> for the turn.
+        - When using the red orb, increases all allies' physical attack by <b>16%</b> for the turn.
+        - When using the red orb, increases all allies' physical attack by <b>24%</b> for the turn.
     - name: 春風の香り
       levels:
         - Normal attacks have a <b>25%</b> chance to apply 1 stack of poison.
@@ -197,7 +197,7 @@
       - Inflicts <b>250%</b> physical damage to all enemies.
         Restores <b>41%</b> of the magic shield.
         20% chance to restore <b>30%</b> HP each turn for 4 turns.
-        <b>Increases allies' physical and magic attack by 50% for 4 turns.</b>
+        <b>increases all allies' physical and magic attack by 50% for 4 turns.</b>
   special:
     name: 冥府の裁きたる大鎌
     type: P
@@ -219,11 +219,11 @@
           When using the yellow orb, restores <b>12%</b> of the magic shield.
     - name: 蒼き死神の矜持
       levels:
-        - Increases allies' damage by <b>5%</b>
+        - increases all allies' damage by <b>5%</b>
           and crit chance by <b>5%</b>.
-        - Increases allies' damage by <b>10%</b>
+        - increases all allies' damage by <b>10%</b>
           and crit chance by <b>10%</b>.
-        - Increases allies' damage by <b>15%</b>
+        - increases all allies' damage by <b>15%</b>
           and crit chance by <b>15%</b>.
 - witch: Eliza
   release: Initial
@@ -252,11 +252,11 @@
   passives:
     - name: 緋色の剣技
       levels:
-        - When using with the red orb, increases allies' attack by <b>8%</b> for the turn.
+        - When using with the red orb, increases all allies' attack by <b>8%</b> for the turn.
           Normal attacks have a <b>25%</b> chance to apply 1 stack of burn.
-        - When using with the red orb, increases allies' attack by <b>16%</b> for the turn.
+        - When using with the red orb, increases all allies' attack by <b>16%</b> for the turn.
           Normal attacks have a <b>50%</b> chance to apply 1 stack of burn.
-        - When using with the red orb, increases allies' attack by <b>24%</b> for the turn.
+        - When using with the red orb, increases all allies' attack by <b>24%</b> for the turn.
           Normal attacks have a <b>75%</b> chance to apply 1 stack of burn.
     - name: 凛然たる眼差し
       levels:
@@ -586,9 +586,9 @@
   passives:
     - name: ハートフルマフラー
       levels:
-        - When using the red orb, increases allies' physical attack by <b>8%</b> for the turn.
-        - When using the red orb, increases allies' physical attack by <b>16%</b> for the turn.
-        - When using the red orb, increases allies' physical attack by <b>24%</b> for the turn.
+        - When using the red orb, increases all allies' physical attack by <b>8%</b> for the turn.
+        - When using the red orb, increases all allies' physical attack by <b>16%</b> for the turn.
+        - When using the red orb, increases all allies' physical attack by <b>24%</b> for the turn.
     - name: Snow Marker
       levels:
         - Normal attacks have a <b>12.5%</b> chance to apply 1 stack of freeze.
@@ -627,11 +627,11 @@
         - When using the blue orb, restores <b>3</b> MP.
     - name: 雪やこんこ
       levels:
-        - When using the blue orb, increases allies' magic attack by <b>6%</b> for the turn.
+        - When using the blue orb, increases all allies' magic attack by <b>6%</b> for the turn.
           Gain <b>20%</b> crit chance when attacking a frozen enemy.
-        - When using the blue orb, increases allies' magic attack by <b>12%</b> for the turn.
+        - When using the blue orb, increases all allies' magic attack by <b>12%</b> for the turn.
           Gain <b>25%</b> crit chance when attacking a frozen enemy.
-        - When using the blue orb, increases allies' magic attack by <b>18%</b> for the turn.
+        - When using the blue orb, increases all allies' magic attack by <b>18%</b> for the turn.
           Gain <b>30%</b> crit chance when attacking a frozen enemy.
   special:
     name: 聖夜の巫女
@@ -702,9 +702,9 @@
   passives:
     - name: 精密射撃
       levels:
-        - When using the red orb, increases allies' physical attack by <b>8%</b> for the turn.
-        - When using the red orb, increases allies' physical attack by <b>16%</b> for the turn.
-        - When using the red orb, increases allies' physical attack by <b>24%</b> for the turn.
+        - When using the red orb, increases all allies' physical attack by <b>8%</b> for the turn.
+        - When using the red orb, increases all allies' physical attack by <b>16%</b> for the turn.
+        - When using the red orb, increases all allies' physical attack by <b>24%</b> for the turn.
     - name: テンションアップ
       levels:
         - When using the red orb, increases all allies' physical attack by <b>15%</b> for the next 2 attacks.
@@ -802,14 +802,14 @@
   passives:
     - name: 魔導書の導き
       levels:
-        - When using the blue orb, increases allies' magic attack by <b>6%</b> for the turn.
-        - When using the blue orb, increases allies' magic attack by <b>12%</b> for the turn.
-        - When using the blue orb, increases allies' magic attack by <b>18%</b> for the turn.
+        - When using the blue orb, increases all allies' magic attack by <b>6%</b> for the turn.
+        - When using the blue orb, increases all allies' magic attack by <b>12%</b> for the turn.
+        - When using the blue orb, increases all allies' magic attack by <b>18%</b> for the turn.
     - name: 読み解くもの
       levels:
-        - Increases the magic attack of <span card-type="M">magic type</span> allies by <b>4%</b>
-        - Increases the magic attack of <span card-type="M">magic type</span> allies by <b>8%</b>
-        - Increases the magic attack of <span card-type="M">magic type</span> allies by <b>12%</b>
+        - Increases all <span card-type="M">magic type</span> allies' magic attack by <b>4%</b>.
+        - Increases all <span card-type="M">magic type</span> allies' magic attack by <b>8%</b>.
+        - Increases all <span card-type="M">magic type</span> allies' magic attack by <b>12%</b>.
   special:
     name: Ars Notria
     type: M
@@ -917,9 +917,9 @@
   passives:
     - name: 野生の勘
       levels:
-        - When using the red orb, increases allies' physical attack by <b>8%</b> for the turn.
-        - When using the red orb, increases allies' physical attack by <b>16%</b> for the turn.
-        - When using the red orb, increases allies' physical attack by <b>24%</b> for the turn.
+        - When using the red orb, increases all allies' physical attack by <b>8%</b> for the turn.
+        - When using the red orb, increases all allies' physical attack by <b>16%</b> for the turn.
+        - When using the red orb, increases all allies' physical attack by <b>24%</b> for the turn.
     - name: 満月に吠える
       levels:
         - Normal attacks have a <b>12.5%</b> chance to apply 1 stack of defence break.
