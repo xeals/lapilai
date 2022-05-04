@@ -828,6 +828,36 @@
     - Single Attack
     - Ability Buff
     - Attack Obstruction
+  spell:
+    name: Rose Palace
+    cost: 10
+    levels:
+      - Inflicts <b>213%</b> hybrid damage to 1 enemy.
+        Reduces the target's defence by <b>33%</b> for 1 turn.
+      - Inflicts <b>266%</b> hybrid damage to 1 enemy.
+        Reduces the target's defence by <b>42%</b> for 1 turn.
+      - Inflicts <b>320%</b> hybrid damage to 1 enemy.
+        Reduces the target's defence by <b>50%</b> for 1 turn.
+  passives:
+    - name: 気高き華
+      levels:
+        - When using the red orb, increases all allies' physical attack by <b>6%</b> for the turn.
+          When using the blue orb, increases all allies' magic attack by <b>6%</b> for the turn.
+        - When using the red orb, increases all allies' physical attack by <b>12%</b> for the turn.
+          When using the blue orb, increases all allies' magic attack by <b>12%</b> for the turn.
+        - When using the red orb, increases all allies' physical attack by <b>18%</b> for the turn.
+          When using the blue orb, increases all allies' magic attack by <b>18%</b> for the turn.
+    - name: 夜薔薇の棘
+      levels:
+        - Enemies take <b>10%</b> increased physical damage for 3 turns.
+        - Enemies take <b>17.5%</b> increased physical damage for 3 turns.
+        - Enemies take <b>25%</b> increased physical damage for 3 turns.
+  special:
+    name: ローズイントルド
+    type: P
+    effect: >-
+      Inflicts 120% (30%, 30%, 60%) hybrid damage to 1 enemy.
+      Applies 1 stack of charm to the target.
 - witch: Alpha
   release: Initial
   rarity: UR
@@ -836,6 +866,36 @@
     - Shield Recovery
     - AoE Attack
     - Ability Buff
+  spell:
+    name: エネルギー解放
+    cost: 10
+    levels:
+      - Inflicts <b>88%</b> physical damage to all enemies.
+        Restores <b>30%</b> of the magic shield.
+        Redirects <b>20%</b> of damage allies take to the caster for 2 turns.
+      - Inflicts <b>110%</b> physical damage to all enemies.
+        Restores <b>38%</b> of the magic shield.
+        Redirects <b>25%</b> of damage allies take to the caster for 2 turns.
+      - Inflicts <b>133%</b> physical damage to all enemies.
+        Restores <b>46%</b> of the magic shield.
+        Redirects <b>30%</b> of damage allies take to the caster for 2 turns.
+  passives:
+    - name: メイドの嗜み
+      levels:
+        - When using the yellow orb, restores <b>4%</b> of the magic shield.
+        - When using the yellow orb, restores <b>8%</b> of the magic shield.
+        - When using the yellow orb, restores <b>12%</b> of the magic shield.
+    - name: メイド三原則
+      levels:
+        - Gain <b>12.5%</b> damage reduction.
+        - Gain <b>18.75%</b> damage reduction.
+        - Gain <b>25%</b> damage reduction.
+  special:
+    name: 出力上昇
+    type: P
+    effect: >-
+      Inflicts 70% (21%, 21%, 28%) physical damage to all enemies.
+      Increases all allies' critical damage reduction by 25% for 2 turns.
 - witch: Salsa
   release: Initial
   rarity: UR
@@ -844,6 +904,39 @@
     - Single Attack
     - Debuff
     - Ability Buff
+  spell:
+    name: 月夜に駆ける
+    cost: 10
+    levels:
+      - Gain <b>50%</b> increased critical damage for 3 turns.
+        Inflicts <b>242.5%</b> (35%, 42.5%, 50%, 52.5%, 62.5%) physical damage to 1 enemy.
+      - Gain <b>62.5%</b> increased critical damage for 3 turns.
+        Inflicts <b>325%</b> (45%, 55%, 65%, 75%, 85%) physical damage to 1 enemy.
+      - Gain <b>75%</b> increased critical damage for 3 turns.
+        Inflicts <b>445%</b> (60%, 75%, 90%, 105%, 120%) physical damage to 1 enemy.
+  passives:
+    - name: 野生の勘
+      levels:
+        - When using the red orb, increases allies' physical attack by <b>8%</b> for the turn.
+        - When using the red orb, increases allies' physical attack by <b>16%</b> for the turn.
+        - When using the red orb, increases allies' physical attack by <b>24%</b> for the turn.
+    - name: 満月に吠える
+      levels:
+        - Normal attacks have a <b>12.5%</b> chance to apply 1 stack of defense break.
+          Increases the crit chance of <span card-type="P">speed type</span> allies by <b>3%</b>
+        - Normal attacks have a <b>25%</b> chance to apply 1 stack of defense break.
+          Increases the crit chance of <span card-type="P">speed type</span> allies by <b>6%</b>
+        - Normal attacks have a <b>37.5%</b> chance to apply 1 stack of defense break.
+          Increases the crit chance of <span card-type="P">speed type</span> allies by <b>9%</b>
+  special:
+    name: Wolves' Fang
+    type: T
+    effect: >-
+      Inflicts 70% (21%, 21%, 28%) physical damage to all enemies.
+      Applies 1 stack of crush to all enemies.
+  notes:
+    Crush: '?'
+    Defence break: Enemies have ?% reduced defence per stack of break; stacks up to ? times, and lasts for ? turns.
 - witch: Garnet
   release: Initial
   rarity: UR
@@ -851,6 +944,30 @@
   tags:
     - AoE Attack
     - Attack Obstruction
+  spell:
+    name: 夢幻泡影
+    cost: 10
+    levels:
+      - Inflicts <b>150%</b> (75%, 75%) magic damaage to all enemies, or <b>250%</b> (112.5%, 112.5%) magic damage to charmed enemies.
+      - Inflicts <b>184%</b> (94%, 94%) magic damaage to all enemies, or <b>282%</b> (141%, 141%) magic damage to charmed enemies.
+      - Inflicts <b>226%</b> (113%, 113%) magic damaage to all enemies, or <b>339%</b> (169.5%, 169.5%) magic damage to charmed enemies.
+  passives:
+    - name: 幽雅な微笑
+      levels:
+        - When using the blue orb, increases all allies' magic attack by <b>8%</b> for the turn.
+        - When using the blue orb, increases all allies' magic attack by <b>16%</b> for the turn.
+        - When using the blue orb, increases all allies' magic attack by <b>24%</b> for the turn.
+    - name: 幻夜の蝶
+      levels:
+        - When using the blue orb, restores <b>1</b> MP.
+        - When using the blue orb, restores <b>2</b> MP.
+        - When using the blue orb, restores <b>3</b> MP.
+  special:
+    name: Charming Bear
+    type: M
+    effect: >-
+      Inflicts 70% (21%, 21%, 28%) magic damage to all enemies.
+      Increases all allies' critical damage reduction by 25% for 2 turns.
 ##
 ## Initial Konohana UR
 ##
