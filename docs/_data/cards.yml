@@ -650,6 +650,36 @@
     - Resuscitation
     - Recovery
     - Ability Buff
+  spell:
+    name: Bloom Cure
+    cost: 10
+    levels:
+      - Revive <b>1</b> knocked out ally with <b>23%</b> HP.
+        Increases all allies' defense by <b>43%</b> for 2 turns.
+      - Revive <b>1</b> knocked out ally with <b>34%</b> HP.
+        Increases all allies' defense by <b>53%</b> for 2 turns.
+      - Revive <b>2</b> knocked out allies with <b>45%</b> HP.
+        Increases all allies' defense by <b>64%</b> for 2 turns.
+  passives:
+    - name: 憧れと決意
+      levels:
+        - When using the red orb, increases all allies' physical attack by <b>6%</b> for the turn.
+          When using the blue orb, increases all allies' magic attack by <b>6%</b> for the turn.
+        - When using the red orb, increases all allies' physical attack by <b>12%</b> for the turn.
+          When using the blue orb, increases all allies' magic attack by <b>12%</b> for the turn.
+        - When using the red orb, increases all allies' physical attack by <b>18%</b> for the turn.
+          When using the blue orb, increases all allies' magic attack by <b>18%</b> for the turn.
+    - name: 花神の寵愛
+      levels:
+        - Gain <b>5%</b> crit evasion.
+        - Gain <b>10%</b> crit evasion.
+        - Gain <b>15%</b> crit evasion.
+  special:
+    name: Bloom Licht
+    type: M
+    effect: >-
+      Inflicts 120% hybrid damage to 1 enemy.
+      Restores 7% HP to all allies.
 - witch: Rosetta
   release: Initial
   rarity: UR
@@ -690,6 +720,33 @@
   tags:
     - Recovery
     - Ability Buff
+  spell:
+    name: Sweet Magic
+    cost: 10
+    levels:
+      - Increases all allies' crit chance by <b>6.74%</b> for 2 turns.
+        Restores HP equal to <b>86%</b> of magic attack to the weakest ally.
+      - Increases all allies' crit chance by <b>8.96%</b> for 2 turns.
+        Restores HP equal to <b>114%</b> of magic attack to the weakest ally.
+      - Increases all allies' crit chance by <b>11.25%</b> for 2 turns.
+        Restores HP equal to <b>144%</b> of magic attack to the weakest ally.
+  passives:
+    - name: 真心の応援
+      levels:
+        - When using the blue orb, restores HP equal to <b>12%<b> of magic attack to the weakest ally.
+        - When using the blue orb, restores HP equal to <b>24%<b> of magic attack to the weakest ally.
+        - When using the blue orb, restores HP equal to <b>36%<b> of magic attack to the weakest ally.
+    - name: 応援再開！
+      levels:
+        - Once per battle, when knocked out, restores <b>18%</b> HP.
+        - Once per battle, when knocked out, restores <b>36%</b> HP.
+        - Once per battle, when knocked out, restores <b>60%</b> HP.
+  special:
+    name: Miracle Cheer
+    type: M
+    effect: >-
+      Inflicts 120% magic damage to 1 enemy.
+      Restores 7% to all allies.
 - witch: Ashley
   release: Initial
   rarity: UR
