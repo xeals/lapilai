@@ -299,11 +299,11 @@
     - name: ドキドキハート
       levels:
         - Attacks have a <b>25%</b> chance to apply 1 stack of charm.
-          When using the blue orb, restores <b>1</b> MP.
+          When using the blue orb, restores <b>1</b> additional MP.
         - Attacks have a <b>37.5%</b> chance to apply 1 stack of charm.
-          When using the blue orb, restores <b>2</b> MP.
+          When using the blue orb, restores <b>2</b> additional MP.
         - Attacks have a <b>50%</b> chance to apply 1 stack of charm.
-          When using the blue orb, restores <b>3</b> MP.
+          When using the blue orb, restores <b>3</b> additional MP.
   special:
     name: Magical Ribbon
     effect: >-
@@ -388,11 +388,11 @@
     - name: 甘すぎシュガー
       levels:
         - Decreases all enemies' physical attack by <b>15%</b> for 4 turns.
-          When using the blue orb, restores <b>1</b> MP.
+          When using the blue orb, restores <b>1</b> additional MP.
         - Decreases all enemies' physical attack by <b>30%</b> for 4 turns.
-          When using the blue orb, restores <b>2</b> MP.
+          When using the blue orb, restores <b>2</b> additional MP.
         - Decreases all enemies' physical attack by <b>45%</b> for 4 turns.
-          When using the blue orb, restores <b>3</b> MP.
+          When using the blue orb, restores <b>3</b> additional MP.
   special:
     name: Silky Melt
     effect: >-
@@ -499,9 +499,9 @@
   passives:
     - name: 小さな発明家
       levels:
-        - When using the blue orb, restores <b>1</b> MP.
-        - When using the blue orb, restores <b>2</b> MP.
-        - When using the blue orb, restores <b>3</b> MP.
+        - When using the blue orb, restores <b>1</b> additional MP.
+        - When using the blue orb, restores <b>2</b> additional MP.
+        - When using the blue orb, restores <b>3</b> additional MP.
     - name: こっそりサポート
       levels:
         - When any ally critically hits, <b>50%</b> chance to restore <b>1</b> MP for 6 turns.
@@ -622,9 +622,9 @@
   passives:
     - name: 心からのプレゼント
       levels:
-        - When using the blue orb, restores <b>1</b> MP.
-        - When using the blue orb, restores <b>2</b> MP.
-        - When using the blue orb, restores <b>3</b> MP.
+        - When using the blue orb, restores <b>1</b> additional MP.
+        - When using the blue orb, restores <b>2</b> additional MP.
+        - When using the blue orb, restores <b>3</b> additional MP.
     - name: 雪やこんこ
       levels:
         - When using the blue orb, increases all allies' magic attack by <b>6%</b> for the turn.
@@ -959,9 +959,9 @@
         - When using the blue orb, increases all allies' magic attack by <b>24%</b> for the turn.
     - name: 幻夜の蝶
       levels:
-        - When using the blue orb, restores <b>1</b> MP.
-        - When using the blue orb, restores <b>2</b> MP.
-        - When using the blue orb, restores <b>3</b> MP.
+        - When using the blue orb, restores <b>1</b> additional MP.
+        - When using the blue orb, restores <b>2</b> additional MP.
+        - When using the blue orb, restores <b>3</b> additional MP.
   special:
     name: Charming Bear
     type: M
