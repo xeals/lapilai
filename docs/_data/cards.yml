@@ -923,11 +923,11 @@
     - name: 満月に吠える
       levels:
         - Normal attacks have a <b>12.5%</b> chance to apply 1 stack of defence break.
-          Increases the crit chance of <span card-type="P">speed type</span> allies by <b>3%</b>
+          Increases the crit chance of <span card-type="S">speed type</span> allies by <b>3%</b>.
         - Normal attacks have a <b>25%</b> chance to apply 1 stack of defence break.
-          Increases the crit chance of <span card-type="P">speed type</span> allies by <b>6%</b>
+          Increases the crit chance of <span card-type="S">speed type</span> allies by <b>6%</b>.
         - Normal attacks have a <b>37.5%</b> chance to apply 1 stack of defence break.
-          Increases the crit chance of <span card-type="P">speed type</span> allies by <b>9%</b>
+          Increases the crit chance of <span card-type="S">speed type</span> allies by <b>9%</b>.
   special:
     name: Wolves' Fang
     type: T
