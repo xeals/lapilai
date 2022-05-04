@@ -30,3 +30,7 @@
 {% include head/seo.html %}
 
 <meta name="theme-color" content="#e95098" />
+
+{% if jekyll.environment == 'production' %}
+<script async defer data-website-id="aa3431ba-de7c-4c43-8cb8-e054b9628ef7" src="https://stats.xeal.me/umami.js"></script>
+{% endif %}
