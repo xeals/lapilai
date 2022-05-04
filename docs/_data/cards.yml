@@ -252,11 +252,11 @@
   passives:
     - name: 緋色の剣技
       levels:
-        - When using with the red orb, increases all allies' attack by <b>8%</b> for the turn.
+        - When using with the red orb, increases all allies' physical attack by <b>8%</b> for the turn.
           Normal attacks have a <b>25%</b> chance to apply 1 stack of burn.
-        - When using with the red orb, increases all allies' attack by <b>16%</b> for the turn.
+        - When using with the red orb, increases all allies' physical attack by <b>16%</b> for the turn.
           Normal attacks have a <b>50%</b> chance to apply 1 stack of burn.
-        - When using with the red orb, increases all allies' attack by <b>24%</b> for the turn.
+        - When using with the red orb, increases all allies' physical attack by <b>24%</b> for the turn.
           Normal attacks have a <b>75%</b> chance to apply 1 stack of burn.
     - name: 凛然たる眼差し
       levels:
