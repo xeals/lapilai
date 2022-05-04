@@ -658,11 +658,11 @@
     cost: 10
     levels:
       - Revive <b>1</b> knocked out ally with <b>23%</b> HP.
-        Increases all allies' defense by <b>43%</b> for 2 turns.
+        Increases all allies' defence by <b>43%</b> for 2 turns.
       - Revive <b>1</b> knocked out ally with <b>34%</b> HP.
-        Increases all allies' defense by <b>53%</b> for 2 turns.
+        Increases all allies' defence by <b>53%</b> for 2 turns.
       - Revive <b>2</b> knocked out allies with <b>45%</b> HP.
-        Increases all allies' defense by <b>64%</b> for 2 turns.
+        Increases all allies' defence by <b>64%</b> for 2 turns.
   passives:
     - name: 憧れと決意
       levels:
@@ -696,8 +696,8 @@
     name: クロノス・レイ
     cost: 12
     levels:
-      - Inflicts <b>153%</b> (51%, 51%, 51%) physical damage to <b>2 enemies with the lowest physical defense</b>.
-      - Inflicts <b>192%</b> (64%, 64%, 64%) physical damage to <b>2 enemies with the lowest physical defense</b>.
+      - Inflicts <b>153%</b> (51%, 51%, 51%) physical damage to <b>2 enemies with the lowest physical defence</b>.
+      - Inflicts <b>192%</b> (64%, 64%, 64%) physical damage to <b>2 enemies with the lowest physical defence</b>.
       - Inflicts <b>231%</b> (77%, 77%, 77%) physical damage to <b>all enemies</b>.
   passives:
     - name: 精密射撃
@@ -922,11 +922,11 @@
         - When using the red orb, increases allies' physical attack by <b>24%</b> for the turn.
     - name: 満月に吠える
       levels:
-        - Normal attacks have a <b>12.5%</b> chance to apply 1 stack of defense break.
+        - Normal attacks have a <b>12.5%</b> chance to apply 1 stack of defence break.
           Increases the crit chance of <span card-type="P">speed type</span> allies by <b>3%</b>
-        - Normal attacks have a <b>25%</b> chance to apply 1 stack of defense break.
+        - Normal attacks have a <b>25%</b> chance to apply 1 stack of defence break.
           Increases the crit chance of <span card-type="P">speed type</span> allies by <b>6%</b>
-        - Normal attacks have a <b>37.5%</b> chance to apply 1 stack of defense break.
+        - Normal attacks have a <b>37.5%</b> chance to apply 1 stack of defence break.
           Increases the crit chance of <span card-type="P">speed type</span> allies by <b>9%</b>
   special:
     name: Wolves' Fang
