@@ -514,7 +514,7 @@
       Inflicts 100% magic damage to all enemies.
       Applies 1 stack of damage amplification.
   notes:
-    Damage amplification: Enemies receive 8% increased damge per stack of damage amplification; stacks up to 6 times, and lasts for 2 turns.
+    Damage amplification: Enemies receive 8% increased damage per stack of damage amplification; stacks up to 6 times, and lasts for 2 turns.
 
 ##
 ## Christmas
@@ -948,9 +948,9 @@
     name: 夢幻泡影
     cost: 10
     levels:
-      - Inflicts <b>150%</b> (75%, 75%) magic damaage to all enemies, or <b>250%</b> (112.5%, 112.5%) magic damage to charmed enemies.
-      - Inflicts <b>184%</b> (94%, 94%) magic damaage to all enemies, or <b>282%</b> (141%, 141%) magic damage to charmed enemies.
-      - Inflicts <b>226%</b> (113%, 113%) magic damaage to all enemies, or <b>339%</b> (169.5%, 169.5%) magic damage to charmed enemies.
+      - Inflicts <b>150%</b> (75%, 75%) magic damage to all enemies, or <b>250%</b> (112.5%, 112.5%) magic damage to charmed enemies.
+      - Inflicts <b>184%</b> (94%, 94%) magic damage to all enemies, or <b>282%</b> (141%, 141%) magic damage to charmed enemies.
+      - Inflicts <b>226%</b> (113%, 113%) magic damage to all enemies, or <b>339%</b> (169.5%, 169.5%) magic damage to charmed enemies.
   passives:
     - name: 幽雅な微笑
       levels:
