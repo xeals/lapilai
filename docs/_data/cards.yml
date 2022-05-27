@@ -47,6 +47,48 @@
 # - Bold variable numbers (changing between levels).
 
 ##
+## Initial Ray part 2
+##
+- witch: Angers
+  release: Initial
+  rarity: LR
+  _title: Little Archangel
+  tags:
+    - Recovery
+    - Ability Buff
+  spell:
+    name: Angelic Phaser
+    cost: 14
+    levels:
+      - Restores HP equal to <b>40%</b> of magic attack to all allies.
+        Increases the critical damage of the strongest ally by <b>15%</b> for 4 turns.
+      - Restores HP equal to <b>60%</b> of magic attack to all allies.
+        Increases the critical damage of the strongest ally by <b>20%</b> for 4 turns.
+      - Restores HP equal to <b>80%</b> of magic attack to all allies.
+        Increases the critical damage of the strongest ally by <b>25%</b> for 4 turns.
+  special:
+    name: 天使の徳し
+    type: M
+    effect: >-
+      Inflicts 100% magic damage to all enemies.
+      Removes stuns from all allies.
+      Restores 10% HP to all allies each turn for 2 turns.
+  passives:
+    - name: Pure Angel
+      levels:
+        - When using the blue orb, restores <b>1</b> additional MP.
+          All allies gain a barrier absorbing <b>10%</b> of maximum HP for 6 turns.
+        - When using the blue orb, restores <b>2</b> additional MP.
+          All allies gain a barrier absorbing <b>15%</b> of maximum HP for 6 turns.
+        - When using the blue orb, restores <b>3</b> additional MP.
+          All allies gain a barrier absorbing <b>20%</b> of maximum HP for 6 turns.
+    - name: 天使の爛漫
+      levels:
+        - When any ally receives a critical hit, they restore <b>10%</b> of the damage taken, then gain <b>1%</b> critical damage reduction (stacking up to 10 times).
+        - When any ally receives a critical hit, they restore <b>12.5%</b> of the damage taken, then gain <b>2%</b> critical damage reduction (stacking up to 10 times).
+        - When any ally receives a critical hit, they restore <b>15%</b> of the damage taken, then gain <b>3%</b> critical damage reduction (stacking up to 10 times).
+
+##
 ## Sakura
 ##
 - witch: Millefeuille
