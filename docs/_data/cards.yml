@@ -66,6 +66,7 @@
         Increases the critical damage of the strongest ally by <b>20%</b> for 4 turns.
       - Restores HP equal to <b>80%</b> of magic attack to all allies.
         Increases the critical damage of the strongest ally by <b>25%</b> for 4 turns.
+        <b>Any damage taken by the 3 weakest allies is reduced to 1 for 1 turn.</b>
   special:
     name: 天使の徳し
     type: M
