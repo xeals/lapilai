@@ -49,6 +49,50 @@
 ##
 ## Initial Ray part 2
 ##
+- witch: Camilla
+  release: Initial
+  rarity: LR
+  _title: 舞踏会への誘い
+  tags:
+    - AoE Attack
+    - Abnormal Status
+  spell:
+    name: Vampire Arrows
+    cost: 10
+    levels:
+      - Inflicts <b>300%</b> (90%, 90%, 120%) hybrid damage to all enemies.
+        Reduces the physical defence of 1 random enemy by <b>30%</b> for 3 turns.
+      - Inflicts <b>400%</b> (120%, 120%, 160%) hybrid damage to all enemies.
+        Reduces the physical defence of 1 random enemy by <b>40%</b> for 3 turns.
+      - Inflicts <b>500%</b> (150%, 150%, 200%) hybrid damage to all enemies.
+        Reduces the physical defence of 1 random enemy by <b>50%</b> for 3 turns.
+        <b>Applies 1 stack of echo to all enemies.</b>
+        <b>Gains 50% crit chance for 3 turns.</b>
+  special:
+    name: 夜の支配者
+    type: P
+    effect: >-
+      Inflicts 144% (36%, 36%, 72%) hybrid damage to 1 enemy.
+      Applies 1 stack of echo to 1 enemy.
+  passives:
+    - name: 貴公子の流儀
+      levels:
+        - When using the red orb, increases all allies' physical attack by <b>6%</b> for the turn.
+          When using the blue orb, increases all allies' magic attack by <b>6%</b> for the turn.
+          Attacking an enemy affected by echoes restores <b>1</b> MP.
+        - When using the red orb, increases all allies' physical attack by <b>12%</b> for the turn.
+          When using the blue orb, increases all allies' magic attack by <b>12%</b> for the turn.
+          Attacking an enemy affected by echoes restores <b>2</b> MP.
+        - When using the red orb, increases all allies' physical attack by <b>18%</b> for the turn.
+          When using the blue orb, increases all allies' magic attack by <b>18%</b> for the turn.
+          Attacking an enemy affected by echoes restores <b>3</b> MP.
+    - name: Escort
+      levels:
+        - Attacking an enemy affected by echoes increases the physical and magical attack of the entire team by <b>10%</b>.
+        - Attacking an enemy affected by echoes increases the physical and magical attack of the entire team by <b>20%</b>.
+        - Attacking an enemy affected by echoes increases the physical and magical attack of the entire team by <b>30%</b>.
+  notes:
+    Echo: When reaching 3 stacks, consumes all stacks to inflict 15% of maximum HP as damage and restore 5 MP; lasts for 4 turns.
 - witch: Angers
   release: Initial
   rarity: LR
