@@ -66,14 +66,14 @@
         Reduces the defence of 1 random enemy by <b>40%</b> for 3 turns.
       - Inflicts <b>500%</b> (150%, 150%, 200%) hybrid damage to all enemies.
         Reduces the defence of 1 random enemy by <b>50%</b> for 3 turns.
-        <b>Applies 1 stack of echo to all enemies.</b>
+        <b>Applies 1 stack of echoes to all enemies.</b>
         <b>Gains 50% crit chance for 3 turns.</b>
   special:
     name: 夜の支配者
     type: P
     effect: >-
       Inflicts 144% (36%, 36%, 72%) hybrid damage to 1 enemy.
-      Applies 1 stack of echo to 1 enemy.
+      Applies 1 stack of echoes to 1 enemy.
   passives:
     - name: 貴公子の流儀
       levels:
