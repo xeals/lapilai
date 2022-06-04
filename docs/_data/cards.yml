@@ -61,11 +61,11 @@
     cost: 10
     levels:
       - Inflicts <b>300%</b> (90%, 90%, 120%) hybrid damage to all enemies.
-        Reduces the physical defence of 1 random enemy by <b>30%</b> for 3 turns.
+        Reduces the defence of 1 random enemy by <b>30%</b> for 3 turns.
       - Inflicts <b>400%</b> (120%, 120%, 160%) hybrid damage to all enemies.
-        Reduces the physical defence of 1 random enemy by <b>40%</b> for 3 turns.
+        Reduces the defence of 1 random enemy by <b>40%</b> for 3 turns.
       - Inflicts <b>500%</b> (150%, 150%, 200%) hybrid damage to all enemies.
-        Reduces the physical defence of 1 random enemy by <b>50%</b> for 3 turns.
+        Reduces the defence of 1 random enemy by <b>50%</b> for 3 turns.
         <b>Applies 1 stack of echo to all enemies.</b>
         <b>Gains 50% crit chance for 3 turns.</b>
   special:
