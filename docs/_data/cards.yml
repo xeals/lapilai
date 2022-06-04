@@ -79,13 +79,13 @@
       levels:
         - When using the red orb, increases all allies' physical attack by <b>6%</b> for the turn.
           When using the blue orb, increases all allies' magic attack by <b>6%</b> for the turn.
-          Attacking an enemy affected by echoes restores <b>1</b> MP.
+          Attacking an enemy affected by damaging status conditions or echoes restores <b>1</b> MP.
         - When using the red orb, increases all allies' physical attack by <b>12%</b> for the turn.
           When using the blue orb, increases all allies' magic attack by <b>12%</b> for the turn.
-          Attacking an enemy affected by echoes restores <b>2</b> MP.
+          Attacking an enemy affected by damaging status conditions or echoes restores <b>2</b> MP.
         - When using the red orb, increases all allies' physical attack by <b>18%</b> for the turn.
           When using the blue orb, increases all allies' magic attack by <b>18%</b> for the turn.
-          Attacking an enemy affected by echoes restores <b>3</b> MP.
+          Attacking an enemy affected by damaging status conditions or echoes restores <b>3</b> MP.
     - name: Escort
       levels:
         - Attacking an enemy affected by echoes increases the physical and magical attack of the entire team by <b>10%</b>.
