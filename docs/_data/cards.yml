@@ -92,7 +92,7 @@
         - Attacking an enemy affected by echoes increases the physical and magical attack of the entire team by <b>20%</b>.
         - Attacking an enemy affected by echoes increases the physical and magical attack of the entire team by <b>30%</b>.
   notes:
-    Echo: When reaching 3 stacks, consumes all stacks to inflict 15% of maximum HP as damage and restore 5 MP; lasts for 4 turns.
+    Echo: When reaching 3 stacks, consumes all stacks to inflict 15% of maximum HP as damage (reduced against bosses) and restore 5 MP; lasts for 4 turns.
 - witch: Angers
   release: Initial
   rarity: LR
