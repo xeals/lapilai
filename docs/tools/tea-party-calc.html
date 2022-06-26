@@ -296,13 +296,18 @@ excerpt: >
         const stamgain = staminaGain();
         const stamina = stamgain * duration;
 
-        var keys = questRewards(stamina, $quest.val());
+        // Base rate + daily rewards.
+        var keys = questRewards(stamina, $quest.val()) + (nodeRewardValue($quest.val()) * days);
         var rewards = 0;
 
         if ($ultEnable.prop("checked")) {
           const attempts = $ult.val() || 1;
           keys -= nodeCostValue(ultimateNode) * attempts * days;
-          rewards += nodeRewardValue(ultimateNode) * days;
+          // Daily rewards at ultimate rate, as well as base reward.
+          rewards += 2 * (nodeRewardValue(ultimateNode) * days);
+        } else {
+          // Daily rewards at highest rate.
+          rewards += nodeRewardValue($boss.val()) * days;
         }
         rewards += bossRewards(keys, $boss.val());
 
