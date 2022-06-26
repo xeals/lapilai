@@ -81,13 +81,17 @@ excerpt: >
 <div class="calc">
   <div class="calc__duration">
     <div>
-      <label for="durationDt">Event end time (local)</label>
-      <input type="datetime-local" id="durationDt">
+      <label>
+        Event end time (local)
+        <input type="datetime-local" id="durationDt">
+      </label>
     </div>
 
     <div>
-      <label for="duration">Hours remaining</label>
-      <input type="text" id="duration">
+      <label>
+        Hours remaining
+        <input type="text" id="duration">
+      </label>
     </div>
   </div>
 
@@ -95,38 +99,52 @@ excerpt: >
     <label for="stamina" style="font-weight: bold">Stamina</label>
 
     <div>
-      <input type="checkbox" id="stamPassive" checked>
-      <label for="stamPassive">Passive restoration</label>
+      <label>
+        <input type="checkbox" id="stamPassive" checked>
+        Passive restoration
+      </label>
     </div>
 
     <div>
-      <input type="checkbox" id="stamLogin" checked>
-      <label for="stamLogin">Login bonuses</label>
+      <label>
+        <input type="checkbox" id="stamLogin" checked>
+        Login bonuses
+      </label>
     </div>
 
     <div>
-      <input type="checkbox" id="stamFriend">
-      <label for="stamFriend">Friendship tokens</label>
+      <label>
+        <input type="checkbox" id="stamFriend">
+        Friendship tokens
+      </label>
     </div>
 
     <div>
-      <input type="checkbox" id="stamRoom">
-      <label for="stamRoom">Dining room</label>
+      <label>
+        <input type="checkbox" id="stamRoom">
+        Dining room
+      </label>
     </div>
 
     <div>
-      <input type="checkbox" id="stamActivities">
-      <label for="stamActivities">Activities</label>
+      <label>
+        <input type="checkbox" id="stamActivities">
+        Activities
+      </label>
     </div>
 
     <div>
-      <label for="stamExtra" style="padding-right: 0.25em">Extra per day</label>
-      <input type="text" id="stamExtra">
+      <label>
+        Extra per day:
+        <input type="text" id="stamExtra">
+      </label>
     </div>
 
     <div style="padding-top: 0.5em">
-      <label for="stamTotal">Effective stamina per hour: </label>
-      <span id="stamTotal"></span>
+      <label>
+        Effective stamina per hour:
+        <span id="stamTotal"></span>
+      </label>
     </div>
   </div>
 
@@ -134,29 +152,33 @@ excerpt: >
     <label style="font-weight: bold">Missions</label>
 
     <div>
-      <label for="quest">Quest:</label>
-      <select id="quest">
-        <option value="1,6">1 / 2</option>
-        <option value="1.5,9">3</option>
-        <option value="2,9">4 / 5</option>
-        <option value="2.5,12">6</option>
-        <option value="3,12">7 / 8</option>
-        <option value="4,15">9 / 10</option>
-        <option value="4.5,15">11</option>
-        <option value="5.5,18">12</option>
-        <option value="6,18">13</option>
-      </select>
+      <label>
+        Quest:
+        <select id="quest">
+          <option value="1,6">1 / 2</option>
+          <option value="1.5,9">3</option>
+          <option value="2,9">4 / 5</option>
+          <option value="2.5,12">6</option>
+          <option value="3,12">7 / 8</option>
+          <option value="4,15">9 / 10</option>
+          <option value="4.5,15">11</option>
+          <option value="5.5,18">12</option>
+          <option value="6,18">13</option>
+        </select>
+      </label>
     </div>
 
     <div>
-      <label for="boss">Boss:</label>
-      <select id="boss">
-        <option value="3,9">Easy</option>
-        <option value="5,12">Normal</option>
-        <option value="7.5,15">Advanced</option>
-        <option value="10,18">Hard</option>
-        <option value="12,21">Extreme</option>
-      </select>
+      <label>
+        Boss:
+        <select id="boss">
+          <option value="3,9">Easy</option>
+          <option value="5,12">Normal</option>
+          <option value="7.5,15">Advanced</option>
+          <option value="10,18">Hard</option>
+          <option value="12,21">Extreme</option>
+        </select>
+      </label>
     </div>
   </div>
 
