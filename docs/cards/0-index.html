@@ -8,41 +8,37 @@ excerpt: Interactive card searcher.
 <style>
   .wc__controls {
     margin-bottom: 1em;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
+    display: grid;
+    gap: 1em;
   }
 
   .wc__controls__search {
     display: flex;
     align-items: center;
-    flex-grow: 1;
+    gap: 0.5em;
   }
 
   .wc__controls__search input {
     border: none;
     border-bottom: 4px solid #fc4d50;
-    margin-left: 0.5em;
-    flex-grow: 1;
-    max-width: 20em;
+    width: 100%;
   }
 
-  .wc__controls__filters {
-    display: flex;
-    gap: 0.2em;
-    align-items: center;
-  }
-
-  .wc__controls__filters select {
+  .wc__controls select {
     border: none;
     background: none;
     border-bottom: 4px solid red;
   }
 
-  @media (min-width: 750px) {
-    .wc__controls {
-      flex-direction: row;
-    }
+  @media (min-width: 500px) {
+      .wc__controls {
+          grid-template-columns: repeat(6, 1fr);
+      }
+
+      .wc__controls__search {
+          grid-column: 1 / 4;
+          max-width: 20em;
+      }
   }
 
   .wc__item {
@@ -79,36 +75,32 @@ excerpt: Interactive card searcher.
       id="wc-search"
       title="Search for cards by tag, character, or release"
       placeholder="Search by tag or character"
-    />
+      />
   </div>
 
-  <div style="margin-right: auto"></div>
+  <select name="wc-type" title="Filter cards by type">
+    <option value="">All types</option>
+    {% for type in site.data.card_types %}
+    <option value="{{ type[0] }}">{{ type[1] }}</option>
+    {% endfor %}
+  </select>
 
-  <div class="wc__controls__filters">
-    <select name="wc-type" title="Filter cards by type">
-      <option value="">All types</option>
-      {% for type in site.data.card_types %}
-      <option value="{{ type[0] }}">{{ type[1] }}</option>
-      {% endfor %}
-    </select>
+  <select name="wc-release" title="Filter cards by release set">
+    <option value="">All sets</option>
+    {% assign _releases = site.data.cards | map: "release" | uniq | reverse %}
+    {% for release in _releases %}
+    <option value="{{ release }}">{{ release }}</option>
+    {% endfor %}
+  </select>
 
-    <select name="wc-release" title="Filter cards by release set">
-      <option value="">All sets</option>
-      {% assign _releases = site.data.cards | map: "release" | uniq | reverse %}
-      {% for release in _releases %}
-      <option value="{{ release }}">{{ release }}</option>
-      {% endfor %}
-    </select>
-
-    <select name="wc-rarity" title="Filter cards by rarity">
-      <option value="">All rarities</option>
-      <option value="LR">Legendary</option>
-      <option value="UR">UR</option>
-      <option value="SSR">SSR</option>
-      <option value="SR">SR</option>
-      <option value="R">R</option>
-    </select>
-  </div>
+  <select name="wc-rarity" title="Filter cards by rarity">
+    <option value="">All rarities</option>
+    <option value="LR">Legendary</option>
+    <option value="UR">UR</option>
+    <option value="SSR">SSR</option>
+    <option value="SR">SR</option>
+    <option value="R">R</option>
+  </select>
 
   <!-- TODO: Pagination -->
   <!-- <select name="wc-limit" id="wc-limit">
