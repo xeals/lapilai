@@ -189,6 +189,22 @@ excerpt: >
         </select>
       </label>
     </div>
+
+    <div class="calc__quests__ult">
+      <label>
+        Ultimate boss:
+        <div>
+          <label>
+            Clear?
+            <input type="checkbox" id="ultEnable">
+          </label>
+          <label>
+            Clear attempts
+            <input type="number" value="1" min="1" style="width: 5em;" id="ultClears">
+          </label>
+        </div>
+      </label>
+    </div>
   </div>
 
   <div class="calc__totals">
@@ -252,10 +268,22 @@ excerpt: >
       return Math.floor(keys / parseFloat(cost)) * parseFloat(reward);
     }
 
+    function nodeCostValue(node) {
+      return parseFloat(node.split(",")[1]);
+    }
+
+    function nodeRewardValue(node) {
+      return parseFloat(node.split(",")[0]);
+    }
+
+    const ultimateNode = "35,15";
+
     const SOURCES = window.TEXT_VARIABLES.sources;
     window.Lazyload.js(SOURCES.jquery, function () {
       $quest = $("#quest");
       $boss = $("#boss");
+      $ult = $("#ultClears");
+      $ultEnable = $("#ultEnable");
 
       $duration = $("#duration");
       $questEff = $("#questEff");
@@ -263,16 +291,34 @@ excerpt: >
       $total = $("#total");
 
       function _update() {
-        const duration = $duration.val() || 0;
+        const duration = parseFloat($duration.val()) || 0;
+        const days = Math.floor(duration / 24);
         const stamgain = staminaGain();
         const stamina = stamgain * duration;
-        const rewards = bossRewards(questRewards(stamina, $quest.val()), $boss.val());
+
+        var keys = questRewards(stamina, $quest.val());
+        var rewards = 0;
+
+        if ($ultEnable.prop("checked")) {
+          const attempts = $ult.val() || 1;
+          keys -= nodeCostValue(ultimateNode) * attempts * days;
+          rewards += nodeRewardValue(ultimateNode) * days;
+        }
+        rewards += bossRewards(keys, $boss.val());
+
         $total.text(Math.floor(rewards));
       }
 
       $duration.change(_update);
       $quest.change(_update);
       $boss.change(_update);
+      $ult.change(_update);
+      $ultEnable.change(_update);
+
+      $ultEnable.change(function() {
+        $ult.prop("disabled", !$(this).prop("checked"));
+      });
+      $ult.prop("disabled", true);
 
       function _updateStamina() {
         $("#stamTotal").text(staminaGain().toFixed(1));
