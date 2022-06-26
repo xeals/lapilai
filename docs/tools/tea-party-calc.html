@@ -81,7 +81,7 @@ excerpt: >
 <div class="calc">
   <div class="calc__duration">
     <div>
-      <label>
+      <label id="durationDtLabel">
         Event end time (local)
         <input type="datetime-local" id="durationDt">
       </label>
@@ -297,6 +297,14 @@ excerpt: >
       const currEventEnd = new Date(EVENTS[EVENTS.length-1].end);
       const localEventEnd = _formatDate(currEventEnd);
       $durationDt.val(localEventEnd);
+
+      $("#durationDtLabel").contents()
+        .filter(function() { return this.nodeType === 3; })
+        .each(function() {
+          this.textContent = this.textContent.replace(
+            "local", Intl.DateTimeFormat().resolvedOptions().timeZone);
+        });
+
 
       _updateStamina();
       _updateDuration();
