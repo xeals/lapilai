@@ -60,6 +60,15 @@ excerpt: >
   .calc__totals span {
     padding-bottom: 0.25em;
   }
+
+  #total[ended="true"] {
+      visibility: hidden;
+  }
+
+  #total[ended="true"]::after {
+      visibility: visible;
+      content: "This event has ended.";
+  }
 </style>
 
 <p>
@@ -293,6 +302,7 @@ excerpt: >
         const time = new Date(Date.now() + hoursF * 3600_000);
         time.setMilliseconds(0);
         $durationDt.val(_formatDate(time));
+        $total.attr("ended", hoursF === 0);
       });
 
       // Load latest event
