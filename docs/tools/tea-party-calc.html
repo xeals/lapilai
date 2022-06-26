@@ -29,18 +29,43 @@ excerpt: >
     justify-content: space-around;
   }
 
+  .calc__duration__section {
+      display: flex;
+      flex-direction: column;
+  }
+
   @media (min-width: 500px) {
     .calc__duration {
       flex-direction: row;
     }
   }
 
-  .calc__duration label {
-    padding-right: 0.5em;
+  .calc__stamina > label,
+  .calc__quests > label,
+  .calc__quest-ult > label {
+      font-weight: bold;
   }
 
-  .calc__quests label {
-    padding-right: 1em;
+  .calc__form-row {
+      display: flex;
+      position: relative;
+      padding-left: 8em;
+  }
+
+  .calc__form-row__content {
+      width: 100%;
+  }
+
+  @media (min-width: 500px) {
+      .calc__form-row__content {
+          max-width: 200px;
+      }
+  }
+
+  .calc__form-row__label {
+      position: absolute;
+      top: 0;
+      left: 0;
   }
 
   .calc__totals {
@@ -89,121 +114,123 @@ excerpt: >
 
 <div class="calc">
   <div class="calc__duration">
-    <div>
-      <label id="durationDtLabel">
+    <div class="calc__duration__section">
+      <label id="durationDtLabel" for="durationDt">
         Event end time (local)
-        <input type="datetime-local" id="durationDt">
       </label>
+      <input type="datetime-local" id="durationDt">
     </div>
 
-    <div>
-      <label>
+    <div class="calc__duration__section">
+      <label for="duration">
         Hours remaining
-        <input type="number" min="0" id="duration">
       </label>
+      <input type="number" min="0" id="duration">
     </div>
   </div>
 
-  <div id="stamina" class="calc__stamina">
-    <label for="stamina" style="font-weight: bold">Stamina</label>
+  <div id="sec-stamina" class="calc__stamina">
+    <label for="sec-stamina">Stamina</label>
 
-    <div>
-      <label>
-        <input type="checkbox" id="stamPassive" checked>
+    <div class="calc__form-row">
+      <input type="checkbox" id="stamPassive" checked>
+      <label for="stamPassive">
         Passive restoration
       </label>
     </div>
 
-    <div>
-      <label>
-        <input type="checkbox" id="stamLogin" checked>
+    <div class="calc__form-row">
+      <input type="checkbox" id="stamLogin" checked>
+      <label for="stamLogin">
         Login bonuses
       </label>
     </div>
 
-    <div>
-      <label>
-        <input type="checkbox" id="stamFriend">
+    <div class="calc__form-row">
+      <input type="checkbox" id="stamFriend">
+      <label for="stamFriend">
         Friendship tokens
       </label>
     </div>
 
-    <div>
-      <label>
-        <input type="checkbox" id="stamRoom">
+    <div class="calc__form-row">
+      <input type="checkbox" id="stamRoom">
+      <label for="stamRoom">
         Dining room
       </label>
     </div>
 
-    <div>
-      <label>
-        <input type="checkbox" id="stamActivities">
+    <div class="calc__form-row">
+      <input type="checkbox" id="stamActivities">
+      <label for="stamActivities">
         Activities
       </label>
     </div>
 
-    <div>
-      <label>
-        Extra per day:
-        <input type="text" id="stamExtra">
+    <div class="calc__form-row">
+      <label for="stamExtra" class="calc__form-row__label">
+        Extra per day
       </label>
+      <input type="text" id="stamExtra" class="calc__form-row__content">
     </div>
 
     <div style="padding-top: 0.5em">
-      <label>
+      <label for="stamTotal">
         Effective stamina per hour:
-        <span id="stamTotal"></span>
       </label>
+      <span id="stamTotal"></span>
     </div>
   </div>
 
-  <div class="calc__quests">
-    <label style="font-weight: bold">Missions</label>
+  <div id="sec-quests" class="calc__quests">
+    <label id="sec-quests">Missions</label>
 
-    <div>
-      <label>
-        Quest:
-        <select id="quest">
-          <option value="1,6">1 / 2</option>
-          <option value="1.5,9">3</option>
-          <option value="2,9">4 / 5</option>
-          <option value="2.5,12">6</option>
-          <option value="3,12">7 / 8</option>
-          <option value="4,15">9 / 10</option>
-          <option value="4.5,15">11</option>
-          <option value="5.5,18">12</option>
-          <option value="6,18">13</option>
-        </select>
+    <div class="calc__form-row">
+      <label for="quest" class="calc__form-row__label">
+        Quest
       </label>
+      <select id="quest" class="calc__form-row__content">
+        <option value="1,6">1 / 2</option>
+        <option value="1.5,9">3</option>
+        <option value="2,9">4 / 5</option>
+        <option value="2.5,12">6</option>
+        <option value="3,12">7 / 8</option>
+        <option value="4,15">9 / 10</option>
+        <option value="4.5,15">11</option>
+        <option value="5.5,18">12</option>
+        <option value="6,18">13</option>
+      </select>
     </div>
 
-    <div>
-      <label>
-        Boss:
-        <select id="boss">
-          <option value="3,9">Easy</option>
-          <option value="5,12">Normal</option>
-          <option value="7.5,15">Advanced</option>
-          <option value="10,18">Hard</option>
-          <option value="12,21">Extreme</option>
-        </select>
+    <div class="calc__form-row">
+      <label for="boss" class="calc__form-row__label">
+        Boss
+      </label>
+      <select id="boss" class="calc__form-row__content">
+        <option value="3,9">Easy</option>
+        <option value="5,12">Normal</option>
+        <option value="7.5,15">Advanced</option>
+        <option value="10,18">Hard</option>
+        <option value="12,21">Extreme</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="sec-ultimateBoss" class="calc__quest-ult">
+    <label for="sec-ultimateBoss">
+      Ultimate boss
+    </label>
+    <div class="calc__form-row">
+      <input type="checkbox" id="ultEnable">
+      <label for="ultEnable">
+        Clear?
       </label>
     </div>
-
-    <div class="calc__quests__ult">
-      <label>
-        Ultimate boss:
-        <div>
-          <label>
-            Clear?
-            <input type="checkbox" id="ultEnable">
-          </label>
-          <label>
-            Clear attempts
-            <input type="number" value="1" min="1" style="width: 5em;" id="ultClears">
-          </label>
-        </div>
+    <div class="calc__form-row">
+      <label for="ultClears" class="calc__form-row__label">
+        Attempts to clear
       </label>
+      <input type="number" value="1" min="1" id="ultClears" class="calc__form-row__content">
     </div>
   </div>
 
@@ -329,7 +356,7 @@ excerpt: >
         $("#stamTotal").text(staminaGain().toFixed(1));
       }
 
-      $("#stamina :input").each(function (index, node) {
+      $("#sec-stamina :input").each(function (index, node) {
         const $node = $(node);
         $node.change(_update);
         $node.change(_updateStamina);
