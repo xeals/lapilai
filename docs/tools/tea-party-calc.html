@@ -90,7 +90,7 @@ excerpt: >
     <div>
       <label>
         Hours remaining
-        <input type="text" id="duration">
+        <input type="number" min="0" id="duration">
       </label>
     </div>
   </div>
@@ -279,7 +279,7 @@ excerpt: >
       function _updateDuration() {
         const ms = new Date($durationDt.val()) - Date.now();
         const hours = ms / 3600_000;
-        $duration.val(hours.toFixed(2));
+        $duration.val(Math.max(0, hours.toFixed(2)));
       }
       $durationDt.change(_updateDuration);
 
@@ -289,8 +289,10 @@ excerpt: >
 
       $duration.change(function () {
         const hours = $(this).val();
-        const time = Date.now() + parseFloat(hours) * 3600_000;
-        $durationDt.val(_formatDate(new Date(time)));
+        const hoursF = parseFloat(hours) || 0;
+        const time = new Date(Date.now() + hoursF * 3600_000);
+        time.setMilliseconds(0);
+        $durationDt.val(_formatDate(time));
       });
 
       // Load latest event
