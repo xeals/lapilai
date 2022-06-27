@@ -41,6 +41,7 @@
 # - Inflict X TYPE damage to (X | all) enemies.
 # - Applies X stacks of DEBUFF to (X | all) enemies
 # - Increases / Decreases TARGET STAT by X% for (the | X) turn.
+# - MP > Generates. Shield > Restore
 #
 # Formatting:
 # - One line, one effect.
@@ -52,7 +53,7 @@
 - witch: Camilla
   release: Initial
   rarity: LR
-  _title: 舞踏会への誘い
+  _title: Invitation to the ball
   tags:
     - AoE Attack
     - Abnormal Status
@@ -66,33 +67,33 @@
         Reduces the defence of 1 random enemy by <b>40%</b> for 3 turns.
       - Inflicts <b>500%</b> (150%, 150%, 200%) hybrid damage to all enemies.
         Reduces the defence of 1 random enemy by <b>50%</b> for 3 turns.
-        <b>Applies 1 stack of echoes to all enemies.</b>
+        <b>Applies 1 stack of echo to all enemies.</b>
         <b>Gains 50% crit chance for 3 turns.</b>
   special:
-    name: 夜の支配者
+    name: Lord of the Night
     type: P
     effect: >-
       Inflicts 144% (36%, 36%, 72%) hybrid damage to 1 enemy.
       Applies 1 stack of echoes to 1 enemy.
   passives:
-    - name: 貴公子の流儀
+    - name: Swagger of the Prince
       levels:
         - When using the red orb, increases all allies' physical attack by <b>6%</b> for the turn.
           When using the blue orb, increases all allies' magic attack by <b>6%</b> for the turn.
-          Attacking an enemy affected by damaging status conditions or echoes restores <b>1</b> MP.
+          Attacking an enemy affected by damaging status conditions or echo generates <b>1</b> MP.
         - When using the red orb, increases all allies' physical attack by <b>12%</b> for the turn.
           When using the blue orb, increases all allies' magic attack by <b>12%</b> for the turn.
-          Attacking an enemy affected by damaging status conditions or echoes restores <b>2</b> MP.
+          Attacking an enemy affected by damaging status conditions or echo generates <b>2</b> MP.
         - When using the red orb, increases all allies' physical attack by <b>18%</b> for the turn.
           When using the blue orb, increases all allies' magic attack by <b>18%</b> for the turn.
-          Attacking an enemy affected by damaging status conditions or echoes restores <b>3</b> MP.
+          Attacking an enemy affected by damaging status conditions or echo generates <b>3</b> MP.
     - name: Escort
       levels:
-        - Attacking an enemy affected by echoes increases the physical and magical attack of the entire team by <b>10%</b>.
-        - Attacking an enemy affected by echoes increases the physical and magical attack of the entire team by <b>20%</b>.
-        - Attacking an enemy affected by echoes increases the physical and magical attack of the entire team by <b>30%</b>.
+        - Attacking an enemy affected by echo increases the physical and magical attack of the entire team by <b>10%</b>.
+        - Attacking an enemy affected by echo increases the physical and magical attack of the entire team by <b>20%</b>.
+        - Attacking an enemy affected by echo increases the physical and magical attack of the entire team by <b>30%</b>.
   notes:
-    Echo: When reaching 3 stacks, consumes all stacks to inflict 15% of maximum HP as damage (reduced against bosses) and restore 5 MP; lasts for 4 turns.
+    Echo: When reaching 3 stacks, consumes all stacks to inflict 15% of maximum HP as damage (reduced against bosses) and generates 5 MP; stacks lasts for 4 turns.
 - witch: Angers
   release: Initial
   rarity: LR
@@ -112,7 +113,7 @@
         Increases the critical damage of the strongest ally by <b>25%</b> for 4 turns.
         <b>Any damage taken by the 3 weakest allies is reduced to 1 for 1 turn.</b>
   special:
-    name: 天使の徳し
+    name: An Angel's Benevolence
     type: M
     effect: >-
       Inflicts 100% magic damage to all enemies.
@@ -121,32 +122,34 @@
   passives:
     - name: Pure Angel
       levels:
-        - When using the blue orb, restores <b>1</b> additional MP.
-          All allies gain a barrier absorbing <b>10%</b> of maximum HP for 6 turns.
-        - When using the blue orb, restores <b>2</b> additional MP.
-          All allies gain a barrier absorbing <b>15%</b> of maximum HP for 6 turns.
-        - When using the blue orb, restores <b>3</b> additional MP.
-          All allies gain a barrier absorbing <b>20%</b> of maximum HP for 6 turns.
-    - name: 天使の爛漫
+        - When using the blue orb, generates <b>1</b> additional MP.
+          All allies gain a barrier that absorbs up to <b>10%</b> of maximum HP for 6 turns.
+        - When using the blue orb, generates <b>2</b> additional MP.
+          All allies gain a barrier that absorbs up to <b>15%</b> of maximum HP for 6 turns.
+        - When using the blue orb, generates <b>3</b> additional MP.
+          All allies gain a barrier that absorbs up to <b>20%</b> of maximum HP for 6 turns.
+    - name: Angel in Bloom
       levels:
         - When any ally receives a critical hit, they restore <b>10%</b> of the damage taken, then gain <b>1%</b> critical damage reduction (stacking up to 10 times).
         - When any ally receives a critical hit, they restore <b>12.5%</b> of the damage taken, then gain <b>2%</b> critical damage reduction (stacking up to 10 times).
         - When any ally receives a critical hit, they restore <b>15%</b> of the damage taken, then gain <b>3%</b> critical damage reduction (stacking up to 10 times).
-
+  notes:
+    Strongest Ally: Witch with the highest offensive stat total (Physical + Magic).
+    Weakest Ally: Witch with the lowest current HP stat.
 ##
 ## Sakura
 ##
 - witch: Millefeuille
   release: Sakura
   rarity: UR
-  _title: 花風に揺られて
+  _title: Fluttering Petals in the Wind
   tags:
     - AoE Attack
     - Debuff
   hidden_tags:
     - Poison
   spell:
-    name: 桜花流光
+    name: Light Scattering Cherry Blossoms
     cost: 7
     levels:
       - Inflicts <b>140%</b> physical damage to all enemies.
@@ -156,18 +159,18 @@
       - Inflicts <b>240%</b> physical damage to all enemies.
         Applies <b>4</b> stacks of poison to all enemies.
   special:
-    name: 満開ブロッサムス
+    name: Blossoms in Full View
     type: T
     effect: >-
       Inflicts 70% physical damage (35%, 35%) to all enemies.
       Affected enemies receive 50% increased damage from poison for 4 turns.
   passives:
-    - name: 夜桜の慈しみ
+    - name: Cherry Blossoms at Night are Love
       levels:
         - When using the red orb, increases all allies' physical attack by <b>8%</b> for the turn.
         - When using the red orb, increases all allies' physical attack by <b>16%</b> for the turn.
         - When using the red orb, increases all allies' physical attack by <b>24%</b> for the turn.
-    - name: 春風の香り
+    - name: The Scent of Spring
       levels:
         - Normal attacks have a <b>25%</b> chance to apply 1 stack of poison.
         - Normal attacks have a <b>50%</b> chance to apply 1 stack of poison.
@@ -175,7 +178,7 @@
 - witch: Alpha
   release: Sakura
   rarity: UR
-  _title: 散る花びらを手に
+  _title: Scattered Petals in my Hand
   tags:
     - AoE Attack
     - Shield Recovery
@@ -183,7 +186,7 @@
     - Damage Reduction
     - Poison
   spell:
-    name: 桜嵐舞踏
+    name: Dance of Scattering Cherry Blossoms
     cost: 10
     levels:
       - Inflicts <b>105%</b> physical damage to 1 enemy.
@@ -199,14 +202,14 @@
         Gain <b>24%</b> damage reduction for 3 turns.
         All allies gain <b>50%</b> damage reduction for 3 turns.
   special:
-    name: 花月ミッドナイト
+    name: A Midnight for the Flowers and Moon
     type: P
     effect: >-
       Inflicts 100% physical damage (30%, 30%, 40%) to all enemies.
       Restores 15% of the magic shield.
       Applies 1 stack of poison to all enemies.
   passives:
-    - name: 夜桜の守護
+    - name: Cherry Blossoms at Night are Protection
       levels:
         - When using the yellow orb, restores <b>4%</b> of the magic shield.
           33% chance when receiving damage to restore <b>25%</b> of the magic shield.
@@ -214,7 +217,7 @@
           33% chance when receiving damage to restore <b>35%</b> of the magic shield.
         - When using the yellow orb, restores <b>12%</b> of the magic shield.
           33% chance when receiving damage to restore <b>45%</b> of the magic shield.
-    - name: 春の祝福
+    - name: Blessings of Spring
       levels:
         - <b>75%</b> chance when attacked to apply 1 stack of poison to the attacker.
           Once per turn, when damaged by a status condition, restores <b>10%</b> HP.
@@ -225,13 +228,13 @@
 - witch: Rosetta
   release: Sakura
   rarity: UR
-  _title: 夜桜と昇る月
+  _title: Cherry Blossoms under the Rising Moon
   tags:
     - AoE Attack
   hidden_tags:
     - Poison
   spell:
-    name: 月光桜影
+    name: Shadow of Cherry Blossoms in the Moon
     cost: 12
     levels:
       - Inflicts <b>240%</b> physical damage to 1 enemy.
@@ -241,13 +244,13 @@
       - Inflicts <b>480%</b> physical damage to 1 enemy.
         Removes all stacks of poison from all enemies, and inflicts damage for each turn remaining.
   special:
-    name: 繚乱ムーンライト
+    name: Wild Moonlight
     type: T
     effect: >-
       Inflicts 144% physical damage (36%, 36%, 72%) to 1 enemy.
       Applies 2 stacks of poison.
   passives:
-    - name: 夜桜の宴
+    - name: Feast of Cherry Blossoms at Night
       levels:
         - After attacking 2 times, gain <b>20%</b> crit chance for 2 turns.
           Critical hits apply 1 stack of poison.
@@ -255,7 +258,7 @@
           Critical hits apply 1 stack of poison.
         - After attacking 2 times, gain <b>40%</b> crit chance for 2 turns.
           Critical hits apply 1 stack of poison.
-    - name: 春色爛漫
+    - name: The Splendor of Spring
       levels:
         - Inflict <b>10%</b> increased damage to poisoned enemies.
         - Inflict <b>20%</b> increased damage to poisoned enemies.
@@ -272,7 +275,7 @@
     - Shield Recovery
     - Ability Buff
   spell:
-    name: イリュージョンタクト
+    name: Illusory Baton
     cost: 12
     levels:
       - Inflicts <b>150%</b> physical damage to all enemies.
@@ -286,14 +289,14 @@
         20% chance to restore <b>30%</b> HP each turn for 4 turns.
         <b>increases all allies' physical and magic attack by 50% for 4 turns.</b>
   special:
-    name: 冥府の裁きたる大鎌
+    name: Hell-reaving Scythe
     type: P
     effect: >-
       Inflicts 120% physical damage to all enemies.
       Restores 20% of the magic shield.
       Taunts all enemies for 2 turns.
   passives:
-    - name: 冷静沈着
+    - name: Level and Calm
       levels:
         - Reduces damage done to the magic shield by <b>20%</b>.
           Once per attack, 20% chance when taking damage to restore <b>10%</b> of the magic shield.
@@ -304,7 +307,7 @@
         - Reduces damage done to the magic shield by <b>40%</b>.
           Once per attack, 20% chance when taking damage to restore <b>20%</b> of the magic shield.
           When using the yellow orb, restores <b>12%</b> of the magic shield.
-    - name: 蒼き死神の矜持
+    - name: Pride of the Reaper in Blue
       levels:
         - increases all allies' damage by <b>5%</b>
           and crit chance by <b>5%</b>.
@@ -315,7 +318,7 @@
 - witch: Eliza
   release: Initial
   rarity: LR
-  _title: 幸せを願う歌
+  _title: Song for Happiness
   tags:
     - Single Attack
   hidden_tags:
@@ -337,7 +340,7 @@
       Increases crit chance by 20% for 2 turns.
       Inflicts 150% (30%, 30%, 40%, 50%) physical damage to 1 enemy.
   passives:
-    - name: 緋色の剣技
+    - name: Crimson Swordplay
       levels:
         - When using with the red orb, increases all allies' physical attack by <b>8%</b> for the turn.
           Normal attacks have a <b>25%</b> chance to apply 1 stack of burn.
@@ -345,7 +348,7 @@
           Normal attacks have a <b>50%</b> chance to apply 1 stack of burn.
         - When using with the red orb, increases all allies' physical attack by <b>24%</b> for the turn.
           Normal attacks have a <b>75%</b> chance to apply 1 stack of burn.
-    - name: 凛然たる眼差し
+    - name: Commanding Gaze
       levels:
         - When an attack hits, gain <b>0.4%</b> increased damage (stacking up to 10 times)
           and <b>1.5%</b> increased critical damage (stacking up to 10 times).
@@ -360,7 +363,7 @@
 - witch: Lynette
   release: Valentines
   rarity: UR
-  _title: 違うんですー！
+  _title: Y-you've got it wrong!
   tags:
     - AoE Attack
     - Abnormal Status
@@ -380,26 +383,26 @@
   passives:
     - name: Energy Gain
       levels:
-        - Restores <b>10</b> MP when an enemy dies.
-        - Restores <b>15</b> MP when an enemy dies.
-        - Restores <b>20</b> MP when an enemy dies.
-    - name: ドキドキハート
+        - Generates <b>10</b> MP when an enemy dies.
+        - Generates <b>15</b> MP when an enemy dies.
+        - Generates <b>20</b> MP when an enemy dies.
+    - name: Palpitating Heart
       levels:
         - Attacks have a <b>25%</b> chance to apply 1 stack of charm.
-          When using the blue orb, restores <b>1</b> additional MP.
+          When using the blue orb, generates <b>1</b> additional MP.
         - Attacks have a <b>37.5%</b> chance to apply 1 stack of charm.
-          When using the blue orb, restores <b>2</b> additional MP.
+          When using the blue orb, generates <b>2</b> additional MP.
         - Attacks have a <b>50%</b> chance to apply 1 stack of charm.
-          When using the blue orb, restores <b>3</b> additional MP.
+          When using the blue orb, generates <b>3</b> additional MP.
   special:
     name: Magical Ribbon
     effect: >-
       Inflicts 144% (36%, 36%, 72%) magic damage to 1 enemy.
-      Restores 2 MP each turn for 2 turns.
+      Generates 2 MP each turn for 2 turns.
 - witch: Garnet
   release: Valentines
   rarity: UR
-  _title: 心ここにこめて
+  _title: My heart is right here
   tags:
     - Single Attack
     - Abnormal Status
@@ -422,13 +425,13 @@
   passives:
     - name: Lovely Gift
       levels:
-        - Critical hits from normal attacks restore <b>2</b> MP.
+        - Critical hits from normal attacks generate <b>2</b> MP.
           Gains <b>25%</b> crit chance against enemies that are charmed or have cursed wounds.
-        - Critical hits from normal attacks restore <b>3</b> MP.
+        - Critical hits from normal attacks generate <b>3</b> MP.
           Gains <b>25%</b> crit chance against enemies that are charmed or have cursed wounds.
-        - Critical hits from normal attacks restore <b>4</b> MP.
+        - Critical hits from normal attacks generate <b>4</b> MP.
           Gains <b>35%</b> crit chance against enemies that are charmed or have cursed wounds.
-    - name: 極甘プレゼント
+    - name: Overly Sweet Present
       levels:
         - When using the blue orb, restores <b>5%</b> HP.
           When part of a blue chain attack, gain <b>8%</b> increased attack.
@@ -437,7 +440,7 @@
         - When using the blue orb, restores <b>15%</b> HP.
           When part of a blue chain attack, gain <b>24%</b> increased attack.
   special:
-    name: 恋の邪魔は禁止です
+    name: There's No Stopping This Love
     effect: >-
       Inflicts 160% magic damage to 1 enemy, or 320% magic damage if the enemy is charmed.
   notes:
@@ -445,13 +448,13 @@
 - witch: Ratura
   release: Valentines
   rarity: UR
-  _title: 口を開けるし〜♪
+  _title: C'mon and open up〜♪
   tags:
     - Single Attack
     - Abnormal Status
     - Healing
   spell:
-    name: 大胆アタック！
+    name: Bold aggression!
     cost: 7
     levels:
       - Inflicts <b>120%</b> hybrid damage to all enemies.
@@ -464,7 +467,7 @@
         Removes all status conditions from all allies.
         Protects allies from sleep, stun, charm, and freeze for <b>2</b> turns.
   passives:
-    - name: スイートムード
+    - name: Sweet Mood
       levels:
         - Removes any impairing status condition received (sleep, stun, charm, or freeze).
           <b>5</b> turn cooldown.
@@ -472,14 +475,14 @@
           <b>4</b> turn cooldown.
         - Removes any impairing status condition received (sleep, stun, charm, or freeze).
           <b>3</b> turn cooldown.
-    - name: 甘すぎシュガー
+    - name: Overly Sweet Sugar
       levels:
         - Decreases all enemies' physical attack by <b>15%</b> for 4 turns.
-          When using the blue orb, restores <b>1</b> additional MP.
+          When using the blue orb, generates <b>1</b> additional MP.
         - Decreases all enemies' physical attack by <b>30%</b> for 4 turns.
-          When using the blue orb, restores <b>2</b> additional MP.
+          When using the blue orb, generates <b>2</b> additional MP.
         - Decreases all enemies' physical attack by <b>45%</b> for 4 turns.
-          When using the blue orb, restores <b>3</b> additional MP.
+          When using the blue orb, generates <b>3</b> additional MP.
   special:
     name: Silky Melt
     effect: >-
@@ -507,7 +510,7 @@
       - Inflicts <b>144%</b> (72%, 72%) hybrid damage to all enemies.
         Decreases all enemies' crit avoidance by <b>30%</b> for 3 turns.
   passives:
-    - name: 憧れと決意
+    - name: Aspiration and Determination
       levels:
         - When using the red orb, increases all allies' physical attack by <b>6%</b> for the turn.
           When using the blue orb, increases all allies' magic attack by <b>6%</b> for the turn.
@@ -521,7 +524,7 @@
         - When any ally critically hits, they gain <b>15%</b> critical damage (stacking up to 5 times).
         - When any ally critically hits, they gain <b>20%</b> critical damage (stacking up to 5 times).
   special:
-    name: 天空に咲く花
+    name: Flowers Blooming in the Sky
     type: T
     effect: >-
       Inflicts 120% (30%, 30%, 60%) hybrid damage to 1 enemy.
@@ -544,12 +547,12 @@
       - Gain <b>36%</b> critical damage and <b>15%</b> crit chance for 2 turns.
         Inflicts <b>372%</b> (124%, 124%, 124%) physical damage to 1 target.
   passives:
-    - name: 弓禅ー如
+    - name: One with the Bow
       levels:
         - When attacking with the red orb, increases all allies' physical attack by <b>8%</b> for the turn.
         - When attacking with the red orb, increases all allies' physical attack by <b>16%</b> for the turn.
         - When attacking with the red orb, increases all allies' physical attack by <b>24%</b> for the turn.
-    - name: 慈しみの歌声
+    - name: Lovely Voice
       levels:
         - When an attack hits, gain <b>1%</b> crit chance (stacking up to <b>6</b> times).
           When an attack critically hits, gain <b>2.5%</b> increased physical attack (stacking up to <b>6</b> times).
@@ -574,7 +577,7 @@
     - Damage Amplification
     - MP Gain
   spell:
-    name: 羊さん、突撃！
+    name: Sheeps, attack！
     cost: 12
     levels:
       - Applies 1 stack of damage amplification to all enemies.
@@ -584,16 +587,16 @@
       - Applies 1 stack of damage amplification to all enemies.
         Inflicts <b>370%</b> (74%, 74%, 74%, 74%, 74%) magic damage to all enemies.
   passives:
-    - name: 小さな発明家
+    - name: Tiny Inventor
       levels:
-        - When using the blue orb, restores <b>1</b> additional MP.
-        - When using the blue orb, restores <b>2</b> additional MP.
-        - When using the blue orb, restores <b>3</b> additional MP.
-    - name: こっそりサポート
+        - When using the blue orb, generates <b>1</b> additional MP.
+        - When using the blue orb, generates <b>2</b> additional MP.
+        - When using the blue orb, generates <b>3</b> additional MP.
+    - name: Hidden Support
       levels:
-        - When any ally critically hits, <b>50%</b> chance to restore <b>1</b> MP for 6 turns.
-        - When any ally critically hits, <b>55%</b> chance to restore <b>2</b> MP for 6 turns.
-        - When any ally critically hits, <b>60%</b> chance to restore <b>3</b> MP for 6 turns.
+        - When any ally critically hits, <b>50%</b> chance to generate <b>1</b> extra MP. Lasts 6 turns.
+        - When any ally critically hits, <b>55%</b> chance to generate <b>2</b> extra MP. Lasts 6 turns.
+        - When any ally critically hits, <b>60%</b> chance to generate <b>3</b> extra MP. Lasts 6 turns.
   special:
     name: Impact Sheep
     type: M
@@ -634,18 +637,18 @@
         All allies gain <b>20%</b> damage reduction for 2 turns.
         Restores <b>15%</b> of the magic shield.
   passives:
-    - name: ハート・イルミネイト
+    - name: Heart Illuminate
       levels:
         - When using the yellow orb, restores <b>4%</b> of the magic shield.
         - When using the yellow orb, restores <b>8%</b> of the magic shield.
         - When using the yellow orb, restores <b>12%</b> of the magic shield.
-    - name: 白雪の印
+    - name: Mark of Snow
       levels:
         - <b>33%</b> chance when hit to apply 1 stack of freeze to the attacker for 3 turns.
         - <b>41%</b> chance when hit to apply 1 stack of freeze to the attacker for 3 turns.
         - <b>50%</b> chance when hit to apply 1 stack of freeze to the attacker for 3 turns.
   special:
-    name: 聖夜の堕天使
+    name: The Fallen Angel of Christmas Eve
     type: P
     effect: >-
       Inflicts 80% to 160% physical to 1 enemy.
@@ -671,7 +674,7 @@
       - Applies <b>2</b> stack of freeze to all enemies.
         Inflicts <b>395%</b> (70%, 145%, 170%) physical damage to all enemies.
   passives:
-    - name: ハートフルマフラー
+    - name: Heartful Muffler
       levels:
         - When using the red orb, increases all allies' physical attack by <b>8%</b> for the turn.
         - When using the red orb, increases all allies' physical attack by <b>16%</b> for the turn.
@@ -682,7 +685,7 @@
         - Normal attacks have a <b>25%</b> chance to apply 1 stack of freeze.
         - Normal attacks have a <b>37.5%</b> chance to apply 1 stack of freeze.
   special:
-    name: 聖夜のオオカミ
+    name: Wolf of Christmas Eve
     type: T
     effect: >-
       Inflicts 70% (20%, 20%, 30%) physical damage to all enemies.
@@ -690,7 +693,7 @@
 - witch: Kaede
   release: Christmas
   rarity: UR
-  _title: 上手にできました
+  _title: It turned out great
   tags:
     - Single Attack
     - Abnormal Status
@@ -707,11 +710,11 @@
       - Inflicts <b>210%</b> magic damage to 1 enemy.
         If the target is frozen, inflicts an additional <b>320%</b> magic damage, and applies 1 stack of crush to all enemies.
   passives:
-    - name: 心からのプレゼント
+    - name: Heartfelt Present
       levels:
-        - When using the blue orb, restores <b>1</b> additional MP.
-        - When using the blue orb, restores <b>2</b> additional MP.
-        - When using the blue orb, restores <b>3</b> additional MP.
+        - When using the blue orb, generates <b>1</b> additional MP.
+        - When using the blue orb, generates <b>2</b> additional MP.
+        - When using the blue orb, generates <b>3</b> additional MP.
     - name: 雪やこんこ
       levels:
         - When using the blue orb, increases all allies' magic attack by <b>6%</b> for the turn.
@@ -721,7 +724,7 @@
         - When using the blue orb, increases all allies' magic attack by <b>18%</b> for the turn.
           Gain <b>30%</b> crit chance when attacking a frozen enemy.
   special:
-    name: 聖夜の巫女
+    name: Priestess of Christmas Eve
     type: M
     effect: >-
       Inflicts 144% (36%, 36%, 72%) magic damage to 1 enemy.
@@ -751,7 +754,7 @@
       - Revive <b>2</b> knocked out allies with <b>45%</b> HP.
         Increases all allies' defence by <b>64%</b> for 2 turns.
   passives:
-    - name: 憧れと決意
+    - name: Aspiration and Determination
       levels:
         - When using the red orb, increases all allies' physical attack by <b>6%</b> for the turn.
           When using the blue orb, increases all allies' magic attack by <b>6%</b> for the turn.
@@ -759,7 +762,7 @@
           When using the blue orb, increases all allies' magic attack by <b>12%</b> for the turn.
         - When using the red orb, increases all allies' physical attack by <b>18%</b> for the turn.
           When using the blue orb, increases all allies' magic attack by <b>18%</b> for the turn.
-    - name: 花神の寵愛
+    - name: Favour of the Botany Gods
       levels:
         - Gain <b>5%</b> crit evasion.
         - Gain <b>10%</b> crit evasion.
@@ -780,19 +783,19 @@
   hidden_tags:
     - Freeze
   spell:
-    name: クロノス・レイ
+    name: Chrono's Ray
     cost: 12
     levels:
       - Inflicts <b>153%</b> (51%, 51%, 51%) physical damage to <b>2 enemies with the lowest physical defence</b>.
       - Inflicts <b>192%</b> (64%, 64%, 64%) physical damage to <b>2 enemies with the lowest physical defence</b>.
       - Inflicts <b>231%</b> (77%, 77%, 77%) physical damage to <b>all enemies</b>.
   passives:
-    - name: 精密射撃
+    - name: Sharpshooting
       levels:
         - When using the red orb, increases all allies' physical attack by <b>8%</b> for the turn.
         - When using the red orb, increases all allies' physical attack by <b>16%</b> for the turn.
         - When using the red orb, increases all allies' physical attack by <b>24%</b> for the turn.
-    - name: テンションアップ
+    - name: Tension Up
       levels:
         - When using the red orb, increases all allies' physical attack by <b>15%</b> for the next 2 attacks.
         - When using the red orb, increases all allies' physical attack by <b>22.5%</b> for the next 2 attacks.
@@ -821,12 +824,12 @@
       - Increases all allies' crit chance by <b>11.25%</b> for 2 turns.
         Restores HP equal to <b>144%</b> of magic attack to the weakest ally.
   passives:
-    - name: 真心の応援
+    - name: Sincere Support
       levels:
         - When using the blue orb, restores HP equal to <b>12%<b> of magic attack to the weakest ally.
         - When using the blue orb, restores HP equal to <b>24%<b> of magic attack to the weakest ally.
         - When using the blue orb, restores HP equal to <b>36%<b> of magic attack to the weakest ally.
-    - name: 応援再開！
+    - name: And again！
       levels:
         - Once per battle, when knocked out, restores <b>18%</b> HP.
         - Once per battle, when knocked out, restores <b>36%</b> HP.
@@ -846,7 +849,7 @@
     - Shield Recovery
     - Persistence
   spell:
-    name: 祈りと断罪の誓剣
+    name: The Vowing Sword of Prayers and Judgement
     cost: 12
     levels:
       - Inflicts <b>128%</b> physical damage to all enemies, and inflicts additional damage based on the strength of the magic shield.
@@ -856,12 +859,12 @@
       - Inflicts <b>192%</b> physical damage to all enemies, and inflicts additional damage based on the strength of the magic shield.
         Protects the <b>3 weakest allies</b> from all damage for <b>2</b> attacks or 2 turns.
   passives:
-    - name: 不撓不屈
+    - name: Tenacity
       levels:
         - When using the yellow orb, restores <b>4%</b> of the magic shield.
         - When using the yellow orb, restores <b>8%</b> of the magic shield.
         - When using the yellow orb, restores <b>12%</b> of the magic shield.
-    - name: 騎士の矜持
+    - name: Knight's Pride
       levels:
         - Gain <b>15%</b> increased physical attack when below 50% HP.
         - Gain <b>22.5%</b> increased physical attack when below 50% HP.
@@ -880,19 +883,19 @@
     - Single Attack
     - Ability Buff
   spell:
-    name: 優しき精霊の書
+    name: Kind Ghost's Book
     cost: 10
     levels:
       - Inflicts <b>373%</b> magic damage to 1 target, and inflicts additional damage based on the current HP of the target (up to <b>17.5%</b>).
       - Inflicts <b>467%</b> magic damage to 1 target, and inflicts additional damage based on the current HP of the target (up to <b>20%</b>).
       - Inflicts <b>560%</b> magic damage to 1 target, and inflicts additional damage based on the current HP of the target (up to <b>25%</b>).
   passives:
-    - name: 魔導書の導き
+    - name: Grimoire's Guidance
       levels:
         - When using the blue orb, increases all allies' magic attack by <b>6%</b> for the turn.
         - When using the blue orb, increases all allies' magic attack by <b>12%</b> for the turn.
         - When using the blue orb, increases all allies' magic attack by <b>18%</b> for the turn.
-    - name: 読み解くもの
+    - name: Analytic
       levels:
         - Increases all <span card-type="M">magic type</span> allies' magic attack by <b>4%</b>.
         - Increases all <span card-type="M">magic type</span> allies' magic attack by <b>8%</b>.
@@ -926,7 +929,7 @@
       - Inflicts <b>320%</b> hybrid damage to 1 enemy.
         Reduces the target's defence by <b>50%</b> for 1 turn.
   passives:
-    - name: 気高き華
+    - name: Noble Flower
       levels:
         - When using the red orb, increases all allies' physical attack by <b>6%</b> for the turn.
           When using the blue orb, increases all allies' magic attack by <b>6%</b> for the turn.
@@ -934,13 +937,13 @@
           When using the blue orb, increases all allies' magic attack by <b>12%</b> for the turn.
         - When using the red orb, increases all allies' physical attack by <b>18%</b> for the turn.
           When using the blue orb, increases all allies' magic attack by <b>18%</b> for the turn.
-    - name: 夜薔薇の棘
+    - name: Thorns of the Night Rose
       levels:
         - Enemies take <b>10%</b> increased physical damage for 3 turns.
         - Enemies take <b>17.5%</b> increased physical damage for 3 turns.
         - Enemies take <b>25%</b> increased physical damage for 3 turns.
   special:
-    name: ローズイントルド
+    name: Rose Interlude
     type: P
     effect: >-
       Inflicts 120% (30%, 30%, 60%) hybrid damage to 1 enemy.
@@ -954,7 +957,7 @@
     - AoE Attack
     - Ability Buff
   spell:
-    name: エネルギー解放
+    name: Release of Energy
     cost: 10
     levels:
       - Inflicts <b>88%</b> physical damage to all enemies.
@@ -967,18 +970,18 @@
         Restores <b>46%</b> of the magic shield.
         Redirects <b>30%</b> of damage allies take to the caster for 2 turns.
   passives:
-    - name: メイドの嗜み
+    - name: A Maid's Grooming
       levels:
         - When using the yellow orb, restores <b>4%</b> of the magic shield.
         - When using the yellow orb, restores <b>8%</b> of the magic shield.
         - When using the yellow orb, restores <b>12%</b> of the magic shield.
-    - name: メイド三原則
+    - name: A Maid's Three Rules
       levels:
         - Gain <b>12.5%</b> damage reduction.
         - Gain <b>18.75%</b> damage reduction.
         - Gain <b>25%</b> damage reduction.
   special:
-    name: 出力上昇
+    name: Rising Discharge
     type: P
     effect: >-
       Inflicts 70% (21%, 21%, 28%) physical damage to all enemies.
@@ -992,7 +995,7 @@
     - Debuff
     - Ability Buff
   spell:
-    name: 月夜に駆ける
+    name: Racing into the Night
     cost: 10
     levels:
       - Gain <b>50%</b> increased critical damage for 3 turns.
@@ -1002,18 +1005,18 @@
       - Gain <b>75%</b> increased critical damage for 3 turns.
         Inflicts <b>445%</b> (60%, 75%, 90%, 105%, 120%) physical damage to 1 enemy.
   passives:
-    - name: 野生の勘
+    - name: Wild Sense
       levels:
         - When using the red orb, increases all allies' physical attack by <b>8%</b> for the turn.
         - When using the red orb, increases all allies' physical attack by <b>16%</b> for the turn.
         - When using the red orb, increases all allies' physical attack by <b>24%</b> for the turn.
-    - name: 満月に吠える
+    - name: Howling at the Moon
       levels:
-        - Normal attacks have a <b>12.5%</b> chance to apply 1 stack of defence break.
+        - Normal attacks have a <b>12.5%</b> chance to apply 1 stack of crush.
           Increases the crit chance of <span card-type="S">speed type</span> allies by <b>3%</b>.
-        - Normal attacks have a <b>25%</b> chance to apply 1 stack of defence break.
+        - Normal attacks have a <b>25%</b> chance to apply 1 stack of crush.
           Increases the crit chance of <span card-type="S">speed type</span> allies by <b>6%</b>.
-        - Normal attacks have a <b>37.5%</b> chance to apply 1 stack of defence break.
+        - Normal attacks have a <b>37.5%</b> chance to apply 1 stack of crush.
           Increases the crit chance of <span card-type="S">speed type</span> allies by <b>9%</b>.
   special:
     name: Wolves' Fang
@@ -1022,8 +1025,7 @@
       Inflicts 70% (21%, 21%, 28%) physical damage to all enemies.
       Applies 1 stack of crush to all enemies.
   notes:
-    Crush: '?'
-    Defence break: Enemies have ?% reduced defence per stack of break; stacks up to ? times, and lasts for ? turns.
+    Crush: Enemies have 16% reduced defence per stack of crush; stacks up to 6 times, and lasts for 4 turns.
 - witch: Garnet
   release: Initial
   rarity: UR
@@ -1032,23 +1034,23 @@
     - AoE Attack
     - Attack Obstruction
   spell:
-    name: 夢幻泡影
+    name: If Life Were a Dream
     cost: 10
     levels:
       - Inflicts <b>150%</b> (75%, 75%) magic damage to all enemies, or <b>250%</b> (112.5%, 112.5%) magic damage to charmed enemies.
       - Inflicts <b>184%</b> (94%, 94%) magic damage to all enemies, or <b>282%</b> (141%, 141%) magic damage to charmed enemies.
       - Inflicts <b>226%</b> (113%, 113%) magic damage to all enemies, or <b>339%</b> (169.5%, 169.5%) magic damage to charmed enemies.
   passives:
-    - name: 幽雅な微笑
+    - name: Elegant Smile
       levels:
         - When using the blue orb, increases all allies' magic attack by <b>8%</b> for the turn.
         - When using the blue orb, increases all allies' magic attack by <b>16%</b> for the turn.
         - When using the blue orb, increases all allies' magic attack by <b>24%</b> for the turn.
-    - name: 幻夜の蝶
+    - name: Short-lived Butterflies
       levels:
-        - When using the blue orb, restores <b>1</b> additional MP.
-        - When using the blue orb, restores <b>2</b> additional MP.
-        - When using the blue orb, restores <b>3</b> additional MP.
+        - When using the blue orb, generates <b>1</b> additional MP.
+        - When using the blue orb, generates <b>2</b> additional MP.
+        - When using the blue orb, generates <b>3</b> additional MP.
   special:
     name: Charming Bear
     type: M
