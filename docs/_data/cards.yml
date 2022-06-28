@@ -53,7 +53,7 @@
 - witch: Camilla
   release: Initial
   rarity: LR
-  _title: Invitation to the ball
+  _title: Invitation to the Ball
   tags:
     - AoE Attack
     - Abnormal Status
@@ -149,7 +149,7 @@
   hidden_tags:
     - Poison
   spell:
-    name: Light Scattering Cherry Blossoms
+    name: Light-scattering Cherry Blossoms
     cost: 7
     levels:
       - Inflicts <b>140%</b> physical damage to all enemies.
