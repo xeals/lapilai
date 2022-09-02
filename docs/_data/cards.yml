@@ -48,6 +48,56 @@
 # - Bold variable numbers (changing between levels).
 
 ##
+## Initial Ray part 3, and the last set to release.
+##
+- witch: Yuzuriha
+  release: Initial
+  rarity: LR
+  _title:
+  tags:
+    - Single Attack
+    - Abnormal Status
+  spell:
+    name: Brilliant Step
+    cost: 10
+    levels:
+      - Inflicts <b>350%</b> magic damage to 1 enemy.
+        Reduces the target's magic defence by <b>10%</b>.
+        Applies 1 stack of echo.
+      - Inflicts <b>450%</b> magic damage to 1 enemy.
+        Reduces the target's magic defence by <b>15%</b>.
+        Applies 1 stack of echo.
+      - Inflicts <b>650%</b> magic damage to 1 enemy.
+        Reduces the target's magic defence by <b>20%</b>.
+        <b>Increases magic attack by 15% for 3 turns.</b>
+        Applies 1 stack of echo.
+  special:
+    name:
+    type: M
+    effect: >-
+      Inflicts 180% magic damage to 1 enemy.
+      Attacking an enemy affected by damaging status conditions or echo generates 2 MP.
+  passives:
+    - name:
+      levels:
+        - When using the blue orb, increases all allies' magic attack by <b>8%</b> for the turn.
+          Gain <b>4</b> MP at the start of battle.
+        - When using the blue orb, increases all allies' magic attack by <b>16%</b> for the turn.
+          Gain <b>6</b> MP at the start of battle.
+        - When using the blue orb, increases all allies' magic attack by <b>24%</b> for the turn.
+          Gain <b>8</b> MP at the start of battle.
+    - name: Dance Partner
+      levels:
+        - Increases all <span card-type="M">magic type</span> allies' magic attack by <b>8%</b>.
+          Normal attacks have a <b>30%</b> chance to apply 1 stack of echo.
+        - Increases all <span card-type="M">magic type</span> allies' magic attack by <b>16%</b>.
+          Normal attacks have a <b>40%</b> chance to apply 1 stack of echo.
+        - Increases all <span card-type="M">magic type</span> allies' magic attack by <b>24%</b>.
+          Normal attacks have a <b>50%</b> chance to apply 1 stack of echo.
+  notes:
+    Echo: When reaching 3 stacks, consumes all stacks to inflict 15% of maximum HP as damage (reduced against bosses) and generates 5 MP; stacks lasts for 4 turns.
+
+##
 ## Initial Ray part 2
 ##
 - witch: Camilla
