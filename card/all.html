@@ -1,0 +1,5758 @@
+<!DOCTYPE html><html lang="en">
+  <head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>All cards - Lapis Re:LiGHTs English Fan Guide</title>
+
+<meta name="description" content="Single-page listing of all cards.">
+<link rel="canonical" href="https://xeals.github.io/lapilai/card/all"><link rel="alternate" type="application/rss+xml" title="Lapis Re:LiGHTs English Fan Guide" href="/lapilai/feed.xml"><link rel="apple-touch-icon" sizes="180x180" href="/lapilai/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/lapilai/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/lapilai/assets/favicon-16x16.png"><link rel="manifest" href="/lapilai/assets/site.webmanifest"><link rel="mask-icon" href="/lapilai/assets/safari-pinned-tab.svg" color="#e95098"><link rel="shortcut icon" href="/lapilai/assets/favicon.ico">
+
+<meta name="msapplication-TileColor" content="#e95098"><meta name="msapplication-config" content="/lapilai/assets/browserconfig.xml">
+
+<meta name="theme-color" content="#e95098">
+<!-- end favicons snippet -->
+<link rel="stylesheet" href="/lapilai/assets/css/main.css"><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.css" ><link rel="stylesheet" href="/lapilai/assets/css/types.css">
+
+<style>
+  figure {
+      display: flex;
+      flex-direction: column;
+  }
+  figure img {
+      max-height: 200px;
+      align-self: center;
+  }
+  figure figcaption {
+      text-align: center;
+  }
+
+  figure img.large {
+      max-height: 400px;
+  }
+
+  .item__image {
+      align-self: center;
+  }
+
+  td > ul {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+  }
+</style>
+
+<meta property="og:title"
+    content="All cards" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xeals.github.io/lapilai/card/all" />
+
+<meta property="og:site_name" content="Lapis Re:LiGHTs English Fan Guide" />
+
+<meta property="og:locale" content="en_AU" />
+
+
+<meta property="og:image" content="https://xeals.github.io/lapilai/assets/og.png" />
+<meta property="og:image:height" content="256" />
+<meta property="og:image:width" content="256" />
+
+<meta name="twitter:card"
+    content="summary" />
+<meta property="twitter:image" content="/assets/og.png" />
+
+
+<meta property="og:description"
+    content="Single-page listing of all cards." />
+
+
+<meta name="theme-color" content="#e95098" />
+
+
+<script async defer data-website-id="aa3431ba-de7c-4c43-8cb8-e054b9628ef7" src="https://stats.xeal.me/umami.js"></script>
+
+<script>(function() {
+  window.isArray = function(val) {
+    return Object.prototype.toString.call(val) === '[object Array]';
+  };
+  window.isString = function(val) {
+    return typeof val === 'string';
+  };
+
+  window.hasEvent = function(event) {
+    return 'on'.concat(event) in window.document;
+  };
+
+  window.isOverallScroller = function(node) {
+    return node === document.documentElement || node === document.body || node === window;
+  };
+
+  window.isFormElement = function(node) {
+    var tagName = node.tagName;
+    return tagName === 'INPUT' || tagName === 'SELECT' || tagName === 'TEXTAREA';
+  };
+
+  window.pageLoad = (function () {
+    var loaded = false, cbs = [];
+    window.addEventListener('load', function () {
+      var i;
+      loaded = true;
+      if (cbs.length > 0) {
+        for (i = 0; i < cbs.length; i++) {
+          cbs[i]();
+        }
+      }
+    });
+    return {
+      then: function(cb) {
+        cb && (loaded ? cb() : (cbs.push(cb)));
+      }
+    };
+  })();
+})();
+(function() {
+  window.throttle = function(func, wait) {
+    var args, result, thisArg, timeoutId, lastCalled = 0;
+
+    function trailingCall() {
+      lastCalled = new Date;
+      timeoutId = null;
+      result = func.apply(thisArg, args);
+    }
+    return function() {
+      var now = new Date,
+        remaining = wait - (now - lastCalled);
+
+      args = arguments;
+      thisArg = this;
+
+      if (remaining <= 0) {
+        clearTimeout(timeoutId);
+        timeoutId = null;
+        lastCalled = now;
+        result = func.apply(thisArg, args);
+      } else if (!timeoutId) {
+        timeoutId = setTimeout(trailingCall, remaining);
+      }
+      return result;
+    };
+  };
+})();
+(function() {
+  var Set = (function() {
+    var add = function(item) {
+      var i, data = this._data;
+      for (i = 0; i < data.length; i++) {
+        if (data[i] === item) {
+          return;
+        }
+      }
+      this.size ++;
+      data.push(item);
+      return data;
+    };
+
+    var Set = function(data) {
+      this.size = 0;
+      this._data = [];
+      var i;
+      if (data.length > 0) {
+        for (i = 0; i < data.length; i++) {
+          add.call(this, data[i]);
+        }
+      }
+    };
+    Set.prototype.add = add;
+    Set.prototype.get = function(index) { return this._data[index]; };
+    Set.prototype.has = function(item) {
+      var i, data = this._data;
+      for (i = 0; i < data.length; i++) {
+        if (this.get(i) === item) {
+          return true;
+        }
+      }
+      return false;
+    };
+    Set.prototype.is = function(map) {
+      if (map._data.length !== this._data.length) { return false; }
+      var i, j, flag, tData = this._data, mData = map._data;
+      for (i = 0; i < tData.length; i++) {
+        for (flag = false, j = 0; j < mData.length; j++) {
+          if (tData[i] === mData[j]) {
+            flag = true;
+            break;
+          }
+        }
+        if (!flag) { return false; }
+      }
+      return true;
+    };
+    Set.prototype.values = function() {
+      return this._data;
+    };
+    return Set;
+  })();
+
+  window.Lazyload = (function(doc) {
+    var queue = {js: [], css: []}, sources = {js: {}, css: {}}, context = this;
+    var createNode = function(name, attrs) {
+      var node = doc.createElement(name), attr;
+      for (attr in attrs) {
+        if (attrs.hasOwnProperty(attr)) {
+          node.setAttribute(attr, attrs[attr]);
+        }
+      }
+      return node;
+    };
+    var end = function(type, url) {
+      var s, q, qi, cbs, i, j, cur, val, flag;
+      if (type === 'js' || type ==='css') {
+        s = sources[type], q = queue[type];
+        s[url] = true;
+        for (i = 0; i < q.length; i++) {
+          cur = q[i];
+          if (cur.urls.has(url)) {
+            qi = cur, val = qi.urls.values();
+            qi && (cbs = qi.callbacks);
+            for (flag = true, j = 0; j < val.length; j++) {
+              cur = val[j];
+              if (!s[cur]) {
+                flag = false;
+              }
+            }
+            if (flag && cbs && cbs.length > 0) {
+              for (j = 0; j < cbs.length; j++) {
+                cbs[j].call(context);
+              }
+              qi.load = true;
+            }
+          }
+        }
+      }
+    };
+    var load = function(type, urls, callback) {
+      var s, q, qi, node, i, cur,
+        _urls = typeof urls === 'string' ? new Set([urls]) : new Set(urls), val, url;
+      if (type === 'js' || type ==='css') {
+        s = sources[type], q = queue[type];
+        for (i = 0; i < q.length; i++) {
+          cur = q[i];
+          if (_urls.is(cur.urls)) {
+            qi = cur;
+            break;
+          }
+        }
+        val = _urls.values();
+        if (qi) {
+          callback && (qi.load || qi.callbacks.push(callback));
+          callback && (qi.load && callback());
+        } else {
+          q.push({
+            urls: _urls,
+            callbacks: callback ? [callback] : [],
+            load: false
+          });
+          for (i = 0; i < val.length; i++) {
+            node = null, url = val[i];
+            if (s[url] === undefined) {
+              (type === 'js' ) && (node = createNode('script', { src: url }));
+              (type === 'css') && (node = createNode('link', { rel: 'stylesheet', href: url }));
+              if (node) {
+                node.onload = (function(type, url) {
+                  return function() {
+                    end(type, url);
+                  };
+                })(type, url);
+                (doc.head || doc.body).appendChild(node);
+                s[url] = false;
+              }
+            }
+          }
+        }
+      }
+    };
+    return {
+      js: function(url, callback) {
+        load('js', url, callback);
+      },
+      css: function(url, callback) {
+        load('css', url, callback);
+      }
+    };
+  })(this.document);
+})();
+</script><script>
+  (function() {
+    var TEXT_VARIABLES = {
+      version: '2.2.6',
+      sources: {
+        font_awesome: 'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.css',
+        jquery: 'https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js',
+        leancloud_js_sdk: '//cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js',
+        chart: 'https://cdn.bootcss.com/Chart.js/2.7.2/Chart.bundle.min.js',
+        gitalk: {
+          js: 'https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.js',
+          css: 'https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.css'
+        },
+        valine: 'https://unpkg.com/valine/dist/Valine.min.js',
+        mathjax: 'https://cdn.bootcss.com/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML',
+        mermaid: 'https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js'
+      },
+      site: {
+        toc: {
+          selectors: 'h1,h2,h3'
+        }
+      },
+      paths: {
+        search_js: '/lapilai/assets/search.js'
+      }
+    };
+    window.TEXT_VARIABLES = TEXT_VARIABLES;
+  })();
+</script>
+</head>
+  <body>
+    <div class="root" data-is-touch="false">
+      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport has-aside cell cell--auto">
+
+      <div class="page__main-inner"><div class="page__header d-print-none"><header class="header"><div class="main">
+      <div class="header__title">
+        <div class="header__brand"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="24px" height="24px" viewBox="0 0 24 24">
+<style type="text/css">
+	.st0{fill:#515151;}
+</style>
+<path class="st0" d="M1.7,22.3c5.7-5.7,11.3-5.7,17,0c3.3-3.3,3.5-5.3,0.8-6c2.7,0.7,3.5-1.1,2.3-5.6s-3.3-5.2-6.3-2.1
+	c3-3,2.3-5.2-2.1-6.3S7,1.8,7.7,4.6C7,1.8,5,2.1,1.7,5.3C7.3,11,7.3,16.7,1.7,22.3"/>
+</svg>
+<a title="Fan-made English documentation for helping new players navigating around Lapis Re:LiGHTs.
+" href="/lapilai/">Lapis Re:LiGHTs English Fan Guide</a></div></div><nav class="navigation">
+        <ul><li class="navigation__item"><a href="/lapilai/guide/faq">How to play</a></li><li class="navigation__item"><a href="/lapilai/content">Translated content</a></li><li class="navigation__item"><a href="/lapilai/tools">Tools</a></li><li class="navigation__item"><a href="/lapilai/card">Cards</a></li></ul>
+      </nav></div>
+  </header>
+</div><div class="page__content"><div class ="main"><div class="grid grid--reverse">
+
+              <div class="col-aside d-print-none js-col-aside"><aside class="page__aside js-page-aside"><div class="toc-aside js-toc-root"></div>
+</aside></div>
+
+              <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
+
+<!-- end custom main top snippet -->
+<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>All cards</h1></header></div><meta itemprop="headline" content="All cards"><div class="article__info clearfix"><ul class="right-col menu"></ul></div><meta itemprop="author" content="Your Name"/><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
+
+<!-- end custom article top snippet -->
+<div class="article__content" itemprop="articleBody"><link rel="stylesheet" href="/lapilai/assets/css/types.css">
+<link rel="stylesheet" href="/lapilai/assets/css/witch-card.css">
+
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-lr-yuzuriha">
+    Initial LR Yuzuriha
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-lr-yuzuriha.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="M">Magic</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        Single Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Abnormal Status
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="brilliant-step"
+    card-type=""
+  >
+    Brilliant Step
+  </h3>
+
+  <p>Cost: <span class="wc__cost">10</span></p>
+
+  <ol>
+    
+    <li>Inflicts <b>350%</b> magic damage to 1 enemy. Reduces the target's magic defence by <b>10%</b>. Applies 1 stack of echo.</li>
+    
+    <li>Inflicts <b>450%</b> magic damage to 1 enemy. Reduces the target's magic defence by <b>15%</b>. Applies 1 stack of echo.</li>
+    
+    <li>Inflicts <b>650%</b> magic damage to 1 enemy. Reduces the target's magic defence by <b>20%</b>. <b>Increases magic attack by 15% for 3 turns.</b> Applies 1 stack of echo.</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id=""
+    card-type="M"
+  >
+     - Special
+  </h3>
+
+  Inflicts 180% magic damage to 1 enemy. Attacking an enemy affected by damaging status conditions or echo generates 2 MP.
+  
+
+  
+  <a name=""></a>
+  <h3 id="">
+     - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the blue orb, increases all allies' magic attack by <b>8%</b> for the turn. Gain <b>4</b> MP at the start of battle.</li>
+    
+    <li>When using the blue orb, increases all allies' magic attack by <b>16%</b> for the turn. Gain <b>6</b> MP at the start of battle.</li>
+    
+    <li>When using the blue orb, increases all allies' magic attack by <b>24%</b> for the turn. Gain <b>8</b> MP at the start of battle.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="dance-partner">
+    Dance Partner - Passive
+  </h3>
+
+  <ol>
+    
+    <li>Increases all <span card-type="M">magic type</span> allies' magic attack by <b>8%</b>. Normal attacks have a <b>30%</b> chance to apply 1 stack of echo.</li>
+    
+    <li>Increases all <span card-type="M">magic type</span> allies' magic attack by <b>16%</b>. Normal attacks have a <b>40%</b> chance to apply 1 stack of echo.</li>
+    
+    <li>Increases all <span card-type="M">magic type</span> allies' magic attack by <b>24%</b>. Normal attacks have a <b>50%</b> chance to apply 1 stack of echo.</li>
+    
+  </ol>
+  
+
+  
+  <h3 id="notes">Notes</h3>
+  <dl>
+  
+    <dt>Echo</dt>
+    <dd>When reaching 3 stacks, consumes all stacks to inflict 15% of maximum HP as damage (reduced against bosses) and generates 5 MP; stacks lasts for 4 turns.</dd>
+  
+  </dl>
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-lr-camilla">
+    Initial LR Camilla
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-lr-camilla.jpg"
+  alt="Card image"
+/>
+
+    <i>Invitation to the Ball</i>
+
+    
+    <b card-type="T">Technique</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        AoE Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Abnormal Status
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="vampire-arrows"
+    card-type=""
+  >
+    Vampire Arrows
+  </h3>
+
+  <p>Cost: <span class="wc__cost">10</span></p>
+
+  <ol>
+    
+    <li>Inflicts <b>300%</b> (90%, 90%, 120%) hybrid damage to all enemies. Reduces the defence of 1 random enemy by <b>30%</b> for 3 turns.</li>
+    
+    <li>Inflicts <b>400%</b> (120%, 120%, 160%) hybrid damage to all enemies. Reduces the defence of 1 random enemy by <b>40%</b> for 3 turns.</li>
+    
+    <li>Inflicts <b>500%</b> (150%, 150%, 200%) hybrid damage to all enemies. Reduces the defence of 1 random enemy by <b>50%</b> for 3 turns. <b>Applies 1 stack of echo to all enemies.</b> <b>Gains 50% crit chance for 3 turns.</b></li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="lord-of-the-night"
+    card-type="P"
+  >
+    Lord of the Night - Special
+  </h3>
+
+  Inflicts 144% (36%, 36%, 72%) hybrid damage to 1 enemy. Applies 1 stack of echoes to 1 enemy.
+  
+
+  
+  <a name=""></a>
+  <h3 id="swagger-of-the-prince">
+    Swagger of the Prince - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>6%</b> for the turn. When using the blue orb, increases all allies' magic attack by <b>6%</b> for the turn. Attacking an enemy affected by damaging status conditions or echo generates <b>1</b> MP.</li>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>12%</b> for the turn. When using the blue orb, increases all allies' magic attack by <b>12%</b> for the turn. Attacking an enemy affected by damaging status conditions or echo generates <b>2</b> MP.</li>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>18%</b> for the turn. When using the blue orb, increases all allies' magic attack by <b>18%</b> for the turn. Attacking an enemy affected by damaging status conditions or echo generates <b>3</b> MP.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="escort">
+    Escort - Passive
+  </h3>
+
+  <ol>
+    
+    <li>Attacking an enemy affected by echo increases the physical and magical attack of the entire team by <b>10%</b>.</li>
+    
+    <li>Attacking an enemy affected by echo increases the physical and magical attack of the entire team by <b>20%</b>.</li>
+    
+    <li>Attacking an enemy affected by echo increases the physical and magical attack of the entire team by <b>30%</b>.</li>
+    
+  </ol>
+  
+
+  
+  <h3 id="notes">Notes</h3>
+  <dl>
+  
+    <dt>Echo</dt>
+    <dd>When reaching 3 stacks, consumes all stacks to inflict 15% of maximum HP as damage (reduced against bosses) and generates 5 MP; stacks lasts for 4 turns.</dd>
+  
+  </dl>
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-lr-angers">
+    Initial LR Angers
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-lr-angers.jpg"
+  alt="Card image"
+/>
+
+    <i>Little Archangel</i>
+
+    
+    <b card-type="X">Support</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="X">
+        Recovery
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Ability Buff
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="angelic-phaser"
+    card-type=""
+  >
+    Angelic Phaser
+  </h3>
+
+  <p>Cost: <span class="wc__cost">14</span></p>
+
+  <ol>
+    
+    <li>Restores HP equal to <b>40%</b> of magic attack to all allies. Increases the critical damage of the strongest ally by <b>15%</b> for 4 turns.</li>
+    
+    <li>Restores HP equal to <b>60%</b> of magic attack to all allies. Increases the critical damage of the strongest ally by <b>20%</b> for 4 turns.</li>
+    
+    <li>Restores HP equal to <b>80%</b> of magic attack to all allies. Increases the critical damage of the strongest ally by <b>25%</b> for 4 turns. <b>Any damage taken by the 3 weakest allies is reduced to 1 for 1 turn.</b></li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="an-angel's-benevolence"
+    card-type="M"
+  >
+    An Angel's Benevolence - Special
+  </h3>
+
+  Inflicts 100% magic damage to all enemies. Removes stuns from all allies. Restores 10% HP to all allies each turn for 2 turns.
+  
+
+  
+  <a name=""></a>
+  <h3 id="pure-angel">
+    Pure Angel - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the blue orb, generates <b>1</b> additional MP. All allies gain a barrier that absorbs up to <b>10%</b> of maximum HP for 6 turns.</li>
+    
+    <li>When using the blue orb, generates <b>2</b> additional MP. All allies gain a barrier that absorbs up to <b>15%</b> of maximum HP for 6 turns.</li>
+    
+    <li>When using the blue orb, generates <b>3</b> additional MP. All allies gain a barrier that absorbs up to <b>20%</b> of maximum HP for 6 turns.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="angel-in-bloom">
+    Angel in Bloom - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When any ally receives a critical hit, they restore <b>10%</b> of the damage taken, then gain <b>1%</b> critical damage reduction (stacking up to 10 times).</li>
+    
+    <li>When any ally receives a critical hit, they restore <b>12.5%</b> of the damage taken, then gain <b>2%</b> critical damage reduction (stacking up to 10 times).</li>
+    
+    <li>When any ally receives a critical hit, they restore <b>15%</b> of the damage taken, then gain <b>3%</b> critical damage reduction (stacking up to 10 times).</li>
+    
+  </ol>
+  
+
+  
+  <h3 id="notes">Notes</h3>
+  <dl>
+  
+    <dt>Strongest Ally</dt>
+    <dd>Witch with the highest offensive stat total (Physical + Magic).</dd>
+  
+    <dt>Weakest Ally</dt>
+    <dd>Witch with the lowest current HP stat.</dd>
+  
+  </dl>
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="sakura-ur-millefeuille">
+    Sakura UR Millefeuille
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/sakura-ur-millefeuille.jpg"
+  alt="Card image"
+/>
+
+    <i>Fluttering Petals in the Wind</i>
+
+    
+    <b card-type="S">Speed</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        AoE Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Debuff
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="light-scattering-cherry-blossoms"
+    card-type=""
+  >
+    Light-scattering Cherry Blossoms
+  </h3>
+
+  <p>Cost: <span class="wc__cost">7</span></p>
+
+  <ol>
+    
+    <li>Inflicts <b>140%</b> physical damage to all enemies. Applies <b>2</b> stacks of poison to all enemies.</li>
+    
+    <li>Inflicts <b>190%</b> physical damage to all enemies. Applies <b>3</b> stacks of poison to all enemies.</li>
+    
+    <li>Inflicts <b>240%</b> physical damage to all enemies. Applies <b>4</b> stacks of poison to all enemies.</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="blossoms-in-full-view"
+    card-type="T"
+  >
+    Blossoms in Full View - Special
+  </h3>
+
+  Inflicts 70% physical damage (35%, 35%) to all enemies. Affected enemies receive 50% increased damage from poison for 4 turns.
+  
+
+  
+  <a name=""></a>
+  <h3 id="cherry-blossoms-at-night-are-love">
+    Cherry Blossoms at Night are Love - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>8%</b> for the turn.</li>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>16%</b> for the turn.</li>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>24%</b> for the turn.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="the-scent-of-spring">
+    The Scent of Spring - Passive
+  </h3>
+
+  <ol>
+    
+    <li>Normal attacks have a <b>25%</b> chance to apply 1 stack of poison.</li>
+    
+    <li>Normal attacks have a <b>50%</b> chance to apply 1 stack of poison.</li>
+    
+    <li>Normal attacks have a <b>75%</b> chance to apply 1 stack of poison.</li>
+    
+  </ol>
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="sakura-ur-alpha">
+    Sakura UR Alpha
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/sakura-ur-alpha.jpg"
+  alt="Card image"
+/>
+
+    <i>Scattered Petals in my Hand</i>
+
+    
+    <b card-type="P">Protection</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        AoE Attack
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Shield Recovery
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="dance-of-scattering-cherry-blossoms"
+    card-type=""
+  >
+    Dance of Scattering Cherry Blossoms
+  </h3>
+
+  <p>Cost: <span class="wc__cost">10</span></p>
+
+  <ol>
+    
+    <li>Inflicts <b>105%</b> physical damage to 1 enemy. Taunts all enemies for 3 turns. Gain <b>8%</b> damage reduction for 3 turns. All allies gain <b>30%</b> damage reduction for 3 turns.</li>
+    
+    <li>Inflicts <b>195%</b> physical damage to 1 enemy. Taunts all enemies for 3 turns. Gain <b>16%</b> damage reduction for 3 turns. All allies gain <b>40%</b> damage reduction for 3 turns.</li>
+    
+    <li>Inflicts <b>285%</b> physical damage to 1 enemy. Taunts all enemies for 3 turns. Gain <b>24%</b> damage reduction for 3 turns. All allies gain <b>50%</b> damage reduction for 3 turns.</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="a-midnight-for-the-flowers-and-moon"
+    card-type="P"
+  >
+    A Midnight for the Flowers and Moon - Special
+  </h3>
+
+  Inflicts 100% physical damage (30%, 30%, 40%) to all enemies. Restores 15% of the magic shield. Applies 1 stack of poison to all enemies.
+  
+
+  
+  <a name=""></a>
+  <h3 id="cherry-blossoms-at-night-are-protection">
+    Cherry Blossoms at Night are Protection - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the yellow orb, restores <b>4%</b> of the magic shield. 33% chance when receiving damage to restore <b>25%</b> of the magic shield.</li>
+    
+    <li>When using the yellow orb, restores <b>8%</b> of the magic shield. 33% chance when receiving damage to restore <b>35%</b> of the magic shield.</li>
+    
+    <li>When using the yellow orb, restores <b>12%</b> of the magic shield. 33% chance when receiving damage to restore <b>45%</b> of the magic shield.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="blessings-of-spring">
+    Blessings of Spring - Passive
+  </h3>
+
+  <ol>
+    
+    <li><b>75%</b> chance when attacked to apply 1 stack of poison to the attacker. Once per turn, when damaged by a status condition, restores <b>10%</b> HP.</li>
+    
+    <li><b>100%</b> chance when attacked to apply 1 stack of poison to the attacker. Once per turn, when damaged by a status condition, restores <b>15%</b> HP.</li>
+    
+    <li><b>100%</b> chance when attacked to apply 1 stack of poison to the attacker. Once per turn, when damaged by a status condition, restores <b>20%</b> HP.</li>
+    
+  </ol>
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="sakura-ur-rosetta">
+    Sakura UR Rosetta
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/sakura-ur-rosetta.jpg"
+  alt="Card image"
+/>
+
+    <i>Cherry Blossoms under the Rising Moon</i>
+
+    
+    <b card-type="S">Speed</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        AoE Attack
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="shadow-of-cherry-blossoms-in-the-moon"
+    card-type=""
+  >
+    Shadow of Cherry Blossoms in the Moon
+  </h3>
+
+  <p>Cost: <span class="wc__cost">12</span></p>
+
+  <ol>
+    
+    <li>Inflicts <b>240%</b> physical damage to 1 enemy. Removes all stacks of poison from all enemies, and inflicts damage for each turn remaining.</li>
+    
+    <li>Inflicts <b>360%</b> physical damage to 1 enemy. Removes all stacks of poison from all enemies, and inflicts damage for each turn remaining.</li>
+    
+    <li>Inflicts <b>480%</b> physical damage to 1 enemy. Removes all stacks of poison from all enemies, and inflicts damage for each turn remaining.</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="wild-moonlight"
+    card-type="T"
+  >
+    Wild Moonlight - Special
+  </h3>
+
+  Inflicts 144% physical damage (36%, 36%, 72%) to 1 enemy. Applies 2 stacks of poison.
+  
+
+  
+  <a name=""></a>
+  <h3 id="feast-of-cherry-blossoms-at-night">
+    Feast of Cherry Blossoms at Night - Passive
+  </h3>
+
+  <ol>
+    
+    <li>After attacking 2 times, gain <b>20%</b> crit chance for 2 turns. Critical hits apply 1 stack of poison.</li>
+    
+    <li>After attacking 2 times, gain <b>30%</b> crit chance for 2 turns. Critical hits apply 1 stack of poison.</li>
+    
+    <li>After attacking 2 times, gain <b>40%</b> crit chance for 2 turns. Critical hits apply 1 stack of poison.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="the-splendor-of-spring">
+    The Splendor of Spring - Passive
+  </h3>
+
+  <ol>
+    
+    <li>Inflict <b>10%</b> increased damage to poisoned enemies.</li>
+    
+    <li>Inflict <b>20%</b> increased damage to poisoned enemies.</li>
+    
+    <li>Inflict <b>30%</b> increased damage to poisoned enemies.</li>
+    
+  </ol>
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-lr-chloe">
+    Initial LR Chloe
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-lr-chloe.jpg"
+  alt="Card image"
+/>
+
+    <i>Conductor</i>
+
+    
+    <b card-type="P">Protection</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="P">
+        Shield Recovery
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Ability Buff
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="illusory-baton"
+    card-type=""
+  >
+    Illusory Baton
+  </h3>
+
+  <p>Cost: <span class="wc__cost">12</span></p>
+
+  <ol>
+    
+    <li>Inflicts <b>150%</b> physical damage to all enemies. Restores <b>27%</b> of the magic shield. 20% chance to restore <b>10%</b> HP each turn for 4 turns.</li>
+    
+    <li>Inflicts <b>200%</b> physical damage to all enemies. Restores <b>34%</b> of the magic shield. 20% chance to restore <b>20%</b> HP each turn for 4 turns.</li>
+    
+    <li>Inflicts <b>250%</b> physical damage to all enemies. Restores <b>41%</b> of the magic shield. 20% chance to restore <b>30%</b> HP each turn for 4 turns. <b>increases all allies' physical and magic attack by 50% for 4 turns.</b></li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="hell-reaving-scythe"
+    card-type="P"
+  >
+    Hell-reaving Scythe - Special
+  </h3>
+
+  Inflicts 120% physical damage to all enemies. Restores 20% of the magic shield. Taunts all enemies for 2 turns.
+  
+
+  
+  <a name=""></a>
+  <h3 id="level-and-calm">
+    Level and Calm - Passive
+  </h3>
+
+  <ol>
+    
+    <li>Reduces damage done to the magic shield by <b>20%</b>. Once per attack, 20% chance when taking damage to restore <b>10%</b> of the magic shield. When using the yellow orb, restores <b>4%</b> of the magic shield.</li>
+    
+    <li>Reduces damage done to the magic shield by <b>30%</b>. Once per attack, 20% chance when taking damage to restore <b>15%</b> of the magic shield. When using the yellow orb, restores <b>8%</b> of the magic shield.</li>
+    
+    <li>Reduces damage done to the magic shield by <b>40%</b>. Once per attack, 20% chance when taking damage to restore <b>20%</b> of the magic shield. When using the yellow orb, restores <b>12%</b> of the magic shield.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="pride-of-the-reaper-in-blue">
+    Pride of the Reaper in Blue - Passive
+  </h3>
+
+  <ol>
+    
+    <li>increases all allies' damage by <b>5%</b> and crit chance by <b>5%</b>.</li>
+    
+    <li>increases all allies' damage by <b>10%</b> and crit chance by <b>10%</b>.</li>
+    
+    <li>increases all allies' damage by <b>15%</b> and crit chance by <b>15%</b>.</li>
+    
+  </ol>
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-lr-eliza">
+    Initial LR Eliza
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-lr-eliza.jpg"
+  alt="Card image"
+/>
+
+    <i>Song for Happiness</i>
+
+    
+    <b card-type="T">Technique</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        Single Attack
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="princess-melody"
+    card-type=""
+  >
+    Princess Melody
+  </h3>
+
+  <p>Cost: <span class="wc__cost">10</span></p>
+
+  <ol>
+    
+    <li>Inflicts <b>300%</b> (30%, 30%, 45%, 45%, 45%, 105%) physical damage to 1 enemy. Applies 1 stack of burn.</li>
+    
+    <li>Inflicts <b>420%</b> (42%, 42%, 63%, 63%, 63%, 147%) physical damage to 1 enemy. Applies 1 stack of burn.</li>
+    
+    <li>Inflicts <b>540%</b> (54%, 54%, 81%, 81%, 81%, 189%) physical damage to 1 enemy, <b>and inflicts 162% (16.2%, 16.2%, 24.3%, 24.3%, 24.3%, 56.7%) physical damage to 2 other random enemies</b>. Applies 1 stack of burn.</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="crimson-sword"
+    card-type="T"
+  >
+    Crimson Sword - Special
+  </h3>
+
+  Increases crit chance by 20% for 2 turns. Inflicts 150% (30%, 30%, 40%, 50%) physical damage to 1 enemy.
+  
+
+  
+  <a name=""></a>
+  <h3 id="crimson-swordplay">
+    Crimson Swordplay - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using with the red orb, increases all allies' physical attack by <b>8%</b> for the turn. Normal attacks have a <b>25%</b> chance to apply 1 stack of burn.</li>
+    
+    <li>When using with the red orb, increases all allies' physical attack by <b>16%</b> for the turn. Normal attacks have a <b>50%</b> chance to apply 1 stack of burn.</li>
+    
+    <li>When using with the red orb, increases all allies' physical attack by <b>24%</b> for the turn. Normal attacks have a <b>75%</b> chance to apply 1 stack of burn.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="commanding-gaze">
+    Commanding Gaze - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When an attack hits, gain <b>0.4%</b> increased damage (stacking up to 10 times) and <b>1.5%</b> increased critical damage (stacking up to 10 times).</li>
+    
+    <li>When an attack hits, gain <b>0.8%</b> increased damage (stacking up to 10 times) and <b>3%</b> increased critical damage (stacking up to 10 times).</li>
+    
+    <li>When an attack hits, gain <b>1.2%</b> increased damage (stacking up to 10 times) and <b>4.5%</b> increased critical damage (stacking up to 10 times).</li>
+    
+  </ol>
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="valentines-ur-lynette">
+    Valentines UR Lynette
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/valentines-ur-lynette.jpg"
+  alt="Card image"
+/>
+
+    <i>Y-you've got it wrong!</i>
+
+    
+    <b card-type="M">Magic</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        AoE Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Abnormal Status
+      </span>
+      
+      <span class="wc__tag" card-type="M">
+        MP Gain
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="i'm-the-present?!"
+    card-type=""
+  >
+    I'm the Present?!
+  </h3>
+
+  <p>Cost: <span class="wc__cost">12</span></p>
+
+  <ol>
+    
+    <li>Inflicts <b>190%</b> magic damage to all enemies. Applies <b>1</b> stack of charm to all enemies.</li>
+    
+    <li>Inflicts <b>230%</b> magic damage to all enemies. Applies <b>1</b> stack of charm to all enemies.</li>
+    
+    <li>Inflicts <b>270%</b> magic damage to all enemies. Applies <b>2</b> stacks of charm to all enemies.</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="magical-ribbon"
+    card-type=""
+  >
+    Magical Ribbon - Special
+  </h3>
+
+  Inflicts 144% (36%, 36%, 72%) magic damage to 1 enemy. Generates 2 MP each turn for 2 turns.
+  
+
+  
+  <a name=""></a>
+  <h3 id="energy-gain">
+    Energy Gain - Passive
+  </h3>
+
+  <ol>
+    
+    <li>Generates <b>10</b> MP when an enemy dies.</li>
+    
+    <li>Generates <b>15</b> MP when an enemy dies.</li>
+    
+    <li>Generates <b>20</b> MP when an enemy dies.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="palpitating-heart">
+    Palpitating Heart - Passive
+  </h3>
+
+  <ol>
+    
+    <li>Attacks have a <b>25%</b> chance to apply 1 stack of charm. When using the blue orb, generates <b>1</b> additional MP.</li>
+    
+    <li>Attacks have a <b>37.5%</b> chance to apply 1 stack of charm. When using the blue orb, generates <b>2</b> additional MP.</li>
+    
+    <li>Attacks have a <b>50%</b> chance to apply 1 stack of charm. When using the blue orb, generates <b>3</b> additional MP.</li>
+    
+  </ol>
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="valentines-ur-garnet">
+    Valentines UR Garnet
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/valentines-ur-garnet.jpg"
+  alt="Card image"
+/>
+
+    <i>My heart is right here</i>
+
+    
+    <b card-type="M">Magic</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        Single Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Abnormal Status
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="on-valentine's-night"
+    card-type=""
+  >
+    On Valentine's Night
+  </h3>
+
+  <p>Cost: <span class="wc__cost">10</span></p>
+
+  <ol>
+    
+    <li>Applies 1 stack of cursed wounds to 1 enemy. Applies 1 stack of charm to the target. Inflicts <b>330%</b> magic damage to the target.</li>
+    
+    <li>Applies 1 stack of cursed wounds to 1 enemy. Applies 1 stack of charm to the target. Inflicts <b>445%</b> magic damage to the target.</li>
+    
+    <li>Applies 1 stack of cursed wounds to 1 enemy. Applies 1 stack of charm to the target. Inflicts <b>560%</b> magic damage to the target.</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="there's-no-stopping-this-love"
+    card-type=""
+  >
+    There's No Stopping This Love - Special
+  </h3>
+
+  Inflicts 160% magic damage to 1 enemy, or 320% magic damage if the enemy is charmed.
+  
+
+  
+  <a name=""></a>
+  <h3 id="lovely-gift">
+    Lovely Gift - Passive
+  </h3>
+
+  <ol>
+    
+    <li>Critical hits from normal attacks generate <b>2</b> MP. Gains <b>25%</b> crit chance against enemies that are charmed or have cursed wounds.</li>
+    
+    <li>Critical hits from normal attacks generate <b>3</b> MP. Gains <b>25%</b> crit chance against enemies that are charmed or have cursed wounds.</li>
+    
+    <li>Critical hits from normal attacks generate <b>4</b> MP. Gains <b>35%</b> crit chance against enemies that are charmed or have cursed wounds.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="overly-sweet-present">
+    Overly Sweet Present - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the blue orb, restores <b>5%</b> HP. When part of a blue chain attack, gain <b>8%</b> increased attack.</li>
+    
+    <li>When using the blue orb, restores <b>10%</b> HP. When part of a blue chain attack, gain <b>16%</b> increased attack.</li>
+    
+    <li>When using the blue orb, restores <b>15%</b> HP. When part of a blue chain attack, gain <b>24%</b> increased attack.</li>
+    
+  </ol>
+  
+
+  
+  <h3 id="notes">Notes</h3>
+  <dl>
+  
+    <dt>Cursed wounds</dt>
+    <dd>Enemies receive 10% increased damage per stack of cursed wounds; stacks up to 3 times, and lasts for 4 turns.</dd>
+  
+  </dl>
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="valentines-ur-ratura">
+    Valentines UR Ratura
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/valentines-ur-ratura.jpg"
+  alt="Card image"
+/>
+
+    <i>C'mon and open up〜♪</i>
+
+    
+    <b card-type="T">Technique</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        Single Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Abnormal Status
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Healing
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="bold-aggression!"
+    card-type=""
+  >
+    Bold aggression!
+  </h3>
+
+  <p>Cost: <span class="wc__cost">7</span></p>
+
+  <ol>
+    
+    <li>Inflicts <b>120%</b> hybrid damage to all enemies. Removes all status conditions from all allies. Protects allies from sleep, stun, charm, and freeze for <b>1</b> turn.</li>
+    
+    <li>Inflicts <b>130%</b> hybrid damage to all enemies. Removes all status conditions from all allies. Protects allies from sleep, stun, charm, and freeze for <b>1</b> turn.</li>
+    
+    <li>Inflicts <b>140%</b> hybrid damage to all enemies. Removes all status conditions from all allies. Protects allies from sleep, stun, charm, and freeze for <b>2</b> turns.</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="silky-melt"
+    card-type=""
+  >
+    Silky Melt - Special
+  </h3>
+
+  Inflicts 100% (30%, 30%, 40%) hybrid damage to all enemies. Applies 1 stack of charm.
+  
+
+  
+  <a name=""></a>
+  <h3 id="sweet-mood">
+    Sweet Mood - Passive
+  </h3>
+
+  <ol>
+    
+    <li>Removes any impairing status condition received (sleep, stun, charm, or freeze). <b>5</b> turn cooldown.</li>
+    
+    <li>Removes any impairing status condition received (sleep, stun, charm, or freeze). <b>4</b> turn cooldown.</li>
+    
+    <li>Removes any impairing status condition received (sleep, stun, charm, or freeze). <b>3</b> turn cooldown.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="overly-sweet-sugar">
+    Overly Sweet Sugar - Passive
+  </h3>
+
+  <ol>
+    
+    <li>Decreases all enemies' physical attack by <b>15%</b> for 4 turns. When using the blue orb, generates <b>1</b> additional MP.</li>
+    
+    <li>Decreases all enemies' physical attack by <b>30%</b> for 4 turns. When using the blue orb, generates <b>2</b> additional MP.</li>
+    
+    <li>Decreases all enemies' physical attack by <b>45%</b> for 4 turns. When using the blue orb, generates <b>3</b> additional MP.</li>
+    
+  </ol>
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="sky-stage-ur-tiara">
+    Sky Stage UR Tiara
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/sky-stage-ur-tiara.jpg"
+  alt="Card image"
+/>
+
+    <i>A Singing Voice from the Sky</i>
+
+    
+    <b card-type="T">Technique</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        AoE Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Debuff
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="sky-stage"
+    card-type=""
+  >
+    Sky Stage
+  </h3>
+
+  <p>Cost: <span class="wc__cost">9</span></p>
+
+  <ol>
+    
+    <li>Inflicts <b>86%</b> (43%, 43%) hybrid damage to all enemies. Decreases all enemies' crit avoidance by <b>14%</b> for 3 turns.</li>
+    
+    <li>Inflicts <b>114%</b> (57%, 57%) hybrid damage to all enemies. Decreases all enemies' crit avoidance by <b>22%</b> for 3 turns.</li>
+    
+    <li>Inflicts <b>144%</b> (72%, 72%) hybrid damage to all enemies. Decreases all enemies' crit avoidance by <b>30%</b> for 3 turns.</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="flowers-blooming-in-the-sky"
+    card-type="T"
+  >
+    Flowers Blooming in the Sky - Special
+  </h3>
+
+  Inflicts 120% (30%, 30%, 60%) hybrid damage to 1 enemy. Reduces the target's defence by 25% for 2 turns.
+  
+
+  
+  <a name=""></a>
+  <h3 id="aspiration-and-determination">
+    Aspiration and Determination - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>6%</b> for the turn. When using the blue orb, increases all allies' magic attack by <b>6%</b> for the turn.</li>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>12%</b> for the turn. When using the blue orb, increases all allies' magic attack by <b>12%</b> for the turn.</li>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>18%</b> for the turn. When using the blue orb, increases all allies' magic attack by <b>18%</b> for the turn.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="flowery-cloud">
+    Flowery Cloud - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When any ally critically hits, they gain <b>10%</b> critical damage (stacking up to 5 times).</li>
+    
+    <li>When any ally critically hits, they gain <b>15%</b> critical damage (stacking up to 5 times).</li>
+    
+    <li>When any ally critically hits, they gain <b>20%</b> critical damage (stacking up to 5 times).</li>
+    
+  </ol>
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="sky-stage-ur-tsubaki">
+    Sky Stage UR Tsubaki
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/sky-stage-ur-tsubaki.jpg"
+  alt="Card image"
+/>
+
+    <i>The Best Sense of Freedom</i>
+
+    
+    <b card-type="S">Speed</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        Single Attack
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Ability Buff
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="thousand-balloons"
+    card-type=""
+  >
+    Thousand Balloons
+  </h3>
+
+  <p>Cost: <span class="wc__cost">9</span></p>
+
+  <ol>
+    
+    <li>Gain <b>24%</b> critical damage and <b>9%</b> crit chance for 2 turns. Inflicts <b>222%</b> (74%, 74%, 74%) physical damage to 1 target.</li>
+    
+    <li>Gain <b>30%</b> critical damage and <b>15%</b> crit chance for 2 turns. Inflicts <b>294%</b> (98%, 98%, 98%) physical damage to 1 target.</li>
+    
+    <li>Gain <b>36%</b> critical damage and <b>15%</b> crit chance for 2 turns. Inflicts <b>372%</b> (124%, 124%, 124%) physical damage to 1 target.</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="colourful-balloon"
+    card-type="T"
+  >
+    Colourful Balloon - Special
+  </h3>
+
+  Gain 10% critical damage for 2 turns. Inflicts 70% (20%, 20%, 30%) physical damage to all enemies.
+  
+
+  
+  <a name=""></a>
+  <h3 id="one-with-the-bow">
+    One with the Bow - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When attacking with the red orb, increases all allies' physical attack by <b>8%</b> for the turn.</li>
+    
+    <li>When attacking with the red orb, increases all allies' physical attack by <b>16%</b> for the turn.</li>
+    
+    <li>When attacking with the red orb, increases all allies' physical attack by <b>24%</b> for the turn.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="lovely-voice">
+    Lovely Voice - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When an attack hits, gain <b>1%</b> crit chance (stacking up to <b>6</b> times). When an attack critically hits, gain <b>2.5%</b> increased physical attack (stacking up to <b>6</b> times).</li>
+    
+    <li>When an attack hits, gain <b>1.25%</b> crit chance (stacking up to <b>8</b> times). When an attack critically hits, gain <b>3.75%</b> increased physical attack (stacking up to <b>8</b> times).</li>
+    
+    <li>When an attack hits, gain <b>1.5%</b> crit chance (stacking up to <b>10</b> times). When an attack critically hits, gain <b>5%</b> increased physical attack (stacking up to <b>10</b> times).</li>
+    
+  </ol>
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="sky-stage-ur-maryberry">
+    Sky Stage UR Maryberry
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/sky-stage-ur-maryberry.jpg"
+  alt="Card image"
+/>
+
+    <i>Dashing through the Clouds</i>
+
+    
+    <b card-type="M">Magic</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        AoE Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Debuff
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="sheeps,-attack！"
+    card-type=""
+  >
+    Sheeps, attack！
+  </h3>
+
+  <p>Cost: <span class="wc__cost">12</span></p>
+
+  <ol>
+    
+    <li>Applies 1 stack of damage amplification to all enemies. Inflicts <b>230%</b> (46%, 46%, 46%, 46%, 46%) magic damage to all enemies.</li>
+    
+    <li>Applies 1 stack of damage amplification to all enemies. Inflicts <b>300%</b> (60%, 60%, 60%, 60%, 60%) magic damage to all enemies.</li>
+    
+    <li>Applies 1 stack of damage amplification to all enemies. Inflicts <b>370%</b> (74%, 74%, 74%, 74%, 74%) magic damage to all enemies.</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="impact-sheep"
+    card-type="M"
+  >
+    Impact Sheep - Special
+  </h3>
+
+  Inflicts 100% magic damage to all enemies. Applies 1 stack of damage amplification.
+  
+
+  
+  <a name=""></a>
+  <h3 id="tiny-inventor">
+    Tiny Inventor - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the blue orb, generates <b>1</b> additional MP.</li>
+    
+    <li>When using the blue orb, generates <b>2</b> additional MP.</li>
+    
+    <li>When using the blue orb, generates <b>3</b> additional MP.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="hidden-support">
+    Hidden Support - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When any ally critically hits, <b>50%</b> chance to generate <b>1</b> extra MP. Lasts 6 turns.</li>
+    
+    <li>When any ally critically hits, <b>55%</b> chance to generate <b>2</b> extra MP. Lasts 6 turns.</li>
+    
+    <li>When any ally critically hits, <b>60%</b> chance to generate <b>3</b> extra MP. Lasts 6 turns.</li>
+    
+  </ol>
+  
+
+  
+  <h3 id="notes">Notes</h3>
+  <dl>
+  
+    <dt>Damage amplification</dt>
+    <dd>Enemies receive 8% increased damage per stack of damage amplification; stacks up to 6 times, and lasts for 2 turns.</dd>
+  
+  </dl>
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="christmas-ur-lucifer">
+    Christmas UR Lucifer
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/christmas-ur-lucifer.jpg"
+  alt="Card image"
+/>
+
+    <i>A Sky of Stars, Lights, and Snow</i>
+
+    
+    <b card-type="P">Protection</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        AoE Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Attack Obstruction
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Shield Recovery
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="christmas-light"
+    card-type=""
+  >
+    Christmas Light
+  </h3>
+
+  <p>Cost: <span class="wc__cost">10</span></p>
+
+  <ol>
+    
+    <li>Inflicts <b>30%</b> physical damage to all enemies. Taunts all enemies for 2 turns. All allies gain <b>10%</b> damage reduction for 2 turns. Restores <b>10%</b> of the magic shield.</li>
+    
+    <li>Inflicts <b>35%</b> physical damage to all enemies. Taunts all enemies for 2 turns. All allies gain <b>15%</b> damage reduction for 2 turns. Restores <b>12.5%</b> of the magic shield.</li>
+    
+    <li>Inflicts <b>40%</b> physical damage to all enemies. Taunts all enemies for 2 turns. All allies gain <b>20%</b> damage reduction for 2 turns. Restores <b>15%</b> of the magic shield.</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="the-fallen-angel-of-christmas-eve"
+    card-type="P"
+  >
+    The Fallen Angel of Christmas Eve - Special
+  </h3>
+
+  Inflicts 80% to 160% physical to 1 enemy. Gain a barrier absorbing 10% of maximum HP for 2 turns. Restores 10% maximum HP to the weakest ally.
+  
+
+  
+  <a name=""></a>
+  <h3 id="heart-illuminate">
+    Heart Illuminate - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the yellow orb, restores <b>4%</b> of the magic shield.</li>
+    
+    <li>When using the yellow orb, restores <b>8%</b> of the magic shield.</li>
+    
+    <li>When using the yellow orb, restores <b>12%</b> of the magic shield.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="mark-of-snow">
+    Mark of Snow - Passive
+  </h3>
+
+  <ol>
+    
+    <li><b>33%</b> chance when hit to apply 1 stack of freeze to the attacker for 3 turns.</li>
+    
+    <li><b>41%</b> chance when hit to apply 1 stack of freeze to the attacker for 3 turns.</li>
+    
+    <li><b>50%</b> chance when hit to apply 1 stack of freeze to the attacker for 3 turns.</li>
+    
+  </ol>
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="christmas-ur-salsa">
+    Christmas UR Salsa
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/christmas-ur-salsa.jpg"
+  alt="Card image"
+/>
+
+    <i>Warm Muffler</i>
+
+    
+    <b card-type="S">Speed</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        AoE Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Debuff
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="christmas-gift"
+    card-type=""
+  >
+    Christmas Gift
+  </h3>
+
+  <p>Cost: <span class="wc__cost">15</span></p>
+
+  <ol>
+    
+    <li>Applies <b>1</b> stack of freeze to all enemies. Inflicts <b>355%</b> (60%, 135%, 160%) physical damage to all enemies.</li>
+    
+    <li>Applies <b>1</b> stack of freeze to all enemies. Inflicts <b>370%</b> (65%, 140%, 165%) physical damage to all enemies.</li>
+    
+    <li>Applies <b>2</b> stack of freeze to all enemies. Inflicts <b>395%</b> (70%, 145%, 170%) physical damage to all enemies.</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="wolf-of-christmas-eve"
+    card-type="T"
+  >
+    Wolf of Christmas Eve - Special
+  </h3>
+
+  Inflicts 70% (20%, 20%, 30%) physical damage to all enemies. Applies 1 stack of freeze.
+  
+
+  
+  <a name=""></a>
+  <h3 id="heartful-muffler">
+    Heartful Muffler - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>8%</b> for the turn.</li>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>16%</b> for the turn.</li>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>24%</b> for the turn.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="snow-marker">
+    Snow Marker - Passive
+  </h3>
+
+  <ol>
+    
+    <li>Normal attacks have a <b>12.5%</b> chance to apply 1 stack of freeze.</li>
+    
+    <li>Normal attacks have a <b>25%</b> chance to apply 1 stack of freeze.</li>
+    
+    <li>Normal attacks have a <b>37.5%</b> chance to apply 1 stack of freeze.</li>
+    
+  </ol>
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="christmas-ur-kaede">
+    Christmas UR Kaede
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/christmas-ur-kaede.jpg"
+  alt="Card image"
+/>
+
+    <i>It turned out great</i>
+
+    
+    <b card-type="M">Magic</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        Single Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Abnormal Status
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="christmas-magic"
+    card-type=""
+  >
+    Christmas Magic
+  </h3>
+
+  <p>Cost: <span class="wc__cost">10</span></p>
+
+  <ol>
+    
+    <li>Inflicts <b>180%</b> magic damage to 1 enemy. If the target is frozen, inflicts an additional <b>260%</b> magic damage, and applies 1 stack of crush to all enemies.</li>
+    
+    <li>Inflicts <b>195%</b> magic damage to 1 enemy. If the target is frozen, inflicts an additional <b>290%</b> magic damage, and applies 1 stack of crush to all enemies.</li>
+    
+    <li>Inflicts <b>210%</b> magic damage to 1 enemy. If the target is frozen, inflicts an additional <b>320%</b> magic damage, and applies 1 stack of crush to all enemies.</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="priestess-of-christmas-eve"
+    card-type="M"
+  >
+    Priestess of Christmas Eve - Special
+  </h3>
+
+  Inflicts 144% (36%, 36%, 72%) magic damage to 1 enemy. Applies 1 stack of freeze.
+  
+
+  
+  <a name=""></a>
+  <h3 id="heartfelt-present">
+    Heartfelt Present - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the blue orb, generates <b>1</b> additional MP.</li>
+    
+    <li>When using the blue orb, generates <b>2</b> additional MP.</li>
+    
+    <li>When using the blue orb, generates <b>3</b> additional MP.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="雪やこんこ">
+    雪やこんこ - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the blue orb, increases all allies' magic attack by <b>6%</b> for the turn. Gain <b>20%</b> crit chance when attacking a frozen enemy.</li>
+    
+    <li>When using the blue orb, increases all allies' magic attack by <b>12%</b> for the turn. Gain <b>25%</b> crit chance when attacking a frozen enemy.</li>
+    
+    <li>When using the blue orb, increases all allies' magic attack by <b>18%</b> for the turn. Gain <b>30%</b> crit chance when attacking a frozen enemy.</li>
+    
+  </ol>
+  
+
+  
+  <h3 id="notes">Notes</h3>
+  <dl>
+  
+    <dt>Crush</dt>
+    <dd>Enemies have 16% reduced defence per stack of crush; stacks up to 6 times, and lasts for 4 turns.</dd>
+  
+  </dl>
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ur-tiara">
+    Initial UR Tiara
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ur-tiara.jpg"
+  alt="Card image"
+/>
+
+    <i>Glowing Pyroxene Forest</i>
+
+    
+    <b card-type="T">Technique</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="P">
+        Resuscitation
+      </span>
+      
+      <span class="wc__tag" card-type="X">
+        Recovery
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Ability Buff
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="bloom-cure"
+    card-type=""
+  >
+    Bloom Cure
+  </h3>
+
+  <p>Cost: <span class="wc__cost">10</span></p>
+
+  <ol>
+    
+    <li>Revive <b>1</b> knocked out ally with <b>23%</b> HP. Increases all allies' defence by <b>43%</b> for 2 turns.</li>
+    
+    <li>Revive <b>1</b> knocked out ally with <b>34%</b> HP. Increases all allies' defence by <b>53%</b> for 2 turns.</li>
+    
+    <li>Revive <b>2</b> knocked out allies with <b>45%</b> HP. Increases all allies' defence by <b>64%</b> for 2 turns.</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="bloom-licht"
+    card-type="M"
+  >
+    Bloom Licht - Special
+  </h3>
+
+  Inflicts 120% hybrid damage to 1 enemy. Restores 7% HP to all allies.
+  
+
+  
+  <a name=""></a>
+  <h3 id="aspiration-and-determination">
+    Aspiration and Determination - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>6%</b> for the turn. When using the blue orb, increases all allies' magic attack by <b>6%</b> for the turn.</li>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>12%</b> for the turn. When using the blue orb, increases all allies' magic attack by <b>12%</b> for the turn.</li>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>18%</b> for the turn. When using the blue orb, increases all allies' magic attack by <b>18%</b> for the turn.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="favour-of-the-botany-gods">
+    Favour of the Botany Gods - Passive
+  </h3>
+
+  <ol>
+    
+    <li>Gain <b>5%</b> crit evasion.</li>
+    
+    <li>Gain <b>10%</b> crit evasion.</li>
+    
+    <li>Gain <b>15%</b> crit evasion.</li>
+    
+  </ol>
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ur-rosetta">
+    Initial UR Rosetta
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ur-rosetta.jpg"
+  alt="Card image"
+/>
+
+    <i>Time's Unknown Land</i>
+
+    
+    <b card-type="S">Speed</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        AoE Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Attack Obstruction
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="chrono's-ray"
+    card-type=""
+  >
+    Chrono's Ray
+  </h3>
+
+  <p>Cost: <span class="wc__cost">12</span></p>
+
+  <ol>
+    
+    <li>Inflicts <b>153%</b> (51%, 51%, 51%) physical damage to <b>2 enemies with the lowest physical defence</b>.</li>
+    
+    <li>Inflicts <b>192%</b> (64%, 64%, 64%) physical damage to <b>2 enemies with the lowest physical defence</b>.</li>
+    
+    <li>Inflicts <b>231%</b> (77%, 77%, 77%) physical damage to <b>all enemies</b>.</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="frozen-palette"
+    card-type="M"
+  >
+    Frozen Palette - Special
+  </h3>
+
+  Inflicts 120% (30%, 30%, 60%) physical damage to 1 enemy. Applies 1 stack of freeze.
+  
+
+  
+  <a name=""></a>
+  <h3 id="sharpshooting">
+    Sharpshooting - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>8%</b> for the turn.</li>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>16%</b> for the turn.</li>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>24%</b> for the turn.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="tension-up">
+    Tension Up - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>15%</b> for the next 2 attacks.</li>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>22.5%</b> for the next 2 attacks.</li>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>30%</b> for the next 2 attacks.</li>
+    
+  </ol>
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ur-lavie">
+    Initial UR Lavie
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ur-lavie.jpg"
+  alt="Card image"
+/>
+
+    <i>The Big Stage of Dreams</i>
+
+    
+    <b card-type="X">Support</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="X">
+        Recovery
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Ability Buff
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="sweet-magic"
+    card-type=""
+  >
+    Sweet Magic
+  </h3>
+
+  <p>Cost: <span class="wc__cost">10</span></p>
+
+  <ol>
+    
+    <li>Increases all allies' crit chance by <b>6.74%</b> for 2 turns. Restores HP equal to <b>86%</b> of magic attack to the weakest ally.</li>
+    
+    <li>Increases all allies' crit chance by <b>8.96%</b> for 2 turns. Restores HP equal to <b>114%</b> of magic attack to the weakest ally.</li>
+    
+    <li>Increases all allies' crit chance by <b>11.25%</b> for 2 turns. Restores HP equal to <b>144%</b> of magic attack to the weakest ally.</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="miracle-cheer"
+    card-type="M"
+  >
+    Miracle Cheer - Special
+  </h3>
+
+  Inflicts 120% magic damage to 1 enemy. Restores 7% to all allies.
+  
+
+  
+  <a name=""></a>
+  <h3 id="sincere-support">
+    Sincere Support - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the blue orb, restores HP equal to <b>12%<b> of magic attack to the weakest ally.</li>
+    
+    <li>When using the blue orb, restores HP equal to <b>24%<b> of magic attack to the weakest ally.</li>
+    
+    <li>When using the blue orb, restores HP equal to <b>36%<b> of magic attack to the weakest ally.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="and-again！">
+    And again！ - Passive
+  </h3>
+
+  <ol>
+    
+    <li>Once per battle, when knocked out, restores <b>18%</b> HP.</li>
+    
+    <li>Once per battle, when knocked out, restores <b>36%</b> HP.</li>
+    
+    <li>Once per battle, when knocked out, restores <b>60%</b> HP.</li>
+    
+  </ol>
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ur-ashley">
+    Initial UR Ashley
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ur-ashley.jpg"
+  alt="Card image"
+/>
+
+    <i>A Knight's Wish</i>
+
+    
+    <b card-type="P">Protection</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        AoE Attack
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Shield Recovery
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Persistence
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="the-vowing-sword-of-prayers-and-judgement"
+    card-type=""
+  >
+    The Vowing Sword of Prayers and Judgement
+  </h3>
+
+  <p>Cost: <span class="wc__cost">12</span></p>
+
+  <ol>
+    
+    <li>Inflicts <b>128%</b> physical damage to all enemies, and inflicts additional damage based on the strength of the magic shield. Protects the <b>weakest ally</b> from all damage for <b>1</b> attack or 2 turns.</li>
+    
+    <li>Inflicts <b>160%</b> physical damage to all enemies, and inflicts additional damage based on the strength of the magic shield. Protects the <b>2 weakest allies</b> from all damage for <b>2</b> attacks or 2 turns.</li>
+    
+    <li>Inflicts <b>192%</b> physical damage to all enemies, and inflicts additional damage based on the strength of the magic shield. Protects the <b>3 weakest allies</b> from all damage for <b>2</b> attacks or 2 turns.</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="bright-sword"
+    card-type="P"
+  >
+    Bright Sword - Special
+  </h3>
+
+  Inflicts 100% physical damage to all enemies, and inflicts 30% physical damage to 2 other random enemies. Restores 9% of the magic shield.
+  
+
+  
+  <a name=""></a>
+  <h3 id="tenacity">
+    Tenacity - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the yellow orb, restores <b>4%</b> of the magic shield.</li>
+    
+    <li>When using the yellow orb, restores <b>8%</b> of the magic shield.</li>
+    
+    <li>When using the yellow orb, restores <b>12%</b> of the magic shield.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="knight's-pride">
+    Knight's Pride - Passive
+  </h3>
+
+  <ol>
+    
+    <li>Gain <b>15%</b> increased physical attack when below 50% HP.</li>
+    
+    <li>Gain <b>22.5%</b> increased physical attack when below 50% HP.</li>
+    
+    <li>Gain <b>30%</b> increased physical attack when below 50% HP.</li>
+    
+  </ol>
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ur-lynette">
+    Initial UR Lynette
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ur-lynette.jpg"
+  alt="Card image"
+/>
+
+    <i>Bookshelf of Delusions</i>
+
+    
+    <b card-type="M">Magic</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        Single Attack
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Ability Buff
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="kind-ghost's-book"
+    card-type=""
+  >
+    Kind Ghost's Book
+  </h3>
+
+  <p>Cost: <span class="wc__cost">10</span></p>
+
+  <ol>
+    
+    <li>Inflicts <b>373%</b> magic damage to 1 target, and inflicts additional damage based on the current HP of the target (up to <b>17.5%</b>).</li>
+    
+    <li>Inflicts <b>467%</b> magic damage to 1 target, and inflicts additional damage based on the current HP of the target (up to <b>20%</b>).</li>
+    
+    <li>Inflicts <b>560%</b> magic damage to 1 target, and inflicts additional damage based on the current HP of the target (up to <b>25%</b>).</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="ars-notria"
+    card-type="M"
+  >
+    Ars Notria - Special
+  </h3>
+
+  Inflicts 120% (30%, 30%, 60%) magic damage to 1 enemy. Gain 15% magic attack for 2 turns.
+  
+
+  
+  <a name=""></a>
+  <h3 id="grimoire's-guidance">
+    Grimoire's Guidance - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the blue orb, increases all allies' magic attack by <b>6%</b> for the turn.</li>
+    
+    <li>When using the blue orb, increases all allies' magic attack by <b>12%</b> for the turn.</li>
+    
+    <li>When using the blue orb, increases all allies' magic attack by <b>18%</b> for the turn.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="analytic">
+    Analytic - Passive
+  </h3>
+
+  <ol>
+    
+    <li>Increases all <span card-type="M">magic type</span> allies' magic attack by <b>4%</b>.</li>
+    
+    <li>Increases all <span card-type="M">magic type</span> allies' magic attack by <b>8%</b>.</li>
+    
+    <li>Increases all <span card-type="M">magic type</span> allies' magic attack by <b>12%</b>.</li>
+    
+  </ol>
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ur-emilia">
+    Initial UR Emilia
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ur-emilia.jpg"
+  alt="Card image"
+/>
+
+    <i>Pride Blooming in the Darkness</i>
+
+    
+    <b card-type="T">Technique</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        Single Attack
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Ability Buff
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Attack Obstruction
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="rose-palace"
+    card-type=""
+  >
+    Rose Palace
+  </h3>
+
+  <p>Cost: <span class="wc__cost">10</span></p>
+
+  <ol>
+    
+    <li>Inflicts <b>213%</b> hybrid damage to 1 enemy. Reduces the target's defence by <b>33%</b> for 1 turn.</li>
+    
+    <li>Inflicts <b>266%</b> hybrid damage to 1 enemy. Reduces the target's defence by <b>42%</b> for 1 turn.</li>
+    
+    <li>Inflicts <b>320%</b> hybrid damage to 1 enemy. Reduces the target's defence by <b>50%</b> for 1 turn.</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="rose-interlude"
+    card-type="P"
+  >
+    Rose Interlude - Special
+  </h3>
+
+  Inflicts 120% (30%, 30%, 60%) hybrid damage to 1 enemy. Applies 1 stack of charm to the target.
+  
+
+  
+  <a name=""></a>
+  <h3 id="noble-flower">
+    Noble Flower - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>6%</b> for the turn. When using the blue orb, increases all allies' magic attack by <b>6%</b> for the turn.</li>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>12%</b> for the turn. When using the blue orb, increases all allies' magic attack by <b>12%</b> for the turn.</li>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>18%</b> for the turn. When using the blue orb, increases all allies' magic attack by <b>18%</b> for the turn.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="thorns-of-the-night-rose">
+    Thorns of the Night Rose - Passive
+  </h3>
+
+  <ol>
+    
+    <li>Enemies take <b>10%</b> increased physical damage for 3 turns.</li>
+    
+    <li>Enemies take <b>17.5%</b> increased physical damage for 3 turns.</li>
+    
+    <li>Enemies take <b>25%</b> increased physical damage for 3 turns.</li>
+    
+  </ol>
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ur-alpha">
+    Initial UR Alpha
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ur-alpha.jpg"
+  alt="Card image"
+/>
+
+    <i>Dance in the Moonlight</i>
+
+    
+    <b card-type="P">Protection</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="P">
+        Shield Recovery
+      </span>
+      
+      <span class="wc__tag" card-type="T">
+        AoE Attack
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Ability Buff
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="release-of-energy"
+    card-type=""
+  >
+    Release of Energy
+  </h3>
+
+  <p>Cost: <span class="wc__cost">10</span></p>
+
+  <ol>
+    
+    <li>Inflicts <b>88%</b> physical damage to all enemies. Restores <b>30%</b> of the magic shield. Redirects <b>20%</b> of damage allies take to the caster for 2 turns.</li>
+    
+    <li>Inflicts <b>110%</b> physical damage to all enemies. Restores <b>38%</b> of the magic shield. Redirects <b>25%</b> of damage allies take to the caster for 2 turns.</li>
+    
+    <li>Inflicts <b>133%</b> physical damage to all enemies. Restores <b>46%</b> of the magic shield. Redirects <b>30%</b> of damage allies take to the caster for 2 turns.</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="rising-discharge"
+    card-type="P"
+  >
+    Rising Discharge - Special
+  </h3>
+
+  Inflicts 70% (21%, 21%, 28%) physical damage to all enemies. Increases all allies' critical damage reduction by 25% for 2 turns.
+  
+
+  
+  <a name=""></a>
+  <h3 id="a-maid's-grooming">
+    A Maid's Grooming - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the yellow orb, restores <b>4%</b> of the magic shield.</li>
+    
+    <li>When using the yellow orb, restores <b>8%</b> of the magic shield.</li>
+    
+    <li>When using the yellow orb, restores <b>12%</b> of the magic shield.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="a-maid's-three-rules">
+    A Maid's Three Rules - Passive
+  </h3>
+
+  <ol>
+    
+    <li>Gain <b>12.5%</b> damage reduction.</li>
+    
+    <li>Gain <b>18.75%</b> damage reduction.</li>
+    
+    <li>Gain <b>25%</b> damage reduction.</li>
+    
+  </ol>
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ur-salsa">
+    Initial UR Salsa
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ur-salsa.jpg"
+  alt="Card image"
+/>
+
+    <i>Brighter than the Moon</i>
+
+    
+    <b card-type="S">Speed</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        Single Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Debuff
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Ability Buff
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="racing-into-the-night"
+    card-type=""
+  >
+    Racing into the Night
+  </h3>
+
+  <p>Cost: <span class="wc__cost">10</span></p>
+
+  <ol>
+    
+    <li>Gain <b>50%</b> increased critical damage for 3 turns. Inflicts <b>242.5%</b> (35%, 42.5%, 50%, 52.5%, 62.5%) physical damage to 1 enemy.</li>
+    
+    <li>Gain <b>62.5%</b> increased critical damage for 3 turns. Inflicts <b>325%</b> (45%, 55%, 65%, 75%, 85%) physical damage to 1 enemy.</li>
+    
+    <li>Gain <b>75%</b> increased critical damage for 3 turns. Inflicts <b>445%</b> (60%, 75%, 90%, 105%, 120%) physical damage to 1 enemy.</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="wolves'-fang"
+    card-type="T"
+  >
+    Wolves' Fang - Special
+  </h3>
+
+  Inflicts 70% (21%, 21%, 28%) physical damage to all enemies. Applies 1 stack of crush to all enemies.
+  
+
+  
+  <a name=""></a>
+  <h3 id="wild-sense">
+    Wild Sense - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>8%</b> for the turn.</li>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>16%</b> for the turn.</li>
+    
+    <li>When using the red orb, increases all allies' physical attack by <b>24%</b> for the turn.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="howling-at-the-moon">
+    Howling at the Moon - Passive
+  </h3>
+
+  <ol>
+    
+    <li>Normal attacks have a <b>12.5%</b> chance to apply 1 stack of crush. Increases the crit chance of <span card-type="S">speed type</span> allies by <b>3%</b>.</li>
+    
+    <li>Normal attacks have a <b>25%</b> chance to apply 1 stack of crush. Increases the crit chance of <span card-type="S">speed type</span> allies by <b>6%</b>.</li>
+    
+    <li>Normal attacks have a <b>37.5%</b> chance to apply 1 stack of crush. Increases the crit chance of <span card-type="S">speed type</span> allies by <b>9%</b>.</li>
+    
+  </ol>
+  
+
+  
+  <h3 id="notes">Notes</h3>
+  <dl>
+  
+    <dt>Crush</dt>
+    <dd>Enemies have 16% reduced defence per stack of crush; stacks up to 6 times, and lasts for 4 turns.</dd>
+  
+  </dl>
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ur-garnet">
+    Initial UR Garnet
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ur-garnet.jpg"
+  alt="Card image"
+/>
+
+    <i>Butterflies Fluttering in the Night</i>
+
+    
+    <b card-type="M">Magic</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        AoE Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Attack Obstruction
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+  <h3
+    id="if-life-were-a-dream"
+    card-type=""
+  >
+    If Life Were a Dream
+  </h3>
+
+  <p>Cost: <span class="wc__cost">10</span></p>
+
+  <ol>
+    
+    <li>Inflicts <b>150%</b> (75%, 75%) magic damage to all enemies, or <b>250%</b> (112.5%, 112.5%) magic damage to charmed enemies.</li>
+    
+    <li>Inflicts <b>184%</b> (94%, 94%) magic damage to all enemies, or <b>282%</b> (141%, 141%) magic damage to charmed enemies.</li>
+    
+    <li>Inflicts <b>226%</b> (113%, 113%) magic damage to all enemies, or <b>339%</b> (169.5%, 169.5%) magic damage to charmed enemies.</li>
+    
+  </ol>
+  
+
+  
+  <h3
+    id="charming-bear"
+    card-type="M"
+  >
+    Charming Bear - Special
+  </h3>
+
+  Inflicts 70% (21%, 21%, 28%) magic damage to all enemies. Increases all allies' critical damage reduction by 25% for 2 turns.
+  
+
+  
+  <a name=""></a>
+  <h3 id="elegant-smile">
+    Elegant Smile - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the blue orb, increases all allies' magic attack by <b>8%</b> for the turn.</li>
+    
+    <li>When using the blue orb, increases all allies' magic attack by <b>16%</b> for the turn.</li>
+    
+    <li>When using the blue orb, increases all allies' magic attack by <b>24%</b> for the turn.</li>
+    
+  </ol>
+  
+  <a name=""></a>
+  <h3 id="short-lived-butterflies">
+    Short-lived Butterflies - Passive
+  </h3>
+
+  <ol>
+    
+    <li>When using the blue orb, generates <b>1</b> additional MP.</li>
+    
+    <li>When using the blue orb, generates <b>2</b> additional MP.</li>
+    
+    <li>When using the blue orb, generates <b>3</b> additional MP.</li>
+    
+  </ol>
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ur-tsubaki">
+    Initial UR Tsubaki
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ur-tsubaki.jpg"
+  alt="Card image"
+/>
+
+    <i>Fluttering Flames</i>
+
+    
+    <b card-type="S">Speed</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        AoE Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Abnormal Status
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ur-nadeshiko">
+    Initial UR Nadeshiko
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ur-nadeshiko.jpg"
+  alt="Card image"
+/>
+
+    <i>Accept the Night Sky</i>
+
+    
+    <b card-type="P">Protection</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="P">
+        Shield Recovery
+      </span>
+      
+      <span class="wc__tag" card-type="T">
+        AoE Attack
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ur-kaede">
+    Initial UR Kaede
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ur-kaede.jpg"
+  alt="Card image"
+/>
+
+    <i>Hidden Hard Work</i>
+
+    
+    <b card-type="M">Magic</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        AoE Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Abnormal Status
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ur-ratura">
+    Initial UR Ratura
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ur-ratura.jpg"
+  alt="Card image"
+/>
+
+    <i>Shining Step</i>
+
+    
+    <b card-type="T">Technique</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        Single Attack
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Healing
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ur-champe">
+    Initial UR Champe
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ur-champe.jpg"
+  alt="Card image"
+/>
+
+    <i>In the Flower Field</i>
+
+    
+    <b card-type="S">Speed</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        Single Attack
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Ability Buff
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ur-maryberry">
+    Initial UR Maryberry
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ur-maryberry.jpg"
+  alt="Card image"
+/>
+
+    <i>Exciting Award Ceremony</i>
+
+    
+    <b card-type="M">Magic</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        Single Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Debuff
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Abnormal Status
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ur-angelica">
+    Initial UR Angelica
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ur-angelica.jpg"
+  alt="Card image"
+/>
+
+    <i>Healing Light</i>
+
+    
+    <b card-type="X">Support</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="X">
+        Recovery
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Ability Buff
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Healing
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ur-lucifer">
+    Initial UR Lucifer
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ur-lucifer.jpg"
+  alt="Card image"
+/>
+
+    <i>The King's Challenge</i>
+
+    
+    <b card-type="P">Protection</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        Single Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Attack Obstruction
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Shield Recovery
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ur-yue">
+    Initial UR Yue
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ur-yue.jpg"
+  alt="Card image"
+/>
+
+    <i>Tiny Friend</i>
+
+    
+    <b card-type="X">Support</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="X">
+        Recovery
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Ability Buff
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ur-millefeuille">
+    Initial UR Millefeuille
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ur-millefeuille.jpg"
+  alt="Card image"
+/>
+
+    <i>Aquatic Dance</i>
+
+    
+    <b card-type="S">Speed</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        Single Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Debuff
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Attack Obstruction
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ur-fiona">
+    Initial UR Fiona
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ur-fiona.jpg"
+  alt="Card image"
+/>
+
+    <i>Premonition of a Great Voyage</i>
+
+    
+    <b card-type="T">Technique</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        AoE Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Abnormal Status
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Debuff
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ssr-tiara">
+    Initial SSR Tiara
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ssr-tiara.jpg"
+  alt="Card image"
+/>
+
+    <i>Blooming in the Night</i>
+
+    
+    <b card-type="T">Technique</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        AoE Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Abnormal Status
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ssr-rosetta">
+    Initial SSR Rosetta
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ssr-rosetta.jpg"
+  alt="Card image"
+/>
+
+    <i>Letter of Happiness</i>
+
+    
+    <b card-type="S">Speed</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        Single Attack
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Ability Buff
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ssr-lavie">
+    Initial SSR Lavie
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ssr-lavie.jpg"
+  alt="Card image"
+/>
+
+    <i>Cutting Edge Fashion</i>
+
+    
+    <b card-type="X">Support</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="X">
+        Recovery
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Ability Buff
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ssr-ashley">
+    Initial SSR Ashley
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ssr-ashley.jpg"
+  alt="Card image"
+/>
+
+    <i>The Situation She Was Found In</i>
+
+    
+    <b card-type="P">Protection</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        Single Attack
+      </span>
+      
+      <span class="wc__tag" card-type="P">
+        Shield Recovery
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Debuff
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ssr-lynette">
+    Initial SSR Lynette
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ssr-lynette.jpg"
+  alt="Card image"
+/>
+
+    <i>Afternoon Daydreaming</i>
+
+    
+    <b card-type="M">Magic</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        AoE Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Debuff
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ssr-emilia">
+    Initial SSR Emilia
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ssr-emilia.jpg"
+  alt="Card image"
+/>
+
+    <i>Salty Breeze Balcony</i>
+
+    
+    <b card-type="T">Technique</b>
+
+    
+    <div class="wc__tags">
+      
+      <span class="wc__tag" card-type="T">
+        Single Attack
+      </span>
+      
+      <span class="wc__tag" card-type="S">
+        Abnormal Status
+      </span>
+      
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ssr-alpha">
+    Initial SSR Alpha
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ssr-alpha.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="P">Protection</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ssr-salsa">
+    Initial SSR Salsa
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ssr-salsa.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="S">Speed</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ssr-garnet">
+    Initial SSR Garnet
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ssr-garnet.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="M">Magic</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ssr-tsubaki">
+    Initial SSR Tsubaki
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ssr-tsubaki.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="S">Speed</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ssr-nadeshiko">
+    Initial SSR Nadeshiko
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ssr-nadeshiko.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="P">Protection</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ssr-kaede">
+    Initial SSR Kaede
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ssr-kaede.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="M">Magic</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ssr-ratura">
+    Initial SSR Ratura
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ssr-ratura.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="T">Technique</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ssr-champe">
+    Initial SSR Champe
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ssr-champe.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="S">Speed</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ssr-maryberry">
+    Initial SSR Maryberry
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ssr-maryberry.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="M">Magic</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ssr-angelica">
+    Initial SSR Angelica
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ssr-angelica.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="X">Support</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ssr-lucifer">
+    Initial SSR Lucifer
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ssr-lucifer.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="P">Protection</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ssr-yue">
+    Initial SSR Yue
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ssr-yue.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="X">Support</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ssr-millefeuille">
+    Initial SSR Millefeuille
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ssr-millefeuille.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="S">Speed</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-ssr-fiona">
+    Initial SSR Fiona
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-ssr-fiona.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="T">Technique</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-sr-tiara">
+    Initial SR Tiara
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-sr-tiara.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="T">Technique</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-sr-rosetta">
+    Initial SR Rosetta
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-sr-rosetta.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="S">Speed</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-sr-lavie">
+    Initial SR Lavie
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-sr-lavie.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="X">Support</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-sr-ashley">
+    Initial SR Ashley
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-sr-ashley.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="P">Protection</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-sr-lynette">
+    Initial SR Lynette
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-sr-lynette.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="M">Magic</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-sr-emilia">
+    Initial SR Emilia
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-sr-emilia.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="T">Technique</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-sr-alpha">
+    Initial SR Alpha
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-sr-alpha.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="P">Protection</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-sr-salsa">
+    Initial SR Salsa
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-sr-salsa.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="S">Speed</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-sr-garnet">
+    Initial SR Garnet
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-sr-garnet.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="M">Magic</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-sr-tsubaki">
+    Initial SR Tsubaki
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-sr-tsubaki.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="S">Speed</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-sr-nadeshiko">
+    Initial SR Nadeshiko
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-sr-nadeshiko.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="P">Protection</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-sr-kaede">
+    Initial SR Kaede
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-sr-kaede.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="M">Magic</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-sr-ratura">
+    Initial SR Ratura
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-sr-ratura.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="T">Technique</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-sr-champe">
+    Initial SR Champe
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-sr-champe.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="S">Speed</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-sr-maryberry">
+    Initial SR Maryberry
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-sr-maryberry.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="M">Magic</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-sr-angelica">
+    Initial SR Angelica
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-sr-angelica.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="X">Support</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-sr-lucifer">
+    Initial SR Lucifer
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-sr-lucifer.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="P">Protection</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-sr-yue">
+    Initial SR Yue
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-sr-yue.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="X">Support</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-sr-millefeuille">
+    Initial SR Millefeuille
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-sr-millefeuille.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="S">Speed</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+  <section>
+  
+<div class="wc__info">
+
+  
+  <h2 id="initial-sr-fiona">
+    Initial SR Fiona
+  </h2>
+  
+
+  <div class="wc__stats">
+    
+<img
+  class="wc__image"
+  src="/lapilai/assets/images/cards/initial-sr-fiona.jpg"
+  alt="Card image"
+/>
+
+    <i></i>
+
+    
+    <b card-type="T">Technique</b>
+
+    
+  </div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  </section>
+
+</div><div class="d-print-none"><footer class="article__footer"><!-- start custom article footer snippet -->
+
+<!-- end custom article footer snippet -->
+</footer>
+</div>
+
+</div>
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    $(function() {
+      var $this ,$scroll;
+      var $articleContent = $('.js-article-content');
+      var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+      var scroll = hasSidebar ? '.js-page-main' : 'html, body';
+      $scroll = $(scroll);
+
+      $articleContent.find('.highlight').each(function() {
+        $this = $(this);
+        $this.attr('data-lang', $this.find('code').attr('data-lang'));
+      });
+      $articleContent.find('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each(function() {
+        $this = $(this);
+        $this.append($('<a class="anchor d-print-none" aria-hidden="true"></a>').html('<i class="fas fa-anchor"></i>'));
+      });
+      $articleContent.on('click', '.anchor', function() {
+        $scroll.scrollToAnchor('#' + $(this).parent().attr('id'), 400);
+      });
+    });
+  });
+})();
+</script>
+</div><section class="page__comments d-print-none"></section></article><!-- start custom main bottom snippet -->
+
+<!-- end custom main bottom snippet -->
+</div>
+            </div></div></div><div class="page__footer d-print-none"><footer class="footer py-4 js-page-footer">
+  <div class="main"><div itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Your Name"><meta itemprop="url" content="/lapilai/"><meta itemprop="description" content="I am an amazing person."><div class="footer__author-links"><div class="author-links">
+  <ul class="menu menu--nowrap menu--inline"></ul>
+</div>
+</div>
+    </div><div class="site-info mt-2">
+      <div>This site is not representitive of and is not associated
+with <a href="https://lapisrelights.com">Lapis Re:LIGHTs</a>.  Lapis Re:LiGHTs
+is © KLabGames and KADOKAWA CORPORATION 2017-2021. All logos, images, and game
+content used in this site are Trademarks of the aforementioned entities.
+<br>
+Site content is provided by the Lapis Re:LiGHTs English Fan Discord Server
+        contributors 2021.
+        Powered by <a title="Jekyll is a simple, blog-aware, static site generator."
+          href="http://jekyllrb.com/">Jekyll</a> & <a title="TeXt is a super customizable Jekyll theme."
+          href="https://github.com/kitian616/jekyll-TeXt-theme">TeXt Theme</a>.
+      </div>
+    </div>
+  </div>
+</footer>
+</div></div>
+    </div><script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $body = $('body'), $window = $(window);
+    var $pageRoot = $('.js-page-root'), $pageMain = $('.js-page-main');
+    var activeCount = 0;
+    function modal(options) {
+      var $root = this, visible, onChange, hideWhenWindowScroll = false;
+      var scrollTop;
+      function setOptions(options) {
+        var _options = options || {};
+        visible = _options.initialVisible === undefined ? false : show;
+        onChange = _options.onChange;
+        hideWhenWindowScroll = _options.hideWhenWindowScroll;
+      }
+      function init() {
+        setState(visible);
+      }
+      function setState(isShow) {
+        if (isShow === visible) {
+          return;
+        }
+        visible = isShow;
+        if (visible) {
+          activeCount++;
+          scrollTop = $(window).scrollTop() || $pageMain.scrollTop();
+          $root.addClass('modal--show');
+          $pageMain.scrollTop(scrollTop);
+          activeCount === 1 && ($pageRoot.addClass('show-modal'), $body.addClass('of-hidden'));
+          hideWhenWindowScroll && window.hasEvent('touchstart') && $window.on('scroll', hide);
+          $window.on('keyup', handleKeyup);
+        } else {
+          activeCount > 0 && activeCount--;
+          $root.removeClass('modal--show');
+          $window.scrollTop(scrollTop);
+          activeCount === 0 && ($pageRoot.removeClass('show-modal'), $body.removeClass('of-hidden'));
+          hideWhenWindowScroll && window.hasEvent('touchstart') && $window.off('scroll', hide);
+          $window.off('keyup', handleKeyup);
+        }
+        onChange && onChange(visible);
+      }
+      function show() {
+        setState(true);
+      }
+      function hide() {
+        setState(false);
+      }
+      function handleKeyup(e) {
+        // Char Code: 27  ESC
+        if (e.which ===  27) {
+          hide();
+        }
+      }
+      setOptions(options);
+      init();
+      return {
+        show: show,
+        hide: hide,
+        $el: $root
+      };
+    }
+    $.fn.modal = modal;
+  });
+})();
+</script><div class="modal modal--overflow page__search-modal d-print-none js-page-search-modal"></div></div>
+
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function scrollToAnchor(anchor, duration, callback) {
+      var $root = this;
+      $root.animate({ scrollTop: $(anchor).position().top }, duration, function() {
+        window.history.replaceState(null, '', window.location.href.split('#')[0] + anchor);
+        callback && callback();
+      });
+    }
+    $.fn.scrollToAnchor = scrollToAnchor;
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function affix(options) {
+      var $root = this, $window = $(window), $scrollTarget, $scroll,
+        offsetBottom = 0, scrollTarget = window, scroll = window.document, disabled = false, isOverallScroller = true,
+        rootTop, rootLeft, rootHeight, scrollBottom, rootBottomTop,
+        hasInit = false, curState;
+
+      function setOptions(options) {
+        var _options = options || {};
+        _options.offsetBottom && (offsetBottom = _options.offsetBottom);
+        _options.scrollTarget && (scrollTarget = _options.scrollTarget);
+        _options.scroll && (scroll = _options.scroll);
+        _options.disabled !== undefined && (disabled = _options.disabled);
+        $scrollTarget = $(scrollTarget);
+        isOverallScroller = window.isOverallScroller($scrollTarget[0]);
+        $scroll = $(scroll);
+      }
+      function preCalc() {
+        top();
+        rootHeight = $root.outerHeight();
+        rootTop = $root.offset().top + (isOverallScroller ? 0 :  $scrollTarget.scrollTop());
+        rootLeft = $root.offset().left;
+      }
+      function calc(needPreCalc) {
+        needPreCalc && preCalc();
+        scrollBottom = $scroll.outerHeight() - offsetBottom - rootHeight;
+        rootBottomTop = scrollBottom - rootTop;
+      }
+      function top() {
+        if (curState !== 'top') {
+          $root.removeClass('fixed').css({
+            left: 0,
+            top: 0
+          });
+          curState = 'top';
+        }
+      }
+      function fixed() {
+        if (curState !== 'fixed') {
+          $root.addClass('fixed').css({
+            left: rootLeft + 'px',
+            top: 0
+          });
+          curState = 'fixed';
+        }
+      }
+      function bottom() {
+        if (curState !== 'bottom') {
+          $root.removeClass('fixed').css({
+            left: 0,
+            top: rootBottomTop + 'px'
+          });
+          curState = 'bottom';
+        }
+      }
+      function setState() {
+        var scrollTop = $scrollTarget.scrollTop();
+        if (scrollTop >= rootTop && scrollTop <= scrollBottom) {
+          fixed();
+        } else if (scrollTop < rootTop) {
+          top();
+        } else {
+          bottom();
+        }
+      }
+      function init() {
+        if(!hasInit) {
+          var interval, timeout;
+          calc(true); setState();
+          // run calc every 100 millisecond
+          interval = setInterval(function() {
+            calc();
+          }, 100);
+          timeout = setTimeout(function() {
+            clearInterval(interval);
+          }, 45000);
+          window.pageLoad.then(function() {
+            setTimeout(function() {
+              clearInterval(interval);
+              clearTimeout(timeout);
+            }, 3000);
+          });
+          $scrollTarget.on('scroll', function() {
+            disabled || setState();
+          });
+          $window.on('resize', function() {
+            disabled || (calc(true), setState());
+          });
+          hasInit = true;
+        }
+      }
+
+      setOptions(options);
+      if (!disabled) {
+        init();
+      }
+      $window.on('resize', window.throttle(function() {
+        init();
+      }, 200));
+      return {
+        setOptions: setOptions,
+        refresh: function() {
+          calc(true, { animation: false }); setState();
+        }
+      };
+    }
+    $.fn.affix = affix;
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function toc(options) {
+      var $root = this, $window = $(window), $scrollTarget, $scroller, $tocUl = $('<ul class="toc toc--ellipsis"></ul>'), $tocLi, $headings, $activeLast, $activeCur,
+        selectors = 'h1,h2,h3', container = 'body', scrollTarget = window, scroller = 'html, body', disabled = false,
+        headingsPos, scrolling = false, hasRendered = false, hasInit = false;
+
+      function setOptions(options) {
+        var _options = options || {};
+        _options.selectors && (selectors = _options.selectors);
+        _options.container && (container = _options.container);
+        _options.scrollTarget && (scrollTarget = _options.scrollTarget);
+        _options.scroller && (scroller = _options.scroller);
+        _options.disabled !== undefined && (disabled = _options.disabled);
+        $headings = $(container).find(selectors).filter('[id]');
+        $scrollTarget = $(scrollTarget);
+        $scroller = $(scroller);
+      }
+      function calc() {
+        headingsPos = [];
+        $headings.each(function() {
+          headingsPos.push(Math.floor($(this).position().top));
+        });
+      }
+      function setState(element, disabled) {
+        var scrollTop = $scrollTarget.scrollTop(), i;
+        if (disabled || !headingsPos || headingsPos.length < 1) { return; }
+        if (element) {
+          $activeCur = element;
+        } else {
+          for (i = 0; i < headingsPos.length; i++) {
+            if (scrollTop >= headingsPos[i]) {
+              $activeCur = $tocLi.eq(i);
+            } else {
+              $activeCur || ($activeCur = $tocLi.eq(i));
+              break;
+            }
+          }
+        }
+        $activeLast && $activeLast.removeClass('active');
+        ($activeLast = $activeCur).addClass('active');
+      }
+      function render() {
+        if(!hasRendered) {
+          $root.append($tocUl);
+          $headings.each(function() {
+            var $this = $(this);
+            $tocUl.append($('<li></li>').addClass('toc-' + $this.prop('tagName').toLowerCase())
+              .append($('<a></a>').text($this.text()).attr('href', '#' + $this.prop('id'))));
+          });
+          $tocLi = $tocUl.children('li');
+          $tocUl.on('click', 'a', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            scrolling = true;
+            setState($this.parent());
+            $scroller.scrollToAnchor($this.attr('href'), 400, function() {
+              scrolling = false;
+            });
+          });
+        }
+        hasRendered = true;
+      }
+      function init() {
+        var interval, timeout;
+        if(!hasInit) {
+          render(); calc(); setState(null, scrolling);
+          // run calc every 100 millisecond
+          interval = setInterval(function() {
+            calc();
+          }, 100);
+          timeout = setTimeout(function() {
+            clearInterval(interval);
+          }, 45000);
+          window.pageLoad.then(function() {
+            setTimeout(function() {
+              clearInterval(interval);
+              clearTimeout(timeout);
+            }, 3000);
+          });
+          $scrollTarget.on('scroll', function() {
+            disabled || setState(null, scrolling);
+          });
+          $window.on('resize', window.throttle(function() {
+            if (!disabled) {
+              render(); calc(); setState(null, scrolling);
+            }
+          }, 100));
+        }
+        hasInit = true;
+      }
+
+      setOptions(options);
+      if (!disabled) {
+        init();
+      }
+      $window.on('resize', window.throttle(function() {
+        init();
+      }, 200));
+      return {
+        setOptions: setOptions
+      };
+    }
+    $.fn.toc = toc;
+  });
+})();
+/*(function () {
+
+})();*/
+</script><script>
+  /* toc must before affix, since affix need to konw toc' height. */(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  var TOC_SELECTOR = window.TEXT_VARIABLES.site.toc.selectors;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window);
+    var $articleContent = $('.js-article-content');
+    var $tocRoot = $('.js-toc-root'), $col2 = $('.js-col-aside');
+    var toc;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+    var hasToc = $articleContent.find(TOC_SELECTOR).length > 0;
+
+    function disabled() {
+      return $col2.css('display') === 'none' || !hasToc;
+    }
+
+    tocDisabled = disabled();
+
+    toc = $tocRoot.toc({
+      selectors: TOC_SELECTOR,
+      container: $articleContent,
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      tocDisabled = disabled();
+      toc && toc.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window), $pageFooter = $('.js-page-footer');
+    var $pageAside = $('.js-page-aside');
+    var affix;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+
+    affix = $pageAside.affix({
+      offsetBottom: $pageFooter.outerHeight(),
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      scroll: hasSidebar ? $('.js-page-main').children() : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      affix && affix.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+    window.pageAsideAffix = affix;
+  });
+})();
+</script>
+    </div>
+    <script>(function () {
+  var $root = document.getElementsByClassName('root')[0];
+  if (window.hasEvent('touchstart')) {
+    $root.dataset.isTouch = true;
+    document.addEventListener('touchstart', function(){}, false);
+  }
+})();
+</script>
+  </body>
+</html>
+

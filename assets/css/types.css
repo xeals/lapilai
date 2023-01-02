@@ -1,0 +1,27 @@
+html {
+    --type-tech: lightcoral;
+    --type-speed: mediumpurple;
+    --type-prot: goldenrod;
+    --type-magic: cornflowerblue;
+    --type-aux: seagreen;
+}
+
+[card-type="T"] {
+    --type-color: var(--type-tech);
+}
+
+[card-type="S"] {
+    --type-color: var(--type-speed);
+}
+
+[card-type="P"] {
+    --type-color: var(--type-prot);
+}
+
+[card-type="M"] {
+    --type-color: var(--type-magic);
+}
+
+[card-type="X"] {
+    --type-color: var(--type-aux);
+}
